@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Front.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Front0000" x="0" y="0" width="2560" height="1400" frameX="40" frameY="30" frameWidth="2560" frameHeight="1400"/>
+</TextureAtlas>
+

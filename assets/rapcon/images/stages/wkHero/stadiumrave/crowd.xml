@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Crowd.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="CrowdLoop0000" x="0" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0001" x="0" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0002" x="0" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0003" x="0" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0004" x="0" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0005" x="0" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0006" x="0" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0007" x="0" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0008" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0009" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0010" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0011" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0012" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0013" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0014" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0015" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0016" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>	
+	
+	<SubTexture name="CrowdLoop0017" x="2560" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0018" x="2560" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0019" x="2560" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0020" x="2560" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0021" x="2560" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0022" x="2560" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0023" x="2560" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0024" x="2560" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0025" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0026" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0027" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0028" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0029" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0030" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0031" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0032" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="CrowdLoop0033" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>	
+	
+</TextureAtlas>
