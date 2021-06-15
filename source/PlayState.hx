@@ -1867,15 +1867,23 @@ class PlayState extends MusicBeatState
 
 		if (health > 2)
 			health = 2;
+		//win icon shit??? bc of how i'm doing this i'm just commenting out the code so it doesn't break the build, but
+		//it'll be here when we're ready for it.
+				
+		//frame 0 = default, frame 1 = losing, frame 2 = winning
 		if (healthBar.percent < 20)
 			iconP1.animation.curAnim.curFrame = 1;
+			//iconP2.animation.curAnim.curFrame = 2;
 		else
 			iconP1.animation.curAnim.curFrame = 0;
+			//iconP2.animation.curAnim.curFrame = 0;
 
 		if (healthBar.percent > 80)
 			iconP2.animation.curAnim.curFrame = 1;
+			//iconP1.animation.curAnim.curFrame = 2;
 		else
 			iconP2.animation.curAnim.curFrame = 0;
+			//iconP1.animation.curAnim.curFrame = 0;
 
 		/* if (FlxG.keys.justPressed.NINE)
 			FlxG.switchState(new Charting()); */
