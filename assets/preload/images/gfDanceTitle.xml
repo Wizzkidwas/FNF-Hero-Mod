@@ -1,35 +1,120 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="gfDanceTitle.png">
-	<!-- Created with Adobe Animate version 20.0.0.17400 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="gfDance0000" x="0" y="0" width="717" height="648" frameX="-2" frameY="-14" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0001" x="727" y="0" width="721" height="648" frameX="0" frameY="-14" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0002" x="1458" y="0" width="721" height="646" frameX="0" frameY="-16" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0003" x="2189" y="0" width="717" height="646" frameX="-2" frameY="-16" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0004" x="2916" y="0" width="717" height="649" frameX="-2" frameY="-13" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0005" x="0" y="659" width="717" height="649" frameX="-2" frameY="-13" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0006" x="727" y="659" width="717" height="650" frameX="-2" frameY="-12" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0007" x="1454" y="659" width="717" height="661" frameX="-2" frameY="-1" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0008" x="1454" y="659" width="717" height="661" frameX="-2" frameY="-1" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0009" x="1454" y="659" width="717" height="661" frameX="-2" frameY="-1" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0010" x="2181" y="659" width="717" height="662" frameX="-2" frameY="0" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0011" x="2181" y="659" width="717" height="662" frameX="-2" frameY="0" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0012" x="2181" y="659" width="717" height="662" frameX="-2" frameY="0" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0013" x="2908" y="659" width="717" height="661" frameX="-2" frameY="-1" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0014" x="2908" y="659" width="717" height="661" frameX="-2" frameY="-1" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0015" x="0" y="1331" width="717" height="650" frameX="-2" frameY="-12" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0016" x="727" y="1331" width="721" height="650" frameX="0" frameY="-12" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0017" x="1458" y="1331" width="721" height="650" frameX="0" frameY="-12" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0018" x="2189" y="1331" width="717" height="650" frameX="-2" frameY="-12" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0019" x="2916" y="1331" width="717" height="651" frameX="-2" frameY="-11" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0020" x="0" y="1992" width="717" height="651" frameX="-2" frameY="-11" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0021" x="727" y="1992" width="717" height="652" frameX="-2" frameY="-10" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0022" x="1454" y="1992" width="717" height="657" frameX="-2" frameY="-5" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0023" x="1454" y="1992" width="717" height="657" frameX="-2" frameY="-5" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0024" x="1454" y="1992" width="717" height="657" frameX="-2" frameY="-5" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0025" x="2181" y="1992" width="717" height="656" frameX="-2" frameY="-6" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0026" x="2181" y="1992" width="717" height="656" frameX="-2" frameY="-6" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0027" x="2181" y="1992" width="717" height="656" frameX="-2" frameY="-6" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0028" x="2908" y="1992" width="717" height="656" frameX="-2" frameY="-6" frameWidth="721" frameHeight="662"/>
-	<SubTexture name="gfDance0029" x="2908" y="1992" width="717" height="656" frameX="-2" frameY="-6" frameWidth="721" frameHeight="662"/>
+<TextureAtlas imagePath="rapconDance.png">
+	<!-- Created without Adobe Animate bitch -->
+	<!-- https://www.oneilr.com/ -->
+	<SubTexture name="gfDance0000" x="0" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0001" x="0" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0002" x="0" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0003" x="0" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0004" x="0" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0005" x="0" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0006" x="0" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0007" x="0" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0008" x="0" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0009" x="0" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0010" x="0" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0011" x="0" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0012" x="0" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0013" x="1280" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0014" x="1280" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0015" x="1280" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0016" x="1280" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0017" x="1280" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0018" x="1280" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0019" x="1280" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0020" x="1280" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0021" x="1280" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0022" x="1280" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0023" x="1280" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0024" x="1280" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="gfDance0025" x="1280" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="gfDance0026" x="2560" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0027" x="2560" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0028" x="2560" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0029" x="2560" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0030" x="2560" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="gfDance0031" x="2560" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	
+	<SubTexture name="ENTER PRESSED0000" x="2560" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>
+	<SubTexture name="ENTER PRESSED0001" x="2560" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="ENTER PRESSED0002" x="3840" y="0" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="ENTER PRESSED0003" x="3840" y="700" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="ENTER PRESSED0004" x="3840" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="ENTER PRESSED0005" x="3840" y="1400" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>	
+	<SubTexture name="ENTER PRESSED0006" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0007" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0008" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0009" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0010" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0011" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0012" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0013" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0014" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0015" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0016" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0017" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0018" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0019" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0020" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0021" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0022" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0023" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0024" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0025" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0026" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0027" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0028" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0029" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0030" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0031" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0032" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0033" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0034" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0035" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0036" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0037" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0038" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0039" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0040" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0041" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0042" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0043" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0044" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0045" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0046" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0047" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0048" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0049" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0050" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0051" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0052" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0053" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0054" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0055" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0056" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0057" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0058" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0059" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>			
+	
+	<SubTexture name="ENTER PRESSED0060" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0061" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0062" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0063" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0064" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0065" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0066" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0067" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0068" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0069" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	<SubTexture name="ENTER PRESSED0070" x="3840" y="2100" width="1280" height="700" frameX="510" frameY="45" frameWidth="721" frameHeight="662"/>		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </TextureAtlas>
