@@ -2211,21 +2211,20 @@ class PlayState extends MusicBeatState
 		//it'll be here when we're ready for it.
 				
 		//frame 0 = default, frame 1 = losing, frame 2 = winning
-		if (healthBar.percent < 20)
+		//Health Icons (stolen from FPS plus)
+		if (healthBar.percent < 20){
 			iconP1.animation.curAnim.curFrame = 1;
-			//iconP2.animation.curAnim.curFrame = 2;
-		else
-			iconP1.animation.curAnim.curFrame = 0;
-			//iconP2.animation.curAnim.curFrame = 0;
-
-		if (healthBar.percent > 80)
+			iconP2.animation.curAnim.curFrame = 2;
+			}
+		else if (healthBar.percent > 80){
 			iconP2.animation.curAnim.curFrame = 1;
-			//iconP1.animation.curAnim.curFrame = 2;
+			iconP1.animation.curAnim.curFrame = 2;
+			}
 		else
+		{
 			iconP2.animation.curAnim.curFrame = 0;
-			//iconP1.animation.curAnim.curFrame = 0;
-		/* if (FlxG.keys.justPressed.NINE)
-			FlxG.switchState(new Charting()); */
+			iconP1.animation.curAnim.curFrame = 0;
+		}
 
 		#if debug
 		if (FlxG.keys.justPressed.EIGHT)
