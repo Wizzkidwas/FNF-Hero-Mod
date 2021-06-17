@@ -92,7 +92,7 @@ class PlayState extends MusicBeatState
 
 	var songLength:Float = 0;
 	var kadeEngineWatermark:FlxText;
-	
+	var stadiumCrowd:FlxSprite;
 	#if windows
 	// Discord RPC variables
 	var storyDifficultyText:String = "";
@@ -695,6 +695,314 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
+				case 'stadium':
+					{
+						defaultCamZoom = 0.9;
+						curStage = 'stadium';
+						
+						trace('Loading BG');
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic('assets/images/rapcon/wkHero/stadium/back.png');
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+						trace('BG loaded!');
+						
+						trace('Loading crowd');
+						stadiumCrowd = new FlxSprite(-250, 140);
+						stadiumCrowd.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadium/crowd.png', 'assets/images/rapcon/wkHero/stadium/crowd.xml');
+						stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
+						stadiumCrowd.animation.play('bop');
+						stadiumCrowd.antialiasing = true;
+						stadiumCrowd.scrollFactor.set(0.9, 0.9);
+						stadiumCrowd.setGraphicSize(Std.int(stadiumCrowd.width * 1));
+						stadiumCrowd.updateHitbox();
+						add(stadiumCrowd);
+						trace('Crowd loaded!');
+						
+						trace('Loading Crowd Front');
+						var stadiumCrowdFront = new FlxSprite(-500, 350);
+						stadiumCrowdFront.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadium/crowdfront.png', 'assets/images/rapcon/wkHero/stadium/crowdfront.xml');
+						stadiumCrowdFront.animation.addByPrefix('bop', 'Front', 35, true);
+						stadiumCrowdFront.animation.play('bop');
+						stadiumCrowdFront.antialiasing = true;
+						stadiumCrowdFront.scrollFactor.set(0.9, 0.9);
+						stadiumCrowdFront.setGraphicSize(Std.int(stadiumCrowdFront.width * 1));
+						stadiumCrowdFront.updateHitbox();
+						add(stadiumCrowdFront);
+						trace('Crowd Front Loaded!');
+						
+						trace('Loading Stage');
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic('assets/images/rapcon/wkHero/stadium/front.png');
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(1, 1);
+						stageFront.active = false;
+						add(stageFront);
+						trace('Stage loaded!');
+						
+						trace('Loading Lights');
+						var stageCurtains:FlxSprite = new FlxSprite(-400, -100).loadGraphic('assets/images/rapcon/wkHero/stadium/lights.png');
+						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+						stageCurtains.updateHitbox();
+						stageCurtains.antialiasing = true;
+						stageCurtains.scrollFactor.set(0.9, 0.9);
+						stageCurtains.active = false;
+						add(stageCurtains);
+						trace('Lights loaded! Everythings set!');
+					}
+					case 'stadiumrave':
+					{
+						defaultCamZoom = 0.9;
+						curStage = 'stadiumrave';
+						
+						trace('Loading BG');
+						var ravebg:FlxSprite = new FlxSprite(-600, -200);
+						ravebg.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumrave/back.png', 'assets/images/rapcon/wkHero/stadiumrave/back.xml');
+						// ravebg.animation.addByPrefix('def', 'Back', 24, false);
+						// ravebg.animation.addByPrefix('transition', 'BackTrans', 24, false);
+						ravebg.animation.addByPrefix('loop', 'BackLoop', 24, true);
+						ravebg.animation.play('loop');
+						ravebg.antialiasing = true;
+						ravebg.setGraphicSize(Std.int(ravebg.width * 1));
+						ravebg.scrollFactor.set(0.9, 0.9);
+						add(ravebg);
+						trace('BG loaded!');
+						
+						trace('Loading crowd');
+						stadiumCrowd = new FlxSprite(-250, 140);
+						stadiumCrowd.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumrave/crowd.png', 'assets/images/rapcon/wkHero/stadiumrave/crowd.xml');
+						// stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
+						// stadiumCrowd.animation.addByPrefix('trans', 'CrowdTrans', 24, true);
+						stadiumCrowd.animation.addByPrefix('loop', 'CrowdLoop', 35, true);
+						stadiumCrowd.animation.play('loop');
+						stadiumCrowd.antialiasing = true;
+						stadiumCrowd.scrollFactor.set(0.9, 0.9);
+						stadiumCrowd.setGraphicSize(Std.int(stadiumCrowd.width * 1));
+						stadiumCrowd.updateHitbox();
+						add(stadiumCrowd);
+						trace('Crowd loaded!');
+						
+						trace('Loading Crowd Front');
+						var stadiumCrowdFront = new FlxSprite(-500, 350);
+						stadiumCrowdFront.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumrave/crowdfront.png', 'assets/images/rapcon/wkHero/stadiumrave/crowdfront.xml');
+						// stadiumCrowdFront.animation.addByPrefix('bop', 'CrowdFront', 35, true);
+						// stadiumCrowdFront.animation.addByPrefix('trans', 'CrowdFrontTrans', 24, true);
+						stadiumCrowdFront.animation.addByPrefix('loop', 'CrowdFrontLoop', 36, true);
+						stadiumCrowdFront.animation.play('loop');
+						stadiumCrowdFront.antialiasing = true;
+						stadiumCrowdFront.scrollFactor.set(0.9, 0.9);
+						stadiumCrowdFront.setGraphicSize(Std.int(stadiumCrowdFront.width * 1));
+						stadiumCrowdFront.updateHitbox();
+						add(stadiumCrowdFront);
+						trace('Crowd Front Loaded!');
+						
+						trace('Loading Stage');
+						var stageFront:FlxSprite = new FlxSprite(-680, 1125);
+						stageFront.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumrave/front.png', 'assets/images/rapcon/wkHero/stadiumrave/front.xml');
+						// stageFront.animation.addByPrefix('def', 'Front', 35, true);
+						// stageFront.animation.addByPrefix('trans', 'FrontTrans', 24, true);
+						stageFront.animation.addByPrefix('loop', 'FrontLoop', 24, true);
+						stageFront.animation.play('loop');
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(1, 1);
+						add(stageFront);
+						trace('Stage loaded!');
+						
+						trace('Loading Lights');
+						var stageCurtains:FlxSprite = new FlxSprite(-400, 350);
+						stageCurtains.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumrave/lights.png', 'assets/images/rapcon/wkHero/stadiumrave/lights.xml');
+						// stageCurtains.animation.addByPrefix('def', 'Lights', 35, true);
+						// stageCurtains.animation.addByPrefix('trans', 'LightsTrans', 24, true);
+						stageCurtains.animation.addByPrefix('loop', 'LightsLoop', 24, true);
+						stageCurtains.animation.play('loop');
+						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+						stageCurtains.updateHitbox();
+						stageCurtains.antialiasing = true;
+						stageCurtains.scrollFactor.set(0.9, 0.9);
+						add(stageCurtains);
+						trace('Lights loaded! Everythings set!');
+					}
+					case 'stadiumBoss':
+					{
+						defaultCamZoom = 0.9;
+						curStage = 'stadiumBoss';
+						
+						trace('Loading BG');
+						var ravebg:FlxSprite = new FlxSprite(-550, -200);
+						ravebg.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumBoss/back.png', 'assets/images/rapcon/wkHero/stadiumBoss/back.xml');
+						// ravebg.animation.addByPrefix('def', 'Back', 24, false);
+						// ravebg.animation.addByPrefix('transition', 'BackTrans', 24, false);
+						ravebg.animation.addByPrefix('loop', 'BackLoop', 24, true);
+						ravebg.animation.play('loop');
+						ravebg.antialiasing = true;
+						ravebg.setGraphicSize(Std.int(ravebg.width * 1));
+						ravebg.scrollFactor.set(0.9, 0.9);
+						add(ravebg);
+						trace('BG loaded!');
+						
+						trace('Loading moon');
+						stadiumCrowd = new FlxSprite(-250, 140);
+						stadiumCrowd.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumBoss/crowd.png', 'assets/images/rapcon/wkHero/stadiumBoss/crowd.xml');
+						// stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
+						// stadiumCrowd.animation.addByPrefix('trans', 'CrowdTrans', 24, true);
+						stadiumCrowd.animation.addByPrefix('loop', 'CrowdLoop', 35, true);
+						stadiumCrowd.animation.play('loop');
+						stadiumCrowd.antialiasing = true;
+						stadiumCrowd.scrollFactor.set(0.9, 0.9);
+						stadiumCrowd.setGraphicSize(Std.int(stadiumCrowd.width * 1));
+						stadiumCrowd.updateHitbox();
+						add(stadiumCrowd);
+						trace('moon loaded!');
+						
+						trace('Loading moon 2');
+						var stadiumCrowdFront = new FlxSprite(-500, 350);
+						stadiumCrowdFront.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumBoss/crowdfront.png', 'assets/images/rapcon/wkHero/stadiumBoss/crowdfront.xml');
+						// stadiumCrowdFront.animation.addByPrefix('bop', 'CrowdFront', 35, true);
+						// stadiumCrowdFront.animation.addByPrefix('trans', 'CrowdFrontTrans', 24, true);
+						stadiumCrowdFront.animation.addByPrefix('loop', 'CrowdFrontLoop', 36, true);
+						stadiumCrowdFront.animation.play('loop');
+						stadiumCrowdFront.antialiasing = true;
+						stadiumCrowdFront.scrollFactor.set(0.9, 0.9);
+						stadiumCrowdFront.setGraphicSize(Std.int(stadiumCrowdFront.width * 1));
+						stadiumCrowdFront.updateHitbox();
+						add(stadiumCrowdFront);
+						trace('moon 2 Loaded!');
+						
+						trace('Loading cloods');
+						var stadiumClouds = new FlxSprite(-500, 350);
+						stadiumClouds.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumBoss/clouds.png', 'assets/images/rapcon/wkHero/stadiumBoss/clouds.xml');
+						// stadiumClouds.animation.addByPrefix('bop', 'clouds', 35, true);
+						// stadiumClouds.animation.addByPrefix('trans', 'cloudsTrans', 24, true);
+						stadiumClouds.animation.addByPrefix('loop', 'clouds', 24, true);
+						stadiumClouds.animation.play('loop');
+						stadiumClouds.antialiasing = true;
+						stadiumClouds.scrollFactor.set(0.9, 0.9);
+						stadiumClouds.setGraphicSize(Std.int(stadiumClouds.width * 1));
+						stadiumClouds.updateHitbox();
+						add(stadiumClouds);
+						trace('cloods Loaded!');
+						
+						trace('Loading Stage');
+						var stageFront:FlxSprite = new FlxSprite(-680, 625);
+						stageFront.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumBoss/front.png', 'assets/images/rapcon/wkHero/stadiumBoss/front.xml');
+						// stageFront.animation.addByPrefix('def', 'Front', 35, true);
+						// stageFront.animation.addByPrefix('trans', 'FrontTrans', 24, true);
+						stageFront.animation.addByPrefix('loop', 'FrontLoop', 24, true);
+						stageFront.animation.play('loop');
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(1, 1);
+						add(stageFront);
+						trace('Stage loaded!');
+						
+						trace('Loading Lights');
+						var stageCurtains:FlxSprite = new FlxSprite(-400, 300);
+						stageCurtains.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkHero/stadiumBoss/lights.png', 'assets/images/rapcon/wkHero/stadiumBoss/lights.xml');
+						// stageCurtains.animation.addByPrefix('def', 'Lights', 35, true);
+						// stageCurtains.animation.addByPrefix('trans', 'LightsTrans', 24, true);
+						stageCurtains.animation.addByPrefix('loop', 'LightsLoop', 24, true);
+						stageCurtains.animation.play('loop');
+						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+						stageCurtains.updateHitbox();
+						stageCurtains.antialiasing = true;
+						stageCurtains.scrollFactor.set(0.9, 0.9);
+						add(stageCurtains);
+						trace('Lights loaded! Everythings set!');
+					}
+						
+					case 'void':
+					{
+						defaultCamZoom = 0.9;
+						curStage = 'void';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic('assets/images/rapcon/wkNega/void/stageback.png');
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+			
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic('assets/images/rapcon/wkNega/void/stagefront.png');
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(0.9, 0.9);
+						stageFront.active = false;
+						add(stageFront);
+			
+						var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic('assets/images/rapcon/wkNega/void/stagecurtains.png');
+						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+						stageCurtains.updateHitbox();
+						stageCurtains.antialiasing = true;
+						stageCurtains.scrollFactor.set(1.3, 1.3);
+						stageCurtains.active = false;
+			
+						add(stageCurtains);
+					}
+					
+					// assets/images/rapcon/wkTak/conhall
+					case 'conhall':
+					{
+						defaultCamZoom = 0.9;
+						curStage = 'conhall';
+						//is it efficient to keep using the same variables over and over again for every stage? absolutely not. do i care? absolutely not.
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic('assets/images/rapcon/wkTak/conhall/back.png');
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+						
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic('assets/images/rapcon/wkTak/conhall/front.png');
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(1, 1);
+						stageFront.active = false;
+						add(stageFront);
+						
+						stadiumCrowd = new FlxSprite(-250, 140);
+						stadiumCrowd.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkTak/conhall/crowd.png', 'assets/images/rapcon/wkTak/conhall/crowd.xml');
+						stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
+						stadiumCrowd.animation.play('bop');
+						stadiumCrowd.antialiasing = true;
+						stadiumCrowd.scrollFactor.set(0.9, 0.9);
+						stadiumCrowd.setGraphicSize(Std.int(stadiumCrowd.width * 1));
+						stadiumCrowd.updateHitbox();
+						add(stadiumCrowd);
+						
+					}
+					case 'conhallempty':
+					{
+						defaultCamZoom = 0.9;
+						curStage = 'conhallempty';
+						//this whole block of code could have been a switch case...
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic('assets/images/rapcon/wkTak/conhallempty/back.png');
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+						
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic('assets/images/rapcon/wkTak/conhallempty/front.png');
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(1, 1);
+						stageFront.active = false;
+						add(stageFront);
+						
+						stadiumCrowd = new FlxSprite(-250, 140);
+						stadiumCrowd.frames = FlxAtlasFrames.fromSparrow('assets/images/rapcon/wkTak/conhallempty/crowd.png', 'assets/images/rapcon/wkTak/conhallempty/crowd.xml');
+						stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
+						stadiumCrowd.animation.play('bop');
+						stadiumCrowd.antialiasing = true;
+						stadiumCrowd.scrollFactor.set(0.9, 0.9);
+						stadiumCrowd.setGraphicSize(Std.int(stadiumCrowd.width * 1));
+						stadiumCrowd.updateHitbox();
+						add(stadiumCrowd);
+					}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -823,6 +1131,38 @@ class PlayState extends MusicBeatState
 				boyfriend.y += 220;
 				gf.x += 180;
 				gf.y += 300;
+				case 'stadium':
+					boyfriend.x += 200;
+					boyfriend.y += 70;
+					//fuck it hero's repositioning goes here too
+					dad.x += -50;
+					dad.y += 70;
+					gf.y = 99999;
+					//fuck you into space you go
+				case 'stadiumrave':
+					boyfriend.x += 200;
+					boyfriend.y += 70;
+					dad.x += -50;
+					dad.y += 70;
+					gf.y = 99999;
+				case 'stadiumBoss':
+					boyfriend.x += 200;
+					boyfriend.y += 70;
+					dad.x += -50;
+					dad.y += 70;
+					gf.y = 99999;
+				case 'conhall':
+					boyfriend.x += 200;
+					boyfriend.y += 70;
+					dad.x += -50;
+					dad.y += 70;
+				case 'conhallempty':
+					boyfriend.x += 200;
+					boyfriend.y += 70;
+					dad.x += -50;
+					dad.y += 70;
+				case 'void':
+					gf.y = 99999;
 		}
 
 		add(gf);
@@ -1867,16 +2207,23 @@ class PlayState extends MusicBeatState
 
 		if (health > 2)
 			health = 2;
+		//win icon shit??? bc of how i'm doing this i'm just commenting out the code so it doesn't break the build, but
+		//it'll be here when we're ready for it.
+				
+		//frame 0 = default, frame 1 = losing, frame 2 = winning
 		if (healthBar.percent < 20)
 			iconP1.animation.curAnim.curFrame = 1;
+			//iconP2.animation.curAnim.curFrame = 2;
 		else
 			iconP1.animation.curAnim.curFrame = 0;
+			//iconP2.animation.curAnim.curFrame = 0;
 
 		if (healthBar.percent > 80)
 			iconP2.animation.curAnim.curFrame = 1;
+			//iconP1.animation.curAnim.curFrame = 2;
 		else
 			iconP2.animation.curAnim.curFrame = 0;
-
+			//iconP1.animation.curAnim.curFrame = 0;
 		/* if (FlxG.keys.justPressed.NINE)
 			FlxG.switchState(new Charting()); */
 

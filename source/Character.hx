@@ -498,6 +498,9 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+			case 'fuckin-hero':
+				frames = Paths.getSparrowAtlas('characters/hero');
+				playAnim('idle');
 		}
 
 		dance();

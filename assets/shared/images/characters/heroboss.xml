@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="heroboss.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<!-- MODIFIED BY ASHATELETHIA/KAYYA -->
+	<!-- heroboss aka pissdemon -->
+	<!-- psa: math SUCKS -->
+	<!-- kayya: tryna figure out the issue here
+		oni: there's an issue with everything abt fnf modding -->
+	<!-- "the more comments i add, the more suffering i've been through" - kayya, march 23rd, 2021 -->
+	<!-- ELECTRIC BOOGALOO BABEYYYY 3 24 21 -->
+	<!-- ELECTRIC THREEAGLOO?!?! 4 21 21 ... plus redesign of heroboss... he's red now. that's his attack -->
+	<!-- helo. this is oni. STOP SNOOPIN. -->
+	
+	<!-- IDLE -->
+	<SubTexture name="Heroboss Idle instance 10000" x="0" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10001" x="930" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10002" x="1860" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10003" x="2790" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10004" x="3720" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10005" x="3720" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10006" x="3720" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10007" x="3720" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10008" x="3720" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10009" x="3720" y="0" width="930" height="957"/>
+	
+	<!-- UP -->
+	<SubTexture name="Heroboss Up instance 10000" x="0" y="957" width="930" height="957"/>
+	<SubTexture name="Heroboss Up instance 10001" x="930" y="957" width="930" height="957"/>
+	<SubTexture name="Heroboss Up instance 10002" x="1860" y="957" width="930" height="957"/>
+	<SubTexture name="Heroboss Up instance 10002" x="1860" y="957" width="930" height="957"/>	
+	
+	<!-- DOWN -->
+	<SubTexture name="Heroboss Down instance 10000" x="2790" y="957" width="930" height="957"/>
+	<SubTexture name="Heroboss Down instance 10001" x="3720" y="957" width="930" height="957"/>
+	<SubTexture name="Heroboss Down instance 10002" x="0" y="1914" width="930" height="957"/>
+	
+	<!-- RIGHT -->
+	<SubTexture name="Heroboss Right instance 10000" x="930" y="1914" width="930" height="957" frameX="-30" frameY="0" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Right instance 10001" x="1860" y="1914" width="930" height="957" frameX="-30" frameY="0" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Right instance 10002" x="2790" y="1914" width="930" height="957" frameX="-30" frameY="0" frameWidth="930" frameHeight="957"/>
+	
+	<!-- LEFT -->
+	<SubTexture name="Heroboss Left instance 10000" x="3720" y="1914" width="930" height="957"/>
+	<SubTexture name="Heroboss Left instance 10001" x="0" y="2871" width="930" height="957"/>
+	<SubTexture name="Heroboss Left instance 10002" x="930" y="2871" width="930" height="957"/>
+	
+	
+	
+	<!-- ALTS -->
+	
+	<!-- LEFT -->
+	<SubTexture name="Heroboss Tired Left instance 10000" x="16" y="720" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Left instance 10001" x="176" y="720" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Left instance 10002" x="336" y="720" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Left instance 10003" x="496" y="720" width="930" height="957"/>
+	
+	<!-- UP -->
+	<SubTexture name="Heroboss Tired Up instance 10000" x="816" y="720" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Up instance 10001" x="976" y="720" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Up instance 10002" x="1136" y="720" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Up instance 10003" x="1296" y="720" width="930" height="957"/>
+	
+	<!-- RIGHT -->
+	<SubTexture name="Heroboss Tired Right instance 10000" x="16" y="900" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Right instance 10001" x="176" y="900" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Right instance 10002" x="336" y="900" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Right instance 10003" x="496" y="900" width="930" height="957"/>
+	
+	<!-- DOWN -->
+	<SubTexture name="Heroboss Tired Down instance 10000" x="816" y="900" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Down instance 10001" x="976" y="900" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Down instance 10002" x="1136" y="900" width="930" height="957"/>
+	<SubTexture name="Heroboss Tired Down instance 10003" x="1296" y="900" width="930" height="957"/>
+	
+
+	
+</TextureAtlas>
