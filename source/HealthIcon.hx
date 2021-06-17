@@ -17,6 +17,9 @@ class HealthIcon extends FlxSprite
 
 		antialiasing = true;
 		animation.add('bf', [0, 1], 0, false, isPlayer);
+		// animation.add('bf', [0, 1, 2], 0, false, isPlayer); // <-- the real one, i just don't want the code to crash and burn
+		
+		//leaving these here so shit doesn't die and crash for now??
 		animation.add('bf-car', [0, 1], 0, false, isPlayer);
 		animation.add('bf-christmas', [0, 1], 0, false, isPlayer);
 		animation.add('bf-pixel', [21, 21], 0, false, isPlayer);
@@ -37,6 +40,17 @@ class HealthIcon extends FlxSprite
 		animation.add('parents-christmas', [17, 18], 0, false, isPlayer);
 		animation.add('monster', [19, 20], 0, false, isPlayer);
 		animation.add('monster-christmas', [19, 20], 0, false, isPlayer);
+		
+		//new characters
+		animation.add('bfrave', [9, 10, 11], 0, false, isPlayer);
+		animation.add('bfspook', [0, 1, 0], 0, false, isPlayer); //imo no win icon for bfspook.
+		animation.add('hero', [3, 4, 5], 0, false, isPlayer);
+		animation.add('herorave', [12, 13, 14], 0, false, isPlayer);
+		animation.add('heroboss', [15, 16, 15], 0, false, isPlayer);
+		animation.add('nega', [6, 7, 8], 0, false, isPlayer);
+		animation.add('tak', [17, 18, 19], 0, false, isPlayer);
+		animation.add('takboss', [23, 24, 23], 0, false, isPlayer);
+		animation.add('twins', [20, 21, 22], 0, false, isPlayer);
 		animation.play(char);
 
 		switch(char)
