@@ -498,9 +498,74 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
-			case 'fuckin-hero':
+			case 'hero':
 				frames = Paths.getSparrowAtlas('characters/hero');
+				animation.addByPrefix('idle', 'Hero Idle', 24, false);
+				animation.addByPrefix('singUP', 'Hero Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Hero Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Hero Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Hero Right', 24, false);
+				animation.addByPrefix('Hero Lets', 'Hero Lets', 24, false);
+				animation.addByPrefix('Hero Go', 'Hero Go', 24, false);
+				
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				addOffset("Hero Lets");
+				addOffset("Hero Go");
+
 				playAnim('idle');
+
+			case 'heroboss':
+				frames = Paths.getSparrowAtlas('characters/heroboss');
+				animation.addByPrefix('idle', 'Heroboss Idle', 24, false);
+				animation.addByPrefix('singUP', 'Heroboss Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Heroboss Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Heroboss Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Heroboss Right', 24, false);
+				
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				playAnim('idle');
+				
+			case 'herorave':
+				frames = Paths.getSparrowAtlas('characters/herorave');
+				animation.addByPrefix('idle', 'Hero Idle', 24, false);
+				animation.addByPrefix('singUP', 'Hero Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Hero Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Hero Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Hero Right', 24, false);
+				
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+			
+				playAnim('idle');
+
+			case 'nega':
+				frames = Paths.getSparrowAtlas('characters/nega');
+				animation.addByPrefix('idle', 'Nega Idle', 24, false);
+				animation.addByPrefix('singUP', 'Nega Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Nega Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Nega Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Nega Right', 24, false);
+					
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				
+				playAnim('idle');
+	
+				
 		}
 
 		dance();

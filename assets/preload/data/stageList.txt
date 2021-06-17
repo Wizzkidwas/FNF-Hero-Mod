@@ -6,3 +6,9 @@ mall
 mallEvil
 school
 schoolEvil
+stadium
+stadiumrave
+stadiumBoss
+void
+conhall
+conhallempty
