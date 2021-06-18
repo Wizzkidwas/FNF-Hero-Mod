@@ -1,7 +1,7 @@
 {
 	"song": {
 		"sectionLengths": [],
-		"player1": "bfspook",
+		"player1": "bf",
 		"notes": [
 			{
 				"sectionNotes": [],
@@ -5614,10 +5614,10 @@
 		"song": "anomaly",
 		"validScore": true,
 		"sections": 0,
-		"uiType" : "glitch",
+		"uiType" : "normal",
 		"needsVoices": true,
 		"speed": 2.5,
-		"stage": "stadiumBoss",		
+		"stage": "stage",		
 		"bpm": 212
 	}
 }

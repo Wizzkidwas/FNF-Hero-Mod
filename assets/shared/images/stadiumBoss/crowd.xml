@@ -3,8 +3,6 @@
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="Crowd0000" x="0" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
-	<SubTexture name="Crowd0004" x="0" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
-	<SubTexture name="Crowd0008" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
 	
 	
 </TextureAtlas>

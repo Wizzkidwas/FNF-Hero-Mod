@@ -1,11 +1,11 @@
 {
      "song" : {
-         "player1" : "bfrave"
+         "player1" : "bf"
         ,"sectionLengths" : [
 
         ]
         ,"isMoody" : false
-        ,"player2" : "herorave"
+        ,"player2" : "hero"
         ,"notes" : [
              {
                  "typeOfSection" : 0
@@ -4641,8 +4641,8 @@
         ,"isSpooky" : false
         ,"needsVoices" : true
         ,"sections" : 0
-        ,"stage" : "stadiumrave"
-        ,"uiType" : "rave"
+        ,"stage" : "stage"
+        ,"uiType" : "normal"
         ,"bpm" : 226
         ,"speed" : 3
         ,"gf" : "gf"

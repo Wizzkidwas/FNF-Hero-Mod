@@ -4641,8 +4641,8 @@
         ,"isSpooky" : false
         ,"needsVoices" : true
         ,"sections" : 0
-        ,"stage" : "stage"
-        ,"uiType" : "normal"
+        ,"stage" : "stadiumrave"
+        ,"uiType" : "rave"
         ,"bpm" : 226
         ,"speed" : 3
         ,"gf" : "gf"
