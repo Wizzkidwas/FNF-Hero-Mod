@@ -10,5 +10,3 @@ stadium
 stadiumrave
 stadiumBoss
 void
-conhall
-conhallempty

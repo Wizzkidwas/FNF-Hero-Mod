@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="back.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BackLoop0000" x="0" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0001" x="0" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0002" x="0" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0003" x="0" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0004" x="0" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0005" x="0" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0006" x="0" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0007" x="0" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0008" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0009" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0010" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0011" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0012" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0013" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0014" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0015" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0016" x="0" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>	
+	
+	<SubTexture name="BackLoop0017" x="2560" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0018" x="2560" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0019" x="2560" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0020" x="2560" y="0" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0021" x="2560" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0022" x="2560" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0023" x="2560" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0024" x="2560" y="1400" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0025" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0026" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0027" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0028" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0029" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0030" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0031" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0032" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>
+	<SubTexture name="BackLoop0033" x="2560" y="2800" width="2560" height="1400" frameX="225" frameY="280" frameWidth="2560" frameHeight="1400"/>	
+	
+</TextureAtlas>
