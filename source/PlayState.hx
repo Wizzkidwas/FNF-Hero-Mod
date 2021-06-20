@@ -697,18 +697,19 @@ class PlayState extends MusicBeatState
 				}
 				case 'stadium':
 					{
-						defaultCamZoom = 0.9;
+						defaultCamZoom = 0.9; // hi wizz this is the camera value. idk what makes it zoom out but we need it to zoom out.
 						curStage = 'stadium';
 						
 						trace('Loading BG');
 						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stadium/back'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
-						bg.active = false;
+						bg.active = false; //also! i believe this is used for like. if the shit animates. so the bg doesn't animate, ergo, it's not active
 						add(bg);
 						if (bg != null)
 						{
 							trace('BG loaded!');
+							//lmao
 						}
 						
 						/*trace('Loading crowd');
@@ -920,7 +921,7 @@ class PlayState extends MusicBeatState
 						
 					case 'void':
 					{
-						defaultCamZoom = 0.9;
+						defaultCamZoom = 0.9; //this might need to be switched out too???
 						curStage = 'void';
 						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('void/stageback.png'));
 						bg.antialiasing = true;
@@ -2441,6 +2442,31 @@ class PlayState extends MusicBeatState
 					// FlxG.switchState(new PlayState());
 			}
 		}
+		if (curSong == 'kick-it') // i think ?? this should work and not crash and burn?? i'm so sorry if it does lmao
+		{
+			switch (curBeat)
+				{
+				case 13:
+				dad.playAnim('Hero Lets');
+				trace('lets');
+				}
+				
+			switch (curStep)
+				{
+				case 58:
+				dad.playAnim('Hero Go');
+				trace('go go go');
+				}
+		}
+			
+		if (curSong == 'anomaly') // THIS IS ALL PLACEHOLDER STUFFS LMAO
+			switch (curBeat)
+			{
+			case -4: //i think it starts here?
+			dad.playAnim('Heroboss Shake'); //the thing is we need this to loop until REE and idk how to do that without making it
+					// count every single beat case. good luck wizz
+			}
+			//switch curbeat/step depending on where the REEE is in song to REE anim
 
 		if (health <= 0)
 		{
