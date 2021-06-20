@@ -88,7 +88,7 @@ class TitleState extends MusicBeatState
 		trace('NEWGROUNDS LOL');
 		#end
 
-		FlxG.save.bind('funkin', 'ninjamuffin99');
+		FlxG.save.bind('funkin', 'ninjamuffin99'); //this sets up the savefile in appdata...
 
 		KadeEngineData.initSave();
 
@@ -333,7 +333,7 @@ class TitleState extends MusicBeatState
 						trace('outdated lmao! ' + returnedData[0] + ' != ' + MainMenuState.kadeEngineVer);
 						OutdatedSubState.needVer = returnedData[0];
 						OutdatedSubState.currChanges = returnedData[1];
-						FlxG.switchState(new OutdatedSubState());
+						// FlxG.switchState(new OutdatedSubState()); this bitch is annoying since KE just updated lmao
 					}
 					else
 					{
@@ -406,7 +406,7 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 1:
-				createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
+				createCoolText(['OneilR', 'AshaTelethia', 'Saruky', 'Wizzkidwas']);
 			// credTextShit.visible = true;
 			case 3:
 				addMoreText('present');
@@ -450,13 +450,13 @@ class TitleState extends MusicBeatState
 			// credTextShit.text = "Friday";
 			// credTextShit.screenCenter();
 			case 13:
-				addMoreText('Friday');
+				addMoreText('FNF');
 			// credTextShit.visible = true;
 			case 14:
-				addMoreText('Night');
+				addMoreText('X');
 			// credTextShit.text += '\nNight';
 			case 15:
-				addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+				addMoreText("Hero's Journey"); // credTextShit.text += '\nFunkin';
 
 			case 16:
 				skipIntro();
