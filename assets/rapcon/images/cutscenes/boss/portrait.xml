@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Portrait.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Boyfriend portrait enter instance =10000" x="0" y="418" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>
+	<SubTexture name="Boyfriend portrait enter instance =10001" x="0" y="418" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10002" x="0" y="418" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10003" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>
+	<SubTexture name="Boyfriend portrait enter instance =10004" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>
+	<SubTexture name="Boyfriend portrait enter instance =10005" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10006" x="0" y="418" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>
+	<SubTexture name="Boyfriend portrait enter instance =10007" x="0" y="418" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>
+	<SubTexture name="Boyfriend portrait enter instance =10008" x="0" y="836" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>
+	<SubTexture name="Boyfriend portrait enter instance =10009" x="0" y="836" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>
+	<SubTexture name="Boyfriend portrait enter instance =10010" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10011" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10012" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>		
+	<SubTexture name="Boyfriend portrait enter instance =10013" x="0" y="836" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10014" x="0" y="836" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10015" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>		
+	<SubTexture name="Boyfriend portrait enter instance =10016" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10017" x="0" y="418" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>		
+	<SubTexture name="Boyfriend portrait enter instance =10018" x="0" y="418" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10019" x="0" y="418" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>
+	<SubTexture name="Boyfriend portrait enter instance =10020" x="0" y="836" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10021" x="0" y="836" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
+	<SubTexture name="Boyfriend portrait enter instance =10022" x="0" y="836" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>		
+	<SubTexture name="Boyfriend portrait enter instance =10023" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>		
+	<SubTexture name="Boyfriend portrait enter instance =10024" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>			
+	<SubTexture name="Boyfriend portrait enter instance =10025" x="0" y="836" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>
+</TextureAtlas>

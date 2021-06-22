@@ -1,10 +1,10 @@
 :bf:BEE!
-:char-pico:?
+:dad:?
 :bf: Bee-op bedopa?
 :dad: Ah...? You want my autograph, bud?
 :bf: Bee, bop!!
-:char-pico: A rap battle you say...
+:dad: A rap battle you say...
 :bf:Bup.
-:char-pico: (Huh.)
+:dad: (Huh.)
 :dad: (I guess.. a lil' practice couldn't hurt.)
 :dad: ...Sure i'll fight you, kid! Prepare yourself!

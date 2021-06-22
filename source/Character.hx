@@ -607,17 +607,20 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'Heroboss Down', 24, false);
 				animation.addByPrefix('singLEFT', 'Heroboss Left', 24, false);
 				animation.addByPrefix('singRIGHT', 'Heroboss Right', 24, false);
-				animation.addByPrefix('Heroboss Crouch', 'Heroboss Crouch', 24, false);
-				animation.addByPrefix('Heroboss REEEEE', 'Heroboss REEEEE', 24, false);
-				
+				animation.addByPrefix('singUP-alt', 'UpSCREAM', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'DownSCREAM', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'LeftSCREAM', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'RightSCREAM', 24, false);
 
 				addOffset('idle');
 				addOffset("singUP");
 				addOffset("singRIGHT");
 				addOffset("singLEFT");
 				addOffset("singDOWN");
-				addOffset("Heroboss Crouch");
-				addOffset("Heroboss REEEEE");
+				addOffset("singUP-alt");
+				addOffset("singRIGHT-alt");
+				addOffset("singLEFT-alt");
+				addOffset("singDOWN-alt");
 				playAnim('idle');
 				
 			case 'herorave':
