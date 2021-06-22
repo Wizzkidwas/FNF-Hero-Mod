@@ -1347,7 +1347,7 @@ class PlayState extends MusicBeatState
 				case 'kick-it':
 					schoolIntro(doof);
 				case 'anomaly':
-					schoolIntro(doof);
+					bossIntro(doof);
 				default:
 					startCountdown();
 			}
@@ -1366,6 +1366,82 @@ class PlayState extends MusicBeatState
 
 		super.create();
 	}
+	
+	function bossIntro(?dialogueBox:DialogueBox):Void
+	{
+		var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, FlxColor.BLACK);
+		black.scrollFactor.set();
+		add(black);
+
+		var red:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, 0xFFff1b31);
+		red.scrollFactor.set();
+
+		var boss:FlxSprite = new FlxSprite();
+		boss.frames = Paths.getSparrowAtlas('characters/herocutscene');
+		boss.animation.addByPrefix('part1', 'Hero Crouch', 24, false);
+		boss.animation.addByPrefix('part2', 'Hero Tremble', 24, false);
+		boss.animation.addByPrefix('part3', 'Hero Shine Start', 24, false);
+		boss.animation.addByPrefix('part4', 'Hero Shine', 24, false);
+		boss.animation.addByPrefix('part5', 'Dark Hero Tremble', 24, false);
+		boss.animation.addByPrefix('part6', 'Dark Hero Charge', 24, false);
+		boss.scrollFactor.set();
+		boss.updateHitbox();
+		boss.screenCenter();
+		
+		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+		
+		camHUD.visible = false;
+		
+		
+		new FlxTimer().start(5, function(swagTimer:FlxTimer)
+		{
+			black.alpha -= 0.15;
+
+			if (black.alpha > 0)
+			{
+				swagTimer.reset(0.3);
+			}
+				inCutscene = true;
+				if (songLowercase == 'anomaly')
+				{
+					add(boss);
+					boss.alpha = 0;
+					new FlxTimer().start(0.3, function(swagTimer:FlxTimer)
+					{
+						boss.alpha += 0.15;
+						if (boss.alpha < 1)
+						{
+							swagTimer.reset();
+						}
+						else
+						{
+							boss.animation.play('part1');
+							boss.animation.play('part2');
+							boss.animation.play('part3');
+							boss.animation.play('part4');
+							boss.animation.play('part5');
+							boss.animation.play('part6');
+							FlxG.sound.play(Paths.sound('Senpai_Dies'), 1, false, null, true, function()
+							{
+								remove(boss);
+								remove(red);
+								FlxG.camera.fade(FlxColor.WHITE, 0.01, true, function()
+								{
+									add(dialogueBox);
+								}, true);
+							});
+							new FlxTimer().start(3.2, function(deadTime:FlxTimer)
+							{
+								FlxG.camera.fade(FlxColor.WHITE, 1.6, false);
+							});
+						}
+					});
+					camHUD.visible = true;
+				}
+				remove(black);
+		});
+	}
+	
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void
 	{

@@ -25,12 +25,12 @@ class StoryMenuState extends MusicBeatState
 
 	var weekData:Array<Dynamic> = [
 		['Tutorial'],
-		['Bopeebo', 'Fresh', 'Dad Battle'],
+		/*['Bopeebo', 'Fresh', 'Dad Battle'],
 		['Spookeez', 'South', "Monster"],
 		['Pico', 'Philly Nice', "Blammed"],
 		['Satin Panties', "High", "Milf"],
 		['Cocoa', 'Eggnog', 'Winter Horrorland'],
-		['Senpai', 'Roses', 'Thorns'],
+		['Senpai', 'Roses', 'Thorns'],*/
 		['Kick It', 'Ringside Rave', 'Anomaly']
 	];
 	var curDifficulty:Int = 1;
@@ -39,24 +39,24 @@ class StoryMenuState extends MusicBeatState
 
 	var weekCharacters:Array<Dynamic> = [
 		['', 'bf', 'gf'],
-		['dad', 'bf', 'gf'],
+		/*['dad', 'bf', 'gf'],
 		['spooky', 'bf', 'gf'],
 		['pico', 'bf', 'gf'],
 		['mom', 'bf', 'gf'],
 		['parents-christmas', 'bf', 'gf'],
-		['senpai', 'bf', 'gf'],
+		['senpai', 'bf', 'gf'],*/
 		['hero', 'bf', 'gf'],
 	];
 
 	var weekNames:Array<String> = [
 		"",
-		"Daddy Dearest",
+		/*"Daddy Dearest",
 		"Spooky Month",
 		"PICO",
 		"MOMMY MUST MURDER",
 		"RED SNOW",
-		"Hating Simulator ft. Moawling",
-		"Our hero"
+		"Hating Simulator ft. Moawling",*/
+		"Our hero at Rapcon"
 	];
 
 	var txtWeekTitle:FlxText;
@@ -157,7 +157,7 @@ class StoryMenuState extends MusicBeatState
 
 		trace("Line 124");
 
-		leftArrow = new FlxSprite(grpWeekText.members[0].x + grpWeekText.members[0].width + 10, grpWeekText.members[0].y + 10);
+		/*leftArrow = new FlxSprite(grpWeekText.members[0].x + grpWeekText.members[0].width + 10, grpWeekText.members[0].y + 10);
 		leftArrow.frames = ui_tex;
 		leftArrow.animation.addByPrefix('idle', "arrow left");
 		leftArrow.animation.addByPrefix('press', "arrow push left");
@@ -179,7 +179,7 @@ class StoryMenuState extends MusicBeatState
 		rightArrow.animation.addByPrefix('idle', 'arrow right');
 		rightArrow.animation.addByPrefix('press', "arrow push right", 24, false);
 		rightArrow.animation.play('idle');
-		difficultySelectors.add(rightArrow);
+		difficultySelectors.add(rightArrow);*/
 
 		trace("Line 150");
 
@@ -235,7 +235,7 @@ class StoryMenuState extends MusicBeatState
 					changeWeek(1);
 				}
 
-				if (controls.RIGHT)
+				/*if (controls.RIGHT)
 					rightArrow.animation.play('press')
 				else
 					rightArrow.animation.play('idle');
@@ -248,7 +248,7 @@ class StoryMenuState extends MusicBeatState
 				if (controls.RIGHT_P)
 					changeDifficulty(1);
 				if (controls.LEFT_P)
-					changeDifficulty(-1);
+					changeDifficulty(-1);*/
 			}
 
 			if (controls.ACCEPT)
