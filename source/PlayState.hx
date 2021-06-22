@@ -1369,21 +1369,22 @@ class PlayState extends MusicBeatState
 	
 	function bossIntro(?dialogueBox:DialogueBox):Void
 	{
-		var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, FlxColor.BLACK);
+		var black:FlxSprite = new FlxSprite(-300, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, FlxColor.BLACK);
 		black.scrollFactor.set();
 		add(black);
 
-		var red:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, 0xFFff1b31);
+		var red:FlxSprite = new FlxSprite(-300, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, 0xFFff1b31);
 		red.scrollFactor.set();
 
 		var boss:FlxSprite = new FlxSprite();
 		boss.frames = Paths.getSparrowAtlas('characters/herocutscene');
-		boss.animation.addByPrefix('part1', 'Hero Crouch', 24, false);
+		boss.animation.addByPrefix('transform', 'Hero Transform', 24, false);
+		/*boss.animation.addByPrefix('part1', 'Hero Crouch', 24, false);
 		boss.animation.addByPrefix('part2', 'Hero Tremble', 24, false);
 		boss.animation.addByPrefix('part3', 'Hero Shine Start', 24, false);
 		boss.animation.addByPrefix('part4', 'Hero Shine', 24, false);
 		boss.animation.addByPrefix('part5', 'Dark Hero Tremble', 24, false);
-		boss.animation.addByPrefix('part6', 'Dark Hero Charge', 24, false);
+		boss.animation.addByPrefix('part6', 'Dark Hero Charge', 24, false);*/
 		boss.scrollFactor.set();
 		boss.updateHitbox();
 		boss.screenCenter();
@@ -1393,7 +1394,7 @@ class PlayState extends MusicBeatState
 		camHUD.visible = false;
 		
 		
-		new FlxTimer().start(5, function(swagTimer:FlxTimer)
+		new FlxTimer().start(0.3, function(swagTimer:FlxTimer)
 		{
 			black.alpha -= 0.15;
 
@@ -1404,6 +1405,7 @@ class PlayState extends MusicBeatState
 				inCutscene = true;
 				if (songLowercase == 'anomaly')
 				{
+					add(red);
 					add(boss);
 					boss.alpha = 0;
 					new FlxTimer().start(0.3, function(swagTimer:FlxTimer)
@@ -1415,14 +1417,15 @@ class PlayState extends MusicBeatState
 						}
 						else
 						{
-							boss.animation.play('part1');
-							boss.animation.play('part2');
-							boss.animation.play('part3');
-							boss.animation.play('part4');
-							boss.animation.play('part5');
-							boss.animation.play('part6');
+							boss.animation.play('transform', true);
 							FlxG.sound.play(Paths.sound('Senpai_Dies'), 1, false, null, true, function()
 							{
+								/*boss.animation.play('part1', true);
+								boss.animation.play('part2', true);
+								boss.animation.play('part3', true);
+								boss.animation.play('part4', true);
+								boss.animation.play('part5', true);
+								boss.animation.play('part6', true);*/
 								remove(boss);
 								remove(red);
 								FlxG.camera.fade(FlxColor.WHITE, 0.01, true, function()
