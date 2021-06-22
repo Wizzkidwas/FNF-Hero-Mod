@@ -190,10 +190,10 @@ class FreeplayState extends MusicBeatState
 			changeSelection(1);
 		}
 
-		if (controls.LEFT_P)
+		/*if (controls.LEFT_P)
 			changeDiff(-1);
 		if (controls.RIGHT_P)
-			changeDiff(1);
+			changeDiff(1);*/
 
 		if (controls.BACK)
 		{
@@ -254,11 +254,11 @@ class FreeplayState extends MusicBeatState
 		switch (curDifficulty)
 		{
 			case 0:
-				diffText.text = "EASY";
+				diffText.text = "Excuse me?";
 			case 1:
-				diffText.text = 'NORMAL';
+				diffText.text = 'HARD';
 			case 2:
-				diffText.text = "HARD";
+				diffText.text = "How?";
 		}
 	}
 

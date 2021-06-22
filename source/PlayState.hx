@@ -342,6 +342,10 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+			case 'kick-it':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('kick-it/dialog'));
+			case 'anomaly':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('anomaly/dialog'));
 		}
 
 		switch(SONG.stage)
@@ -697,11 +701,12 @@ class PlayState extends MusicBeatState
 				}
 				case 'stadium':
 					{
-						defaultCamZoom = 0.9; // hi wizz this is the camera value. idk what makes it zoom out but we need it to zoom out.
+						defaultCamZoom = 0.7; // hi wizz this is the camera value. idk what makes it zoom out but we need it to zoom out.
 						curStage = 'stadium';
 						
 						trace('Loading BG');
-						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stadium/back'));
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkHero/stadium/back', 'rapcon'));
+						// var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stadium/back'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false; //also! i believe this is used for like. if the shit animates. so the bg doesn't animate, ergo, it's not active
@@ -710,6 +715,7 @@ class PlayState extends MusicBeatState
 						{
 							trace('BG loaded!');
 							//lmao
+							// thanks
 						}
 						
 						/*trace('Loading crowd');
@@ -737,7 +743,8 @@ class PlayState extends MusicBeatState
 						trace('Crowd Front Loaded!');*/
 						
 						trace('Loading Stage');
-						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stadium/front'));
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stages/wkHero/stadium/front', 'rapcon'));
+						// var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stadium/front'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
@@ -747,7 +754,8 @@ class PlayState extends MusicBeatState
 						trace('Stage loaded!');
 						
 						trace('Loading Lights');
-						var stageCurtains:FlxSprite = new FlxSprite(-400, -100).loadGraphic(Paths.image('stadium/lights'));
+						var stageCurtains:FlxSprite = new FlxSprite(-400, -300).loadGraphic(Paths.image('stages/wkHero/stadium/lights', 'rapcon'));
+						// var stageCurtains:FlxSprite = new FlxSprite(-400, -100).loadGraphic(Paths.image('stadium/lights'));
 						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 						stageCurtains.updateHitbox();
 						stageCurtains.antialiasing = true;
@@ -758,12 +766,13 @@ class PlayState extends MusicBeatState
 					}
 					case 'stadiumrave':
 					{
-						defaultCamZoom = 0.9;
+						defaultCamZoom = 0.7;
 						curStage = 'stadiumrave';
 						
 						trace('Loading BG');
 						var ravebg:FlxSprite = new FlxSprite(-600, -200);
-						ravebg.frames = Paths.getSparrowAtlas('stadiumrave/back');
+						ravebg.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/back', 'rapcon');
+						// ravebg.frames = Paths.getSparrowAtlas('stadiumrave/back');
 						// ravebg.animation.addByPrefix('def', 'Back', 24, false);
 						// ravebg.animation.addByPrefix('transition', 'BackTrans', 24, false);
 						ravebg.animation.addByPrefix('loop', 'BackLoop', 24, true);
@@ -776,7 +785,8 @@ class PlayState extends MusicBeatState
 						
 						/*trace('Loading crowd');
 						stadiumCrowd = new FlxSprite(-250, 140);
-						stadiumCrowd.frames = Paths.getSparrowAtlas('stadiumrave/crowd');
+						stadiumCrowd.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowd', 'rapcon')
+						// stadiumCrowd.frames = Paths.getSparrowAtlas('stadiumrave/crowd');
 						// stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
 						// stadiumCrowd.animation.addByPrefix('trans', 'CrowdTrans', 24, true);
 						stadiumCrowd.animation.addByPrefix('loop', 'CrowdLoop', 35, true);
@@ -790,7 +800,8 @@ class PlayState extends MusicBeatState
 						
 						trace('Loading Crowd Front');
 						var stadiumCrowdFront = new FlxSprite(-500, 350);
-						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stadiumrave/crowdfront');
+						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowdfront', 'rapcon')
+						// stadiumCrowdFront.frames = Paths.getSparrowAtlas('stadiumrave/crowdfront');
 						// stadiumCrowdFront.animation.addByPrefix('bop', 'CrowdFront', 35, true);
 						// stadiumCrowdFront.animation.addByPrefix('trans', 'CrowdFrontTrans', 24, true);
 						stadiumCrowdFront.animation.addByPrefix('loop', 'CrowdFrontLoop', 36, true);
@@ -804,7 +815,8 @@ class PlayState extends MusicBeatState
 						
 						trace('Loading Stage');
 						var stageFront:FlxSprite = new FlxSprite(-680, 1125);
-						stageFront.frames = Paths.getSparrowAtlas('stadiumrave/front');
+						stageFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/front', 'rapcon');
+						// stageFront.frames = Paths.getSparrowAtlas('stadiumrave/front');
 						// stageFront.animation.addByPrefix('def', 'Front', 35, true);
 						// stageFront.animation.addByPrefix('trans', 'FrontTrans', 24, true);
 						stageFront.animation.addByPrefix('loop', 'FrontLoop', 24, true);
@@ -818,7 +830,8 @@ class PlayState extends MusicBeatState
 						
 						trace('Loading Lights');
 						var stageCurtains:FlxSprite = new FlxSprite(-400, 350);
-						stageCurtains.frames = Paths.getSparrowAtlas('stadiumrave/lights');
+						stageCurtains.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/lights', 'rapcon');
+						// stageCurtains.frames = Paths.getSparrowAtlas('stadiumrave/lights');
 						// stageCurtains.animation.addByPrefix('def', 'Lights', 35, true);
 						// stageCurtains.animation.addByPrefix('trans', 'LightsTrans', 24, true);
 						stageCurtains.animation.addByPrefix('loop', 'LightsLoop', 24, true);
@@ -832,12 +845,13 @@ class PlayState extends MusicBeatState
 					}
 					case 'stadiumBoss':
 					{
-						defaultCamZoom = 0.9;
+						defaultCamZoom = 0.7;
 						curStage = 'stadiumBoss';
 						
 						trace('Loading BG');
 						var ravebg:FlxSprite = new FlxSprite(-550, -200);
-						ravebg.frames = Paths.getSparrowAtlas('stadiumBoss/back');
+						ravebg.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/back', 'rapcon');
+						// ravebg.frames = Paths.getSparrowAtlas('stadiumBoss/back');
 						// ravebg.animation.addByPrefix('def', 'Back', 24, false);
 						// ravebg.animation.addByPrefix('transition', 'BackTrans', 24, false);
 						ravebg.animation.addByPrefix('loop', 'BackLoop', 24, true);
@@ -850,7 +864,8 @@ class PlayState extends MusicBeatState
 						
 						trace('Loading moon');
 						stadiumCrowd = new FlxSprite(-250, 140);
-						stadiumCrowd.frames = Paths.getSparrowAtlas('stadiumBoss/crowd');
+						stadiumCrowd.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/crowd', 'rapcon');
+						// stadiumCrowd.frames = Paths.getSparrowAtlas('stadiumBoss/crowd');
 						// stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
 						// stadiumCrowd.animation.addByPrefix('trans', 'CrowdTrans', 24, true);
 						stadiumCrowd.animation.addByPrefix('loop', 'CrowdLoop', 35, true);
@@ -860,11 +875,12 @@ class PlayState extends MusicBeatState
 						stadiumCrowd.setGraphicSize(Std.int(stadiumCrowd.width * 1));
 						stadiumCrowd.updateHitbox();
 						add(stadiumCrowd);
-						trace('moon loaded!');
+						trace('moon landed!');
 						
 						trace('Loading moon 2');
 						var stadiumCrowdFront = new FlxSprite(-500, 350);
-						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stadiumBoss/crowdfront');
+						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/crowdfront', 'rapcon');
+						// stadiumCrowdFront.frames = Paths.getSparrowAtlas('stadiumBoss/crowdfront');
 						// stadiumCrowdFront.animation.addByPrefix('bop', 'CrowdFront', 35, true);
 						// stadiumCrowdFront.animation.addByPrefix('trans', 'CrowdFrontTrans', 24, true);
 						stadiumCrowdFront.animation.addByPrefix('loop', 'CrowdFrontLoop', 36, true);
@@ -874,11 +890,12 @@ class PlayState extends MusicBeatState
 						stadiumCrowdFront.setGraphicSize(Std.int(stadiumCrowdFront.width * 1));
 						stadiumCrowdFront.updateHitbox();
 						add(stadiumCrowdFront);
-						trace('moon 2 Loaded!');
+						trace('moon 2 Landed!');
 						
 						trace('Loading cloods');
 						var stadiumClouds = new FlxSprite(-500, 350);
-						stadiumClouds.frames = Paths.getSparrowAtlas('stadiumBoss/clouds');
+						stadiumClouds.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/clouds', 'rapcon');
+						// stadiumClouds.frames = Paths.getSparrowAtlas('stadiumBoss/clouds');
 						// stadiumClouds.animation.addByPrefix('bop', 'clouds', 35, true);
 						// stadiumClouds.animation.addByPrefix('trans', 'cloudsTrans', 24, true);
 						stadiumClouds.animation.addByPrefix('loop', 'clouds', 24, true);
@@ -892,7 +909,8 @@ class PlayState extends MusicBeatState
 						
 						trace('Loading Stage');
 						var stageFront:FlxSprite = new FlxSprite(-680, 625);
-						stageFront.frames = Paths.getSparrowAtlas('stadiumBoss/front');
+						stageFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/front', 'rapcon');
+						// stageFront.frames = Paths.getSparrowAtlas('stadiumBoss/front');
 						// stageFront.animation.addByPrefix('def', 'Front', 35, true);
 						// stageFront.animation.addByPrefix('trans', 'FrontTrans', 24, true);
 						stageFront.animation.addByPrefix('loop', 'FrontLoop', 24, true);
@@ -906,7 +924,8 @@ class PlayState extends MusicBeatState
 						
 						trace('Loading Lights');
 						var stageCurtains:FlxSprite = new FlxSprite(-400, 300);
-						stageCurtains.frames = Paths.getSparrowAtlas('stadiumBoss/lights');
+						stageCurtains.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/lights', 'rapcon');
+						// stageCurtains.frames = Paths.getSparrowAtlas('stadiumBoss/lights');
 						// stageCurtains.animation.addByPrefix('def', 'Lights', 35, true);
 						// stageCurtains.animation.addByPrefix('trans', 'LightsTrans', 24, true);
 						stageCurtains.animation.addByPrefix('loop', 'LightsLoop', 24, true);
@@ -918,18 +937,18 @@ class PlayState extends MusicBeatState
 						add(stageCurtains);
 						trace('Lights loaded! Everythings set!');
 					}
-						
 					case 'void':
 					{
 						defaultCamZoom = 0.9; //this might need to be switched out too???
 						curStage = 'void';
-						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('void/stageback.png'));
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkNega/void/stageback.png', 'rapcon'));
+						// var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('void/stageback.png'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false;
 						add(bg);
-			
-						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('void/stagefront.png'));
+
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stages/wkNega/void/stagefront.png', 'rapcon'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
@@ -937,7 +956,7 @@ class PlayState extends MusicBeatState
 						stageFront.active = false;
 						add(stageFront);
 			
-						var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('void/stagecurtains.png'));
+						var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stages/wkNega/void/stagecurtains.png', 'rapcon'));
 						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 						stageCurtains.updateHitbox();
 						stageCurtains.antialiasing = true;
@@ -1325,6 +1344,10 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
+				case 'kick-it':
+					schoolIntro(doof);
+				case 'anomaly':
+					bossIntro(doof);
 				default:
 					startCountdown();
 			}
@@ -1343,6 +1366,85 @@ class PlayState extends MusicBeatState
 
 		super.create();
 	}
+	
+	function bossIntro(?dialogueBox:DialogueBox):Void
+	{
+		var black:FlxSprite = new FlxSprite(-300, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, FlxColor.BLACK);
+		black.scrollFactor.set();
+		add(black);
+
+		var red:FlxSprite = new FlxSprite(-300, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, 0xFFff1b31);
+		red.scrollFactor.set();
+
+		var boss:FlxSprite = new FlxSprite();
+		boss.frames = Paths.getSparrowAtlas('characters/herocutscene');
+		boss.animation.addByPrefix('transform', 'Hero Transform', 24, false);
+		/*boss.animation.addByPrefix('part1', 'Hero Crouch', 24, false);
+		boss.animation.addByPrefix('part2', 'Hero Tremble', 24, false);
+		boss.animation.addByPrefix('part3', 'Hero Shine Start', 24, false);
+		boss.animation.addByPrefix('part4', 'Hero Shine', 24, false);
+		boss.animation.addByPrefix('part5', 'Dark Hero Tremble', 24, false);
+		boss.animation.addByPrefix('part6', 'Dark Hero Charge', 24, false);*/
+		boss.scrollFactor.set();
+		boss.updateHitbox();
+		boss.screenCenter();
+		
+		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+		
+		camHUD.visible = false;
+		
+		
+		new FlxTimer().start(0.3, function(swagTimer:FlxTimer)
+		{
+			black.alpha -= 0.15;
+
+			if (black.alpha > 0)
+			{
+				swagTimer.reset(0.3);
+			}
+				inCutscene = true;
+				if (songLowercase == 'anomaly')
+				{
+					add(red);
+					add(boss);
+					boss.alpha = 0;
+					new FlxTimer().start(0.3, function(swagTimer:FlxTimer)
+					{
+						boss.alpha += 0.15;
+						if (boss.alpha < 1)
+						{
+							swagTimer.reset();
+						}
+						else
+						{
+							boss.animation.play('transform', true);
+							FlxG.sound.play(Paths.sound('Senpai_Dies'), 1, false, null, true, function()
+							{
+								/*boss.animation.play('part1', true);
+								boss.animation.play('part2', true);
+								boss.animation.play('part3', true);
+								boss.animation.play('part4', true);
+								boss.animation.play('part5', true);
+								boss.animation.play('part6', true);*/
+								remove(boss);
+								remove(red);
+								FlxG.camera.fade(FlxColor.WHITE, 0.01, true, function()
+								{
+									add(dialogueBox);
+								}, true);
+							});
+							new FlxTimer().start(3.2, function(deadTime:FlxTimer)
+							{
+								FlxG.camera.fade(FlxColor.WHITE, 1.6, false);
+							});
+						}
+					});
+					camHUD.visible = true;
+				}
+				remove(black);
+		});
+	}
+	
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void
 	{

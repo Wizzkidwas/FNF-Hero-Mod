@@ -13,44 +13,54 @@
 	<!-- helo. this is oni. STOP SNOOPIN. -->
 	
 	<!-- IDLE -->
-	<SubTexture name="Heroboss Idle instance 10000" x="0" y="0" width="930" height="957"/>
-	<SubTexture name="Heroboss Idle instance 10001" x="930" y="0" width="930" height="957"/>
-	<SubTexture name="Heroboss Idle instance 10002" x="1860" y="0" width="930" height="957"/>
-	<SubTexture name="Heroboss Idle instance 10003" x="2790" y="0" width="930" height="957"/>
-	<SubTexture name="Heroboss Idle instance 10004" x="3720" y="0" width="930" height="957"/>
-	<SubTexture name="Heroboss Idle instance 10005" x="3720" y="0" width="930" height="957"/>
-	<SubTexture name="Heroboss Idle instance 10006" x="3720" y="0" width="930" height="957"/>
-	<SubTexture name="Heroboss Idle instance 10007" x="3720" y="0" width="930" height="957"/>
-	<SubTexture name="Heroboss Idle instance 10008" x="3720" y="0" width="930" height="957"/>
-	<SubTexture name="Heroboss Idle instance 10009" x="3720" y="0" width="930" height="957"/>
+	<SubTexture name="Heroboss Idle instance 10000" x="0" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Idle instance 10001" x="930" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Idle instance 10002" x="1860" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Idle instance 10003" x="1860" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Idle instance 10004" x="2790" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Idle instance 10005" x="2790" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Idle instance 10006" x="3720" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Idle instance 10007" x="3720" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Idle instance 10008" x="3720" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Idle instance 10009" x="3720" y="0" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
 	<!-- UP -->
-	<SubTexture name="Heroboss Up instance 10000" x="0" y="957" width="930" height="957"/>
-	<SubTexture name="Heroboss Up instance 10001" x="930" y="957" width="930" height="957"/>
-	<SubTexture name="Heroboss Up instance 10002" x="1860" y="957" width="930" height="957"/>
-	<SubTexture name="Heroboss Up instance 10002" x="1860" y="957" width="930" height="957"/>	
+	<SubTexture name="Heroboss Up instance 10000" x="0" y="957" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Up instance 10001" x="930" y="957" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Up instance 10002" x="1860" y="957" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Up instance 10002" x="1860" y="957" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
 	<!-- DOWN -->
-	<SubTexture name="Heroboss Down instance 10000" x="2790" y="957" width="930" height="957"/>
-	<SubTexture name="Heroboss Down instance 10001" x="3720" y="957" width="930" height="957"/>
-	<SubTexture name="Heroboss Down instance 10002" x="0" y="1914" width="930" height="957"/>
+	<SubTexture name="Heroboss Down instance 10000" x="2790" y="957" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Down instance 10001" x="3720" y="957" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Down instance 10002" x="0" y="1914" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>
 	<!-- RIGHT -->
-	<SubTexture name="Heroboss Right instance 10000" x="930" y="1914" width="930" height="957" frameX="-30" frameY="0" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="Heroboss Right instance 10001" x="1860" y="1914" width="930" height="957" frameX="-30" frameY="0" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="Heroboss Right instance 10002" x="2790" y="1914" width="930" height="957" frameX="-30" frameY="0" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Right instance 10000" x="930" y="1914" width="930" height="957" frameX="240" frameY="150" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Right instance 10001" x="1860" y="1914" width="930" height="957" frameX="240" frameY="150" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Right instance 10002" x="2790" y="1914" width="930" height="957" frameX="240" frameY="150" frameWidth="930" frameHeight="957"/>
 	<!-- LEFT -->
-	<SubTexture name="Heroboss Left instance 10000" x="3720" y="1914" width="930" height="957"/>
-	<SubTexture name="Heroboss Left instance 10001" x="0" y="2871" width="930" height="957"/>
-	<SubTexture name="Heroboss Left instance 10002" x="930" y="2871" width="930" height="957"/>
+	<SubTexture name="Heroboss Left instance 10000" x="3720" y="1914" width="930" height="957" frameX="300" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Left instance 10001" x="0" y="2871" width="930" height="957" frameX="300" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Left instance 10002" x="930" y="2871" width="930" height="957" frameX="300" frameY="200" frameWidth="930" frameHeight="957"/>
 	
 	<!-- cutscenic anims -->
-	<SubTexture name="Heroboss Crouch instance 10000" x="0" y="3828" width="930" height="957"/>	
-	<SubTexture name="Heroboss Crouch instance 10001" x="930" y="3828" width="930" height="957"/>	
-	<SubTexture name="Heroboss Crouch instance 10002" x="1860" y="3828" width="930" height="957"/>	
-	<SubTexture name="Heroboss Crouch instance 10003" x="2790" y="3828" width="930" height="957"/>	
+	<SubTexture name="Heroboss Crouch instance 10000" x="0" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Crouch instance 10001" x="930" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="Heroboss Crouch instance 10002" x="1860" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Crouch instance 10003" x="2790" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
 
-	<SubTexture name="Heroboss REEEEE instance 10000" x="1860" y="2871" width="930" height="957"/>
-	<SubTexture name="Heroboss REEEEE instance 10000" x="2790" y="2871" width="930" height="957"/>
-
-
-
-	
+	<SubTexture name="UpSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="UpSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="UpSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="DownSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="DownSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="DownSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="LeftSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="LeftSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="LeftSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="RightSCREAM10002" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="RightSCREAM10002" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="RightSCREAM10002" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="RightSCREAM10002" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
 </TextureAtlas>

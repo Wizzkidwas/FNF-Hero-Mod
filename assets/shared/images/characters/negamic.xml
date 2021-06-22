@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="negamic.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<!-- MODIFIED BY ONI -->
+
+	<!-- AAAAAA -->
+	<SubTexture name="mic idle00000" x="0" y="0" width="396" height="414"/>
+	<SubTexture name="mic idle00001" x="396" y="0" width="396" height="414"/>
+	<SubTexture name="mic idle00002" x="792" y="0" width="396" height="414"/>
+	<SubTexture name="mic idle00003" x="1188" y="0" width="396" height="414"/>
+	<SubTexture name="mic idle00004" x="1584" y="0" width="396" height="414"/>	
+	<SubTexture name="mic idle00015" x="1980" y="0" width="396" height="414"/>
+	<!-- AAAAAA -->
+	<SubTexture name="mic appear00000" x="0" y="414" width="396" height="414"/>
+	<SubTexture name="mic appear00001" x="0" y="414" width="396" height="414"/>
+	<SubTexture name="mic appear00002" x="396" y="414" width="396" height="414"/>
+	<SubTexture name="mic appear00003" x="396" y="414" width="396" height="414"/>	
+	<SubTexture name="mic appear00004" x="792" y="414" width="396" height="414"/>
+	<SubTexture name="mic appear00005" x="792" y="414" width="396" height="414"/>	
+	<SubTexture name="mic appear00006" x="1188" y="414" width="396" height="414"/>
+	<SubTexture name="mic appear00007" x="1584" y="414" width="396" height="414"/>	
+	<SubTexture name="mic appear00008" x="1980" y="414" width="396" height="414"/>	
+	<SubTexture name="mic appear00009" x="2376" y="414" width="396" height="414"/>	
+	<SubTexture name="mic appear00010" x="2772" y="414" width="396" height="414"/>
+	<SubTexture name="mic appear00011" x="3168" y="414" width="396" height="414"/>
+	<!-- AAAAAA -->
+	<SubTexture name="huh? appear00000" x="0" y="828" width="396" height="414"/>
+	<SubTexture name="huh? appear00000" x="396" y="828" width="396" height="414"/>
+	<SubTexture name="huh? appear00000" x="792" y="828" width="396" height="414"/>
+	<!-- AAAAAA -->
+	<SubTexture name="huh? idle00000" x="0" y="1242" width="396" height="414"/>
+	<SubTexture name="huh? idle00001" x="396" y="1242" width="396" height="414"/>
+	<SubTexture name="huh? idle00002" x="792" y="1242" width="396" height="414"/>
+	<SubTexture name="huh? idle00003" x="1188" y="1242" width="396" height="414"/>
+	<SubTexture name="huh? idle00004" x="1584" y="1242" width="396" height="414"/>	
+	<SubTexture name="huh? idle00015" x="1980" y="1242" width="396" height="414"/>
+</TextureAtlas>

@@ -17,6 +17,6 @@ Winter Horrorland:monster-christmas:5
 Senpai:senpai:6
 Roses:senpai:6
 Thorns:spirit:6
-Kick It:dad:7
-Ringside Rave:dad:7
-Anomaly:spooky:7
+Kick It:hero:7
+Ringside Rave:herorave:7
+Anomaly:heroboss:7
