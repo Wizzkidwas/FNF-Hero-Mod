@@ -611,6 +611,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN-alt', 'DownSCREAM', 24, false);
 				animation.addByPrefix('singLEFT-alt', 'LeftSCREAM', 24, false);
 				animation.addByPrefix('singRIGHT-alt', 'RightSCREAM', 24, false);
+				animation.addByPrefix('Heroboss Shake', 'Heroboss Crouch', 24, false);
 
 				addOffset('idle');
 				addOffset("singUP");
@@ -621,6 +622,7 @@ class Character extends FlxSprite
 				addOffset("singRIGHT-alt");
 				addOffset("singLEFT-alt");
 				addOffset("singDOWN-alt");
+				addOffset("Heroboss Shake");
 				playAnim('idle');
 				
 			case 'herorave':

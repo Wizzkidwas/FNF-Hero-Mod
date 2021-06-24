@@ -205,6 +205,11 @@ class PlayState extends MusicBeatState
 	public static var songOffset:Float = 0;
 	// BotPlay text
 	private var botPlayState:FlxText;
+	// BeatPlay text
+	private var beatPlayState:FlxText;
+	// StepPlay text
+	private var stepPlayState:FlxText;
+	
 	// Replay shit
 	private var saveNotes:Array<Float> = [];
 
@@ -319,7 +324,7 @@ class PlayState extends MusicBeatState
 		//dialogue shit
 		switch (songLowercase)
 		{
-			case 'tutorial':
+			/*case 'tutorial':
 				dialogue = ["Hey you're pretty cute.", 'Use the arrow keys to keep up \nwith me singing.'];
 			case 'bopeebo':
 				dialogue = [
@@ -341,7 +346,7 @@ class PlayState extends MusicBeatState
 			case 'roses':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));*/
 			case 'kick-it':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('kick-it/dialog'));
 			case 'anomaly':
@@ -1270,6 +1275,20 @@ class PlayState extends MusicBeatState
 		botPlayState.scrollFactor.set();
 		
 		if(FlxG.save.data.botplay && !loadRep) add(botPlayState);
+
+		beatPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 100 : -100), 0, "", 20);
+		beatPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		// beatPlayState.text = "Beat: " + curBeat;
+		beatPlayState.scrollFactor.set();
+		
+		// add(beatPlayState); // Will be commented/uncommented for debugging purposes
+
+		stepPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 200 : -200), 0, "", 20);
+		stepPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		// stepPlayState.text = "Beat: " + curStep;
+		stepPlayState.scrollFactor.set();
+		
+		// add(stepPlayState); // Will be commented/uncommented for debugging purposes
 
 		iconP1 = new HealthIcon(SONG.player1, true);
 		iconP1.y = healthBar.y - (iconP1.height / 2);
@@ -2201,6 +2220,8 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
+		beatPlayState.text = "Beat: " + curBeat;
+		stepPlayState.text = "Step: " + curStep;
 		scoreTxt.text = Ratings.CalculateRanking(songScore,songScoreDef,nps,maxNPS,accuracy);
 		if (!FlxG.save.data.accuracyDisplay)
 			scoreTxt.text = "Score: " + songScore;
@@ -2561,14 +2582,17 @@ class PlayState extends MusicBeatState
 				}
 		}
 			
-		if (curSong == 'anomaly') // THIS IS ALL PLACEHOLDER STUFFS LMAO
-			switch (curBeat)
+		if (curSong == 'Anomaly')
+		{
+			if (curBeat < 31)
 			{
-			case -4: //i think it starts here?
-			dad.playAnim('Heroboss Shake'); //the thing is we need this to loop until REE and idk how to do that without making it
+				dad.playAnim('Heroboss Shake'); //the thing is we need this to loop until REE and idk how to do that without making it
 					// count every single beat case. good luck wizz
+					// Luck was had, somewhat
+				trace('*Shakes you like a juice*');
 			}
 			//switch curbeat/step depending on where the REEE is in song to REE anim
+		}
 
 		if (health <= 0)
 		{
