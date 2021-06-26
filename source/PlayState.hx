@@ -2589,7 +2589,9 @@ class PlayState extends MusicBeatState
 				dad.playAnim('Heroboss Shake'); //the thing is we need this to loop until REE and idk how to do that without making it
 					// count every single beat case. good luck wizz
 					// Luck was had, somewhat
-				trace('*Shakes you like a juice*');
+				trace('*Shakes you like a juice*'); // thanks for filling up my cmd wizz.
+				// anyways so the beat resets to 0 upon song end, which is when the fadeout occurs... so heroboss is shaking again at the transition. visibly.
+				// we could force a transition earlier or have the camera not focused on him??? i don't know. help
 			}
 			//switch curbeat/step depending on where the REEE is in song to REE anim
 		}

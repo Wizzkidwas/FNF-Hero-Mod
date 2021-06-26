@@ -42,7 +42,7 @@ class TitleState extends MusicBeatState
 	var credGroup:FlxGroup;
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
-	var ngSpr:FlxSprite;
+	var beansSpr:FlxSprite;
 
 	var curWacky:Array<String> = [];
 
@@ -174,7 +174,7 @@ class TitleState extends MusicBeatState
 			// logoBl.color = FlxColor.BLACK;
 		} else {
 			logoBl = new FlxSprite(-150, -100);
-			logoBl.frames = Paths.getSparrowAtlas('logoBumpin');
+			logoBl.frames = Paths.getSparrowAtlas('KadeEngineLogoBumpin');
 			logoBl.antialiasing = true;
 			logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
 			logoBl.animation.play('bump');
@@ -223,13 +223,17 @@ class TitleState extends MusicBeatState
 
 		credTextShit.visible = false;
 
-		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('newgrounds_logo'));
-		add(ngSpr);
-		ngSpr.visible = false;
-		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.8));
-		ngSpr.updateHitbox();
-		ngSpr.screenCenter(X);
-		ngSpr.antialiasing = true;
+		beansSpr = new FlxSprite(0, FlxG.height * 0.52);
+		beansSpr.frames = Paths.getSparrowAtlas('thebeans');
+		beansSpr.animation.addByPrefix('wiggle', 'credits wiggle', 24, true);
+		add(beansSpr);
+		beansSpr.animation.play('wiggle');
+		beansSpr.visible = false;
+		beansSpr.setGraphicSize(Std.int(beansSpr.width * 0.8));
+		beansSpr.updateHitbox();
+		beansSpr.screenCenter(X);
+		beansSpr.y = 190;
+		beansSpr.antialiasing = true;
 
 		FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
 
@@ -397,14 +401,14 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 1:
-				createCoolText(['OneilR', 'AshaTelethia', 'Saruky', 'Wizzkidwas']);
+				beansSpr.visible = true;
 			// credTextShit.visible = true;
 			case 3:
-				addMoreText('present');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
 			case 4:
 				deleteCoolText();
+				beansSpr.visible = false;
 			// credTextShit.visible = false;
 			// credTextShit.text = 'In association \nwith';
 			// credTextShit.screenCenter();
@@ -412,19 +416,17 @@ class TitleState extends MusicBeatState
 				if (Main.watermarks)
 					createCoolText(['Kade Engine', 'by']);
 				else
-					createCoolText(['In Partnership', 'with']);
+					createCoolText(['Kade Engine', 'by']);
 			case 7:
 				if (Main.watermarks)
 					addMoreText('KadeDeveloper');
 				else
 				{
-					addMoreText('Newgrounds');
-					ngSpr.visible = true;
+					addMoreText('KadeDeveloper');
 				}
 			// credTextShit.text += '\nNewgrounds';
 			case 8:
 				deleteCoolText();
-				ngSpr.visible = false;
 			// credTextShit.visible = false;
 
 			// credTextShit.text = 'Shoutouts Tom Fulp';
@@ -460,7 +462,7 @@ class TitleState extends MusicBeatState
 	{
 		if (!skippedIntro)
 		{
-			remove(ngSpr);
+			remove(beansSpr);
 
 			FlxG.camera.flash(FlxColor.WHITE, 4);
 			remove(credGroup);
