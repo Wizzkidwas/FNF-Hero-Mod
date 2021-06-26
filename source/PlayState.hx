@@ -214,6 +214,9 @@ class PlayState extends MusicBeatState
 	private var saveNotes:Array<Float> = [];
 
 	private var executeModchart = false;
+	
+	//Fixes a bug in Anomaly
+	public var screamed:Bool = false;
 
 	// API stuff
 	
@@ -1276,12 +1279,12 @@ class PlayState extends MusicBeatState
 		
 		if(FlxG.save.data.botplay && !loadRep) add(botPlayState);
 
-		beatPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 100 : -100), 0, "", 20);
+		beatPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 150 : -150), 0, "", 20);
 		beatPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		// beatPlayState.text = "Beat: " + curBeat;
 		beatPlayState.scrollFactor.set();
 		
-		// add(beatPlayState); // Will be commented/uncommented for debugging purposes
+		add(beatPlayState); // Will be commented/uncommented for debugging purposes
 
 		stepPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 200 : -200), 0, "", 20);
 		stepPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
@@ -2584,7 +2587,7 @@ class PlayState extends MusicBeatState
 			
 		if (curSong == 'Anomaly')
 		{
-			if (curBeat < 31)
+			if (curBeat < 31 && !screamed)
 			{
 				dad.playAnim('Heroboss Shake'); //the thing is we need this to loop until REE and idk how to do that without making it
 					// count every single beat case. good luck wizz
@@ -2592,6 +2595,10 @@ class PlayState extends MusicBeatState
 				trace('*Shakes you like a juice*'); // thanks for filling up my cmd wizz.
 				// anyways so the beat resets to 0 upon song end, which is when the fadeout occurs... so heroboss is shaking again at the transition. visibly.
 				// we could force a transition earlier or have the camera not focused on him??? i don't know. help
+			}
+			if (curBeat > 31)
+			{
+				screamed = true;
 			}
 			//switch curbeat/step depending on where the REEE is in song to REE anim
 		}
