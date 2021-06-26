@@ -42,25 +42,170 @@
 	<SubTexture name="Heroboss Left instance 10002" x="930" y="2871" width="930" height="957" frameX="300" frameY="200" frameWidth="930" frameHeight="957"/>
 	
 	<!-- cutscenic anims -->
-	<SubTexture name="Heroboss Crouch instance 10000" x="0" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="Heroboss Crouch instance 10001" x="930" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
-	<SubTexture name="Heroboss Crouch instance 10002" x="1860" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="Heroboss Crouch instance 10003" x="2790" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="Heroboss Crouch instance 10000" x="0" y="3828" width="930" height="957" frameX="270" frameY="190" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Crouch instance 10001" x="930" y="3828" width="930" height="957" frameX="260" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="Heroboss Crouch instance 10002" x="930" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="Heroboss Crouch instance 10003" x="1860" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Crouch instance 10004" x="1860" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Crouch instance 10005" x="2790" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="Heroboss Crouch instance 10006" x="2790" y="3828" width="930" height="957" frameX="275" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="Heroboss Crouch instance 10007" x="0" y="3828" width="930" height="957" frameX="270" frameY="220" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Crouch instance 10008" x="930" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="Heroboss Crouch instance 10009" x="0" y="3828" width="930" height="957" frameX="270" frameY="210" frameWidth="930" frameHeight="957"/>
+	<SubTexture name="Heroboss Crouch instance 10010" x="1860" y="3828" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
 
-	<SubTexture name="UpSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="UpSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="UpSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
-	<SubTexture name="UpSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="DownSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="DownSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="DownSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
-	<SubTexture name="DownSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="LeftSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="LeftSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="LeftSCREAM10000" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
-	<SubTexture name="LeftSCREAM10000" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="RightSCREAM10002" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="RightSCREAM10002" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="RightSCREAM10002" x="1860" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>
-	<SubTexture name="RightSCREAM10002" x="2790" y="2871" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+
+
+	<SubTexture name="UpSCREAM10000" x="0" y="4785" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10001" x="930" y="4785" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10002" x="1860" y="4785" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10003" x="2790" y="4785" width="930" height="957" frameX="270" frameY="170" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10004" x="3720" y="4785" width="930" height="957" frameX="270" frameY="160" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10005" x="1860" y="2871" width="930" height="957" frameX="270" frameY="155" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10006" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10007" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10008" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10009" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10010" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10011" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10012" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10013" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10014" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10015" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10016" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10017" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10018" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10019" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10020" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10021" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10022" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10023" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10024" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10025" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10026" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10027" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10028" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10029" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10030" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10031" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10032" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10033" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10034" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10035" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="UpSCREAM10036" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10000" x="0" y="4785" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10001" x="930" y="4785" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10002" x="1860" y="4785" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10003" x="2790" y="4785" width="930" height="957" frameX="270" frameY="170" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10004" x="3720" y="4785" width="930" height="957" frameX="270" frameY="160" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10005" x="1860" y="2871" width="930" height="957" frameX="270" frameY="155" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10006" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10007" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10008" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10009" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10010" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10011" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10012" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10013" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10014" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10015" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10016" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10017" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10018" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10019" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10020" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10021" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10022" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10023" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10024" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10025" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10026" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10027" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10028" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10029" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10030" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10031" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10032" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10033" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10034" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10035" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="DownSCREAM10036" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>		
+	
+	
+	<SubTexture name="LeftSCREAM10000" x="0" y="4785" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10001" x="930" y="4785" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10002" x="1860" y="4785" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10003" x="2790" y="4785" width="930" height="957" frameX="270" frameY="170" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10004" x="3720" y="4785" width="930" height="957" frameX="270" frameY="160" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10005" x="1860" y="2871" width="930" height="957" frameX="270" frameY="155" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10006" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10007" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10008" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10009" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10010" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10011" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10012" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10013" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10014" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10015" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10016" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10017" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10018" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10019" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10020" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10021" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10022" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10023" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10024" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10025" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10026" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10027" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10028" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10029" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10030" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10031" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10032" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10033" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10034" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10035" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="LeftSCREAM10036" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10000" x="0" y="4785" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10001" x="930" y="4785" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10002" x="1860" y="4785" width="930" height="957" frameX="270" frameY="200" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10003" x="2790" y="4785" width="930" height="957" frameX="270" frameY="170" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10004" x="3720" y="4785" width="930" height="957" frameX="270" frameY="160" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10005" x="1860" y="2871" width="930" height="957" frameX="270" frameY="155" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10006" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10007" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10008" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10009" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10010" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10011" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10012" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10013" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10014" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10015" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10016" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10017" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10018" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10019" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10020" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10021" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10022" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10023" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10024" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10025" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10026" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10027" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10028" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10029" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10030" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10031" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10032" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10033" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10034" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10035" x="1860" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>	
+	<SubTexture name="RightSCREAM10036" x="2790" y="2871" width="930" height="957" frameX="270" frameY="150" frameWidth="930" frameHeight="957"/>		
+	
+	
 </TextureAtlas>
