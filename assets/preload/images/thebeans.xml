@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="thebeans.png">
+	<!-- Created by OneilR -->
+	<!-- https://oneilr.newgrounds.com/ -->
+	<SubTexture name="credits wiggle00000" x="0" y="0" width="1171" height="425"/>
+	<SubTexture name="credits wiggle00001" x="0" y="0" width="1171" height="425"/>
+	<SubTexture name="credits wiggle00002" x="0" y="425" width="1171" height="425"/>	
+	<SubTexture name="credits wiggle00003" x="0" y="425" width="1171" height="425"/>	
+	<SubTexture name="credits wiggle00004" x="0" y="850" width="1171" height="425"/>	
+	<SubTexture name="credits wiggle00005" x="0" y="850" width="1171" height="425"/>		
+	<SubTexture name="credits wiggle00006" x="0" y="0" width="1171" height="425"/>
+	<SubTexture name="credits wiggle00007" x="0" y="0" width="1171" height="425"/>
+	<SubTexture name="credits wiggle00008" x="0" y="425" width="1171" height="425"/>	
+	<SubTexture name="credits wiggle00009" x="0" y="425" width="1171" height="425"/>	
+	<SubTexture name="credits wiggle00010" x="0" y="850" width="1171" height="425"/>	
+	<SubTexture name="credits wiggle00011" x="0" y="850" width="1171" height="425"/>		
+</TextureAtlas>
