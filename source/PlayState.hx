@@ -793,7 +793,7 @@ class PlayState extends MusicBeatState
 						
 						/*trace('Loading crowd');
 						stadiumCrowd = new FlxSprite(-250, 140);
-						stadiumCrowd.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowd', 'rapcon')
+						stadiumCrowd.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowd', 'rapcon');
 						// stadiumCrowd.frames = Paths.getSparrowAtlas('stadiumrave/crowd');
 						// stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
 						// stadiumCrowd.animation.addByPrefix('trans', 'CrowdTrans', 24, true);
@@ -808,7 +808,7 @@ class PlayState extends MusicBeatState
 						
 						trace('Loading Crowd Front');
 						var stadiumCrowdFront = new FlxSprite(-500, 350);
-						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowdfront', 'rapcon')
+						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowdfront', 'rapcon');
 						// stadiumCrowdFront.frames = Paths.getSparrowAtlas('stadiumrave/crowdfront');
 						// stadiumCrowdFront.animation.addByPrefix('bop', 'CrowdFront', 35, true);
 						// stadiumCrowdFront.animation.addByPrefix('trans', 'CrowdFrontTrans', 24, true);
@@ -2496,6 +2496,10 @@ class PlayState extends MusicBeatState
 					case 'senpai-angry':
 						camFollow.y = dad.getMidpoint().y - 430;
 						camFollow.x = dad.getMidpoint().x - 100;
+					case 'hero':
+						camFollow.y = dad.getMidpoint().y + 50;
+					case 'herorave':
+						camFollow.y = dad.getMidpoint().y + 50;					
 				}
 
 				if (dad.curCharacter == 'mom')
