@@ -61,6 +61,26 @@ class Character extends FlxSprite
 				addOffset('scared', -2, -17);
 
 				playAnim('danceRight');
+				
+			case 'kiki':
+				//kiki is hero's gf (/s)
+				//for some reason he didn't animate properly??? so??? i guess he just idles now.
+				tex = Paths.getSparrowAtlas('characters/kiki_box');
+				frames = tex;
+				animation.addByPrefix('idle', 'kiki SIT right', 24, true);
+
+				addOffset('idle');
+
+				playAnim('idle');
+				
+			case 'kikirave':
+				tex = Paths.getSparrowAtlas('characters/kiki_rave');
+				frames = tex;
+				animation.addByPrefix('idle', 'kiki SIT right', 24, true);
+
+				addOffset('idle');
+
+				playAnim('idle');
 
 			case 'gf-christmas':
 				tex = Paths.getSparrowAtlas('characters/gfChristmas');
