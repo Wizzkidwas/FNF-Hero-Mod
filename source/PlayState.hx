@@ -793,7 +793,7 @@ class PlayState extends MusicBeatState
 						
 						/*trace('Loading crowd');
 						stadiumCrowd = new FlxSprite(-250, 140);
-						stadiumCrowd.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowd', 'rapcon')
+						stadiumCrowd.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowd', 'rapcon');
 						// stadiumCrowd.frames = Paths.getSparrowAtlas('stadiumrave/crowd');
 						// stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
 						// stadiumCrowd.animation.addByPrefix('trans', 'CrowdTrans', 24, true);
@@ -808,7 +808,7 @@ class PlayState extends MusicBeatState
 						
 						trace('Loading Crowd Front');
 						var stadiumCrowdFront = new FlxSprite(-500, 350);
-						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowdfront', 'rapcon')
+						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowdfront', 'rapcon');
 						// stadiumCrowdFront.frames = Paths.getSparrowAtlas('stadiumrave/crowdfront');
 						// stadiumCrowdFront.animation.addByPrefix('bop', 'CrowdFront', 35, true);
 						// stadiumCrowdFront.animation.addByPrefix('trans', 'CrowdFrontTrans', 24, true);
@@ -1215,28 +1215,28 @@ class PlayState extends MusicBeatState
 		FlxG.fixedTimestep = false;
 
 		if (FlxG.save.data.songPosition) // I dont wanna talk about this code :(
-			{
-				songPosBG = new FlxSprite(0, 10).loadGraphic(Paths.image('healthBar'));
-				if (FlxG.save.data.downscroll)
-					songPosBG.y = FlxG.height * 0.9 + 45; 
-				songPosBG.screenCenter(X);
-				songPosBG.scrollFactor.set();
-				add(songPosBG);
-				
-				songPosBar = new FlxBar(songPosBG.x + 4, songPosBG.y + 4, LEFT_TO_RIGHT, Std.int(songPosBG.width - 8), Std.int(songPosBG.height - 8), this,
-					'songPositionBar', 0, 90000);
-				songPosBar.scrollFactor.set();
-				songPosBar.createFilledBar(FlxColor.GRAY, FlxColor.LIME);
-				add(songPosBar);
-	
-				var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y,0,SONG.song, 16);
-				if (FlxG.save.data.downscroll)
-					songName.y -= 3;
-				songName.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
-				songName.scrollFactor.set();
-				add(songName);
-				songName.cameras = [camHUD];
-			}
+		{
+			songPosBG = new FlxSprite(0, 10).loadGraphic(Paths.image('healthBar'));
+			if (FlxG.save.data.downscroll)
+				songPosBG.y = FlxG.height * 0.9 + 45; 
+			songPosBG.screenCenter(X);
+			songPosBG.scrollFactor.set();
+			add(songPosBG);
+			
+			songPosBar = new FlxBar(songPosBG.x + 4, songPosBG.y + 4, LEFT_TO_RIGHT, Std.int(songPosBG.width - 8), Std.int(songPosBG.height - 8), this,
+				'songPositionBar', 0, 90000);
+			songPosBar.scrollFactor.set();
+			songPosBar.createFilledBar(FlxColor.GRAY, FlxColor.LIME);
+			add(songPosBar);
+
+			var songName = new FlxText(songPosBG.x + (songPosBG.width / 2) - 20,songPosBG.y,0,SONG.song, 16);
+			if (FlxG.save.data.downscroll)
+				songName.y -= 3;
+			songName.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+			songName.scrollFactor.set();
+			add(songName);
+			songName.cameras = [camHUD];
+		}
 
 		healthBarBG = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('healthBar'));
 		if (FlxG.save.data.downscroll)
@@ -1374,8 +1374,8 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'kick-it':
 					schoolIntro(doof);
-				case 'anomaly':
-					bossIntro(doof);
+				/*case 'anomaly':
+					bossIntro(doof);*/
 				default:
 					startCountdown();
 			}
@@ -1476,7 +1476,7 @@ class PlayState extends MusicBeatState
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void
 	{
-		var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+		var black:FlxSprite = new FlxSprite(-1000, -200).makeGraphic(FlxG.width * 4, FlxG.height * 3, FlxColor.BLACK);
 		black.scrollFactor.set();
 		add(black);
 
@@ -2496,6 +2496,10 @@ class PlayState extends MusicBeatState
 					case 'senpai-angry':
 						camFollow.y = dad.getMidpoint().y - 430;
 						camFollow.x = dad.getMidpoint().x - 100;
+					case 'hero':
+						camFollow.y = dad.getMidpoint().y + 50;
+					case 'herorave':
+						camFollow.y = dad.getMidpoint().y + 50;					
 				}
 
 				if (dad.curCharacter == 'mom')
