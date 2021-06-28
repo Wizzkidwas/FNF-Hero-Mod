@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="kiki_box.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="kiki SIT right10000" x="0" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10001" x="0" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10002" x="580" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10003" x="580" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10004" x="1160" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10005" x="1160" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10006" x="1740" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10007" x="1740" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10008" x="1740" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10009" x="1740" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+
+	<SubTexture name="kiki SIT right10010" x="0" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10011" x="0" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10012" x="580" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10013" x="580" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10014" x="1160" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10015" x="1160" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10016" x="1740" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10017" x="1740" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10018" x="1740" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10019" x="1740" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>		
+</TextureAtlas>
