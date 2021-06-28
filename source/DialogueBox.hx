@@ -140,6 +140,7 @@ class DialogueBox extends FlxSpriteGroup
 				add(portraitLeft);
 				portraitLeft.visible = false;
 			
+			// Differentiate between regular hero and boss hero
 			case 'kick-it':
 				portraitLeft = new FlxSprite(-20, 40);
 				portraitLeft.frames = Paths.getSparrowAtlas('cutscenes/hero/portrait', 'rapcon');
