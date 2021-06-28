@@ -1005,6 +1005,10 @@ class PlayState extends MusicBeatState
 
 		switch (SONG.gfVersion)
 		{
+			case 'kiki':
+				gfVersion = 'kiki';
+			case 'kikirave':
+				gfVersion = 'kikirave';
 			case 'gf-car':
 				gfVersion = 'gf-car';
 			case 'gf-christmas':
@@ -1016,7 +1020,6 @@ class PlayState extends MusicBeatState
 		}
 
 		gf = new Character(400, 130, gfVersion);
-		gf.scrollFactor.set(0.95, 0.95);
 
 		dad = new Character(100, 100, SONG.player2);
 
@@ -1107,14 +1110,17 @@ class PlayState extends MusicBeatState
 					//fuck it hero's repositioning goes here too
 					dad.x += -50;
 					dad.y += 70;
-					gf.y = 99999;
-					//fuck you into space you go
+					// gf.y = 99999;
+					//fuck you into space you go <-- old comment before kiki was added in as the replacement for gf
+					gf.y += 90;
+					gf.x -= 800;
 				case 'stadiumrave':
 					boyfriend.x += 200;
 					boyfriend.y += 70;
 					dad.x += -50;
 					dad.y += 70;
-					gf.y = 99999;
+					gf.y += 90;
+					gf.x -= 800;
 				case 'stadiumBoss':
 					boyfriend.x += 200;
 					boyfriend.y += 70;
@@ -2587,6 +2593,7 @@ class PlayState extends MusicBeatState
 			
 		if (curSong == 'Anomaly')
 		{
+			camZooming = true;
 			if (curBeat < 31 && !screamed)
 			{
 				dad.playAnim('Heroboss Shake'); //the thing is we need this to loop until REE and idk how to do that without making it
