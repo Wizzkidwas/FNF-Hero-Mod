@@ -1476,7 +1476,7 @@ class PlayState extends MusicBeatState
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void
 	{
-		var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
+		var black:FlxSprite = new FlxSprite(-1000, -200).makeGraphic(FlxG.width * 4, FlxG.height * 3, FlxColor.BLACK);
 		black.scrollFactor.set();
 		add(black);
 

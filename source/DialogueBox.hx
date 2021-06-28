@@ -29,7 +29,10 @@ class DialogueBox extends FlxSpriteGroup
 	public var finishThing:Void->Void;
 
 	var portraitLeft:FlxSprite;
+	var portraitLeft2:FlxSprite;
+	var portraitLeft3:FlxSprite;
 	var portraitRight:FlxSprite;
+	var portraitRight2:FlxSprite;
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
@@ -158,6 +161,39 @@ class DialogueBox extends FlxSpriteGroup
 				add(portraitLeft);
 				portraitLeft.visible = false;
 		}
+
+		// Easy copypastes to add heroL, kiki and nega when needed
+		/*
+		heroL:
+			portraitRight2 = new FlxSprite(-20, 40);
+			portraitRight2.frames = Paths.getSparrowAtlas('cutscenes/hero/portrait', 'rapcon');
+			portraitRight2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+			portraitRight2.scrollFactor.set();
+			add(portraitRight2);
+			portraitRight2.visible = false;
+
+		kiki:
+			portraitLeft2 = new FlxSprite(-20, 40);
+			portraitLeft2.frames = Paths.getSparrowAtlas('cutscenes/kiki/portrait', 'rapcon');
+			portraitLeft2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+			portraitLeft2.scrollFactor.set();
+			portraitLeft2.flipX = true;
+			add(portraitLeft2);
+			portraitLeft2.visible = false;
+
+		nega:
+			portraitLeft3 = new FlxSprite(-20, 40);
+			portraitLeft3.frames = Paths.getSparrowAtlas('cutscenes/nega/portrait', 'rapcon');
+			portraitLeft3.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+			portraitLeft3.scrollFactor.set();
+			portraitLeft3.flipX = true;
+			add(portraitLeft3);
+			portraitLeft3.visible = false;
+		*/
+
+
+
+
 		/* Preserves Senpai images in week 6
 		if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'roses' || PlayState.SONG.song.toLowerCase() == 'thorns')
 		{
@@ -196,6 +232,29 @@ class DialogueBox extends FlxSpriteGroup
 			add(portraitLeft);
 			portraitLeft.visible = false;
 		}*/
+
+		portraitLeft2 = new FlxSprite(450, 40);
+		portraitLeft2.frames = Paths.getSparrowAtlas('cutscenes/kiki/portrait', 'rapcon');
+		portraitLeft2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitLeft2.scrollFactor.set();
+		portraitLeft2.flipX = true;
+		add(portraitLeft2);
+		portraitLeft2.visible = false;
+
+		portraitLeft3 = new FlxSprite(450, 40);
+		portraitLeft3.frames = Paths.getSparrowAtlas('cutscenes/nega/portrait', 'rapcon');
+		portraitLeft3.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitLeft3.scrollFactor.set();
+		portraitLeft3.flipX = true;
+		add(portraitLeft3);
+		portraitLeft3.visible = false;
+
+		portraitRight2 = new FlxSprite(300, 40);
+		portraitRight2.frames = Paths.getSparrowAtlas('cutscenes/hero/portrait', 'rapcon');
+		portraitRight2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitRight2.scrollFactor.set();
+		add(portraitRight2);
+		portraitRight2.visible = false;
 
 		portraitRight = new FlxSprite(0, 40);
 		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
@@ -291,7 +350,10 @@ class DialogueBox extends FlxSpriteGroup
 						box.alpha -= 1 / 5;
 						bgFade.alpha -= 1 / 5 * 0.7;
 						portraitLeft.visible = false;
+						portraitLeft2.visible = false;
+						portraitLeft3.visible = false;
 						portraitRight.visible = false;
+						portraitRight2.visible = false;
 						swagDialogue.alpha -= 1 / 5;
 						dropText.alpha = swagDialogue.alpha;
 					}, 5);
@@ -328,19 +390,55 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (curCharacter)
 		{
-			case 'dad':
+			case 'heroL':	// This is portraitLeft
+				portraitLeft2.visible = false;
+				portraitLeft3.visible = false;
 				portraitRight.visible = false;
+				portraitRight2.visible = false;
 				if (!portraitLeft.visible)
 				{
 					portraitLeft.visible = true;
 					portraitLeft.animation.play('enter');
 				}
-			case 'bf':
+			case 'bf':		// This is portraitRight
 				portraitLeft.visible = false;
+				portraitLeft2.visible = false;
+				portraitLeft3.visible = false;
+				portraitRight2.visible = false;
 				if (!portraitRight.visible)
 				{
 					portraitRight.visible = true;
 					portraitRight.animation.play('enter');
+				}
+			case 'heroR':	// This is portraitRight2
+				portraitLeft.visible = false;
+				portraitLeft2.visible = false;
+				portraitLeft3.visible = false;
+				portraitRight.visible = false; // These lines make other portraits invisible
+				if (!portraitRight2.visible)    // If character protrait isn't visible already
+				{
+					portraitRight2.visible = true;			// Do the funky animations
+					portraitRight2.animation.play('enter');
+				}
+			case 'kiki':	// This is portraitLeft2
+				portraitLeft.visible = false;
+				portraitLeft3.visible = false;
+				portraitRight.visible = false;
+				portraitRight2.visible = false; // These lines make other portraits invisible
+				if (!portraitLeft2.visible)    // If 2nd protrait isn't visible already
+				{
+					portraitLeft2.visible = true;			// Do the funky animations
+					portraitLeft2.animation.play('enter');
+				}
+			case 'nega':	// This is portraitLeft3
+				portraitLeft.visible = false;
+				portraitLeft2.visible = false;
+				portraitRight.visible = false;
+				portraitRight2.visible = false; // These lines make other portraits invisible
+				if (!portraitLeft3.visible)    // If 2nd protrait isn't visible already
+				{
+					portraitLeft3.visible = true;			// Do the funky animations
+					portraitLeft3.animation.play('enter');
 				}
 		}
 	}
