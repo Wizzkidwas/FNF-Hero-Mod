@@ -54,9 +54,7 @@ class HealthIcon extends FlxSprite
 		animation.add('herorave', [12, 13, 14], 0, false, isPlayer);
 		animation.add('heroboss', [15, 16, 15], 0, false, isPlayer);
 		animation.add('nega', [6, 7, 8], 0, false, isPlayer);
-		animation.add('tak', [17, 18, 19], 0, false, isPlayer);
-		animation.add('takboss', [23, 24, 23], 0, false, isPlayer);
-		animation.add('twins', [20, 21, 22], 0, false, isPlayer);
+		animation.add('kikituto', [17, 18, 18], 0, false, isPlayer);
 		
 		iconSize = width;
 		id = _id;

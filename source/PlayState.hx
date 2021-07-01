@@ -707,6 +707,33 @@ class PlayState extends MusicBeatState
 	
 						add(stageCurtains);
 				}
+			case 'kikisbooth':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'kikisbooth';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stageback'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+	
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(0.9, 0.9);
+						stageFront.active = false;
+						add(stageFront);
+	
+						var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stagecurtains'));
+						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+						stageCurtains.updateHitbox();
+						stageCurtains.antialiasing = true;
+						stageCurtains.scrollFactor.set(1.3, 1.3);
+						stageCurtains.active = false;
+	
+						add(stageCurtains);
+				}
 				case 'stadium':
 					{
 						defaultCamZoom = 0.7; // hi wizz this is the camera value. idk what makes it zoom out but we need it to zoom out.
@@ -1127,17 +1154,9 @@ class PlayState extends MusicBeatState
 					dad.x += -50;
 					dad.y += 70;
 					gf.y = 99999;
-				case 'conhall':
-					boyfriend.x += 200;
-					boyfriend.y += 70;
-					dad.x += -50;
-					dad.y += 70;
-				case 'conhallempty':
-					boyfriend.x += 200;
-					boyfriend.y += 70;
-					dad.x += -50;
-					dad.y += 70;
 				case 'void':
+					gf.y = 99999;
+				case 'kikisbooth':
 					gf.y = 99999;
 		}
 
