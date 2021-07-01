@@ -31,6 +31,8 @@ class DialogueBox extends FlxSpriteGroup
 	var portraitLeft:FlxSprite;
 	var portraitLeft2:FlxSprite;
 	var portraitLeft3:FlxSprite;
+	var portraitLeft4:FlxSprite;
+	var portraitLeft5:FlxSprite;
 	var portraitRight:FlxSprite;
 	var portraitRight2:FlxSprite;
 
@@ -97,11 +99,24 @@ class DialogueBox extends FlxSpriteGroup
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
 
-			case 'anomaly':
+			case 'ringside-rave':
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
 				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);				
+			
+			case 'anomaly':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+				
+			case 'voodoo-puppet':
+				hasDialog = true;
+				box.frames = Paths.getSparrowAtlas('weeb/pixelUI/dialogueBox-pixel');
+				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
+
 				
 		}
 
@@ -141,9 +156,9 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.visible = false;
 			
 			// Differentiate between regular hero and boss hero
-			case 'kick-it':
+			case 'anomaly':
 				portraitLeft = new FlxSprite(-20, 40);
-				portraitLeft.frames = Paths.getSparrowAtlas('cutscenes/hero/portrait', 'rapcon');
+				portraitLeft.frames = Paths.getSparrowAtlas('cutscenes/boss/portrait', 'rapcon');
 				portraitLeft.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
 				// portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				// portraitLeft.updateHitbox();
@@ -151,9 +166,9 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.flipX = true;
 				add(portraitLeft);
 				portraitLeft.visible = false;
-			case 'anomaly':
+			default:
 				portraitLeft = new FlxSprite(-20, 40);
-				portraitLeft.frames = Paths.getSparrowAtlas('cutscenes/boss/portrait', 'rapcon');
+				portraitLeft.frames = Paths.getSparrowAtlas('cutscenes/hero/portrait', 'rapcon');
 				portraitLeft.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
 				// portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				// portraitLeft.updateHitbox();
@@ -192,48 +207,7 @@ class DialogueBox extends FlxSpriteGroup
 			portraitLeft3.visible = false;
 		*/
 
-
-
-
-		/* Preserves Senpai images in week 6
-		if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'roses' || PlayState.SONG.song.toLowerCase() == 'thorns')
-		{
-			portraitLeft = new FlxSprite(-20, 40);
-			portraitLeft.frames = Paths.getSparrowAtlas('weeb/senpaiPortrait');
-			portraitLeft.animation.addByPrefix('enter', 'Senpai Portrait Enter', 24, false);
-			portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
-			portraitLeft.updateHitbox();
-			portraitLeft.scrollFactor.set();
-			add(portraitLeft);
-			portraitLeft.visible = false;
-		}
-
-		// Will put in images for hero dialogue
-		if (PlayState.SONG.song.toLowerCase() == 'kick-it')
-		{
-			portraitLeft = new FlxSprite(-20, 40);
-			portraitLeft.frames = Paths.getSparrowAtlas('cutscenes/hero/portrait', 'rapcon');
-			portraitLeft.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-			portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
-			portraitLeft.updateHitbox();
-			portraitLeft.scrollFactor.set();
-			add(portraitLeft);
-			portraitLeft.visible = false;
-		}
-
-		// Will put in images for boss hero dialogue
-		if (PlayState.SONG.song.toLowerCase() == 'anomaly')
-		{
-			portraitLeft = new FlxSprite(-20, 40);
-			portraitLeft.frames = Paths.getSparrowAtlas('cutscenes/boss/portrait', 'rapcon');
-			portraitLeft.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-			portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
-			portraitLeft.updateHitbox();
-			portraitLeft.scrollFactor.set();
-			add(portraitLeft);
-			portraitLeft.visible = false;
-		}*/
-
+		// Kiki
 		portraitLeft2 = new FlxSprite(450, 40);
 		portraitLeft2.frames = Paths.getSparrowAtlas('cutscenes/kiki/portrait', 'rapcon');
 		portraitLeft2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
@@ -242,6 +216,7 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitLeft2);
 		portraitLeft2.visible = false;
 
+		// Nega
 		portraitLeft3 = new FlxSprite(450, 40);
 		portraitLeft3.frames = Paths.getSparrowAtlas('cutscenes/nega/portrait', 'rapcon');
 		portraitLeft3.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
@@ -250,6 +225,25 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitLeft3);
 		portraitLeft3.visible = false;
 
+		// Negaconfuse
+		portraitLeft4 = new FlxSprite(450, 40);
+		portraitLeft4.frames = Paths.getSparrowAtlas('cutscenes/negaconfuse/portrait', 'rapcon');
+		portraitLeft4.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitLeft4.scrollFactor.set();
+		portraitLeft4.flipX = true;
+		add(portraitLeft4);
+		portraitLeft4.visible = false;
+
+		// Negathreads
+		portraitLeft5 = new FlxSprite(450, 40);
+		portraitLeft5.frames = Paths.getSparrowAtlas('cutscenes/negathreads/portrait', 'rapcon');
+		portraitLeft5.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitLeft5.scrollFactor.set();
+		portraitLeft5.flipX = true;
+		add(portraitLeft5);
+		portraitLeft5.visible = false;
+
+		// HeroR
 		portraitRight2 = new FlxSprite(300, 40);
 		portraitRight2.frames = Paths.getSparrowAtlas('cutscenes/hero/portrait', 'rapcon');
 		portraitRight2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
@@ -257,6 +251,7 @@ class DialogueBox extends FlxSpriteGroup
 		add(portraitRight2);
 		portraitRight2.visible = false;
 
+		// BF
 		portraitRight = new FlxSprite(0, 40);
 		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
 		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
@@ -353,6 +348,8 @@ class DialogueBox extends FlxSpriteGroup
 						portraitLeft.visible = false;
 						portraitLeft2.visible = false;
 						portraitLeft3.visible = false;
+						portraitLeft4.visible = false;
+						portraitLeft5.visible = false;
 						portraitRight.visible = false;
 						portraitRight2.visible = false;
 						swagDialogue.alpha -= 1 / 5;
@@ -394,6 +391,8 @@ class DialogueBox extends FlxSpriteGroup
 			case 'heroL':	// This is portraitLeft
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
+				portraitLeft4.visible = false;
+				portraitLeft5.visible = false;
 				portraitRight.visible = false;
 				portraitRight2.visible = false;
 				if (!portraitLeft.visible)
@@ -405,6 +404,8 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
+				portraitLeft4.visible = false;
+				portraitLeft5.visible = false;
 				portraitRight2.visible = false;
 				if (!portraitRight.visible)
 				{
@@ -415,6 +416,8 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
 				portraitLeft3.visible = false;
+				portraitLeft4.visible = false;
+				portraitLeft5.visible = false;
 				portraitRight.visible = false; // These lines make other portraits invisible
 				if (!portraitRight2.visible)    // If character protrait isn't visible already
 				{
@@ -424,6 +427,8 @@ class DialogueBox extends FlxSpriteGroup
 			case 'kiki':	// This is portraitLeft2
 				portraitLeft.visible = false;
 				portraitLeft3.visible = false;
+				portraitLeft4.visible = false;
+				portraitLeft5.visible = false;
 				portraitRight.visible = false;
 				portraitRight2.visible = false; // These lines make other portraits invisible
 				if (!portraitLeft2.visible)    // If 2nd protrait isn't visible already
@@ -434,6 +439,8 @@ class DialogueBox extends FlxSpriteGroup
 			case 'nega':	// This is portraitLeft3
 				portraitLeft.visible = false;
 				portraitLeft2.visible = false;
+				portraitLeft4.visible = false;
+				portraitLeft5.visible = false;
 				portraitRight.visible = false;
 				portraitRight2.visible = false; // These lines make other portraits invisible
 				if (!portraitLeft3.visible)    // If 2nd protrait isn't visible already
@@ -441,6 +448,31 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeft3.visible = true;			// Do the funky animations
 					portraitLeft3.animation.play('enter');
 				}
+			case 'negaconfuse':	// This is portraitLeft4
+				portraitLeft.visible = false;
+				portraitLeft2.visible = false;
+				portraitLeft3.visible = false;
+				portraitLeft5.visible = false;
+				portraitRight.visible = false;
+				portraitRight2.visible = false; // These lines make other portraits invisible
+				if (!portraitLeft4.visible)    // If 2nd protrait isn't visible already
+				{
+					portraitLeft4.visible = true;			// Do the funky animations
+					portraitLeft4.animation.play('enter');
+				}
+			case 'negathreads':	// This is portraitLeft5
+				portraitLeft.visible = false;
+				portraitLeft2.visible = false;
+				portraitLeft3.visible = false;
+				portraitLeft4.visible = false;
+				portraitRight.visible = false;
+				portraitRight2.visible = false; // These lines make other portraits invisible
+				if (!portraitLeft5.visible)    // If 2nd protrait isn't visible already
+				{
+					portraitLeft5.visible = true;			// Do the funky animations
+					portraitLeft5.animation.play('enter');
+				}
+				
 		}
 	}
 

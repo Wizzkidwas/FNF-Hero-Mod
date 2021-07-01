@@ -352,8 +352,12 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));*/
 			case 'kick-it':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('kick-it/dialog'));
+			case 'ringside-rave':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('ringside-rave/dialog'));		
 			case 'anomaly':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('anomaly/dialog'));
+			case 'voodoo-puppet':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('voodoo-puppet/dialog'));
 		}
 
 		switch(SONG.stage)
@@ -1045,10 +1049,12 @@ class PlayState extends MusicBeatState
 			default:
 				gfVersion = 'gf';
 		}
+		trace("gf version chosen");
 
 		gf = new Character(400, 130, gfVersion);
-
+		trace("gf added");
 		dad = new Character(100, 100, SONG.player2);
+		trace("dad added");
 
 		var camPos:FlxPoint = new FlxPoint(dad.getGraphicMidpoint().x, dad.getGraphicMidpoint().y);
 
@@ -1089,10 +1095,12 @@ class PlayState extends MusicBeatState
 				dad.y += 100;
 				camPos.set(dad.getGraphicMidpoint().x + 300, dad.getGraphicMidpoint().y);
 		}
+		trace("none of the characters are involved with this bit so hopefully should pass");
 
 
 		
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
+		trace("bf added");
 
 		// REPOSITIONING PER STAGE
 		switch (curStage)
@@ -1148,6 +1156,7 @@ class PlayState extends MusicBeatState
 					dad.y += 70;
 					gf.y += 90;
 					gf.x -= 800;
+					trace("positions ready");
 				case 'stadiumBoss':
 					boyfriend.x += 200;
 					boyfriend.y += 70;
@@ -1156,18 +1165,22 @@ class PlayState extends MusicBeatState
 					gf.y = 99999;
 				case 'void':
 					gf.y = 99999;
+					trace("gf yeeted");
 				case 'kikisbooth':
 					gf.y = 99999;
 		}
 
 		add(gf);
-
+		trace("gf truly added");
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
 
 		add(dad);
+		trace("dad truly added");
 		add(boyfriend);
+		trace("bf truly added");
+
 		if (loadRep)
 		{
 			FlxG.watch.addQuick('rep rpesses',repPresses);
@@ -1178,15 +1191,19 @@ class PlayState extends MusicBeatState
 			FlxG.save.data.downscroll = rep.replay.isDownscroll;
 			// FlxG.watch.addQuick('Queued',inputsQueued);
 		}
+		trace("not a replay fuck off");
 
 		var doof:DialogueBox = new DialogueBox(false, dialogue);
+		trace("doof initialised");
 		// doof.x += 70;
 		// doof.y = FlxG.height * 0.5;
 		doof.scrollFactor.set();
+		trace("doof scroll factor set");
 		doof.finishThing = startCountdown;
+		trace("Heinz Doofenshmirtz");
 
 		Conductor.songPosition = -5000;
-		
+		trace("Conductor");
 		strumLine = new FlxSprite(0, 50).makeGraphic(FlxG.width, 10);
 		strumLine.scrollFactor.set();
 		
@@ -1199,6 +1216,7 @@ class PlayState extends MusicBeatState
 		playerStrums = new FlxTypedGroup<FlxSprite>();
 		cpuStrums = new FlxTypedGroup<FlxSprite>();
 
+		trace("Strums added");
 		// startCountdown();
 
 		if (SONG.song == null)
@@ -1393,6 +1411,13 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'kick-it':
 					schoolIntro(doof);
+				case 'ringside-rave':
+					schoolIntro(doof);
+				case 'anomaly':
+					schoolIntro(doof);
+				case 'voodoo-puppet':
+					schoolIntro(doof);
+														
 				/*case 'anomaly':
 					bossIntro(doof);*/
 				default:
@@ -1516,7 +1541,7 @@ class PlayState extends MusicBeatState
 				case 'dad-battle': songLowercase = 'dadbattle';
 				case 'philly-nice': songLowercase = 'philly';
 			}
-		if (songLowercase == 'roses' || songLowercase == 'thorns')
+		if (songLowercase == 'roses' || songLowercase == 'thorns' || songLowercase == 'ringside-rave')
 		{
 			remove(black);
 
