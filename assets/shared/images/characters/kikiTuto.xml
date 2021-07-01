@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="kikiTuto.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="kiki SIT right10000" x="0" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10001" x="0" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10002" x="580" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10003" x="580" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10004" x="1160" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10005" x="1160" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10006" x="1740" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10007" x="1740" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10008" x="1740" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10009" x="1740" y="0" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+
+	<SubTexture name="kiki SIT right10010" x="0" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10011" x="0" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10012" x="580" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10013" x="580" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10014" x="1160" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10015" x="1160" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki SIT right10016" x="1740" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10017" x="1740" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10018" x="1740" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+	<SubTexture name="kiki SIT right10019" x="1740" y="716" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>	
+
+	<SubTexture name="kiki left 10000" x="0" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10001" x="580" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10002" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10003" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10004" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10005" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10006" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10007" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10008" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10009" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10010" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10011" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10012" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10013" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10014" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10015" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10016" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki left 10017" x="1160" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+
+	<SubTexture name="kiki up 10000" x="0" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10001" x="580" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10002" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10003" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10004" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10005" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10006" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10007" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10008" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10009" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10010" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10011" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10012" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10013" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10014" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10015" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10016" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki up 10017" x="1160" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+
+	<SubTexture name="kiki down 10000" x="1740" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10001" x="2320" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10002" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10003" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10004" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10005" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10006" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10007" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10008" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10009" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10010" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10011" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10012" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10013" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10014" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10015" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10016" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki down 10017" x="2900" y="1432" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+
+	<SubTexture name="kiki right 10000" x="1740" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10001" x="2320" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10002" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10003" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10004" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10005" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10006" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10007" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10008" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10009" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10010" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10011" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10012" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10013" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10014" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10015" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10016" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+	<SubTexture name="kiki right 10017" x="2900" y="2148" width="580" height="716" frameX="-100" frameY="0" frameWidth="580" frameHeight="716"/>
+</TextureAtlas>
