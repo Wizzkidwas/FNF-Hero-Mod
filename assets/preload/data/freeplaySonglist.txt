@@ -1,3 +1,4 @@
+Tutorial:kikituto:0
 Kick It:hero:7
 Ringside Rave:herorave:7
 Anomaly:heroboss:7

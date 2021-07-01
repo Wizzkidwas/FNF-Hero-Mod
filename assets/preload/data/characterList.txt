@@ -21,3 +21,4 @@ hero
 heroboss
 herorave
 nega
+kikituto

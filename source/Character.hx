@@ -68,8 +68,16 @@ class Character extends FlxSprite
 				tex = Paths.getSparrowAtlas('characters/kiki_box');
 				frames = tex;
 				animation.addByPrefix('idle', 'kiki SIT right', 24, true);
+				animation.addByPrefix('singUP', 'kiki up', 24, false);
+				animation.addByPrefix('singRIGHT', 'kiki right', 24, false);
+				animation.addByPrefix('singDOWN', 'kiki down', 24, false);
+				animation.addByPrefix('singLEFT', 'kiki left', 24, false);
 
 				addOffset('idle');
+				addOffset('singUP');
+				addOffset('singRIGHT');
+				addOffset('singDOWN');
+				addOffset('singLEFT');
 
 				playAnim('idle');
 				
@@ -79,6 +87,23 @@ class Character extends FlxSprite
 				animation.addByPrefix('idle', 'kiki SIT right', 24, true);
 
 				addOffset('idle');
+
+				playAnim('idle');
+				
+			case 'kikituto':
+				tex = Paths.getSparrowAtlas('characters/kikiTuto');
+				frames = tex;
+				animation.addByPrefix('idle', 'kiki SIT right', 24, true);
+				animation.addByPrefix('singUP', 'kiki up', 24, false);
+				animation.addByPrefix('singRIGHT', 'kiki right', 24, false);
+				animation.addByPrefix('singDOWN', 'kiki down', 24, false);
+				animation.addByPrefix('singLEFT', 'kiki left', 24, false);
+
+				addOffset('idle');
+				addOffset('singUP');
+				addOffset('singRIGHT');
+				addOffset('singDOWN');
+				addOffset('singLEFT');
 
 				playAnim('idle');
 
