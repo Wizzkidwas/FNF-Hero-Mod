@@ -169,7 +169,11 @@ class PlayState extends MusicBeatState
 	var upperBoppers:FlxSprite;
 	var bottomBoppers:FlxSprite;
 	var santa:FlxSprite;
-
+	/*var eyes:FlxSprite;
+	var eyes2:FlxSprite;		// Remnants of a simpler time
+	var eyesArray:Array<FlxSprite>;*/
+	var eyesArray = new haxe.ds.Vector(15);	// This number has to be changed here, should scale fine with the rest of it
+	// IF YOU CHANGE THE NUMBER HERE, CHANGE THE NUMBER FOR THE eyesCanAnimate VECTOR AT AROUND LINE 3895. MAKE SURE THEY ARE EQUAL
 	var fc:Bool = true;
 
 	var bgGirls:BackgroundGirls;
@@ -815,7 +819,10 @@ class PlayState extends MusicBeatState
 						// ravebg.animation.addByPrefix('def', 'Back', 24, false);
 						// ravebg.animation.addByPrefix('transition', 'BackTrans', 24, false);
 						ravebg.animation.addByPrefix('loop', 'BackLoop', 24, true);
-						ravebg.animation.play('loop');
+						if(FlxG.save.data.distractions)
+						{
+							ravebg.animation.play('loop');	// If this don't work, define the animation differently by adding the 00001 for the distractions case
+						}
 						ravebg.antialiasing = true;
 						ravebg.setGraphicSize(Std.int(ravebg.width * 1));
 						ravebg.scrollFactor.set(0.9, 0.9);
@@ -994,20 +1001,20 @@ class PlayState extends MusicBeatState
 						stageFront.scrollFactor.set(0.9, 0.9);
 						stageFront.active = false;
 						add(stageFront);
-			
+						
 						var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stages/wkNega/void/stagecurtains.png', 'rapcon'));
 						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 						stageCurtains.updateHitbox();
 						stageCurtains.antialiasing = true;
 						stageCurtains.scrollFactor.set(1.3, 1.3);
 						stageCurtains.active = false;
-			
+						
 						add(stageCurtains);
 					}
 					case 'voideye':
 					{
 						defaultCamZoom = 0.9; //this might need to be switched out too???
-						curStage = 'void';
+						curStage = 'voideye';
 						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkNega/void/stageback.png', 'rapcon'));
 						// var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('void/stageback.png'));
 						bg.antialiasing = true;
@@ -1032,18 +1039,30 @@ class PlayState extends MusicBeatState
 			
 						add(stageCurtains);
 
-						trace('Loading Eyes');
-						var stageEyes:FlxSprite = new FlxSprite();
-						stageEyes.frames = Paths.getSparrowAtlas('stages/wkNega/void/negaeyes', 'rapcon');
-						stageEyes.animation.addByPrefix('open', 'eye', 24, false);
-						stageEyes.animation.addByPrefix('look', 'eye but it looks around', 24, false);
-					    // stageEyes.animation.play('loop');
-						stageEyes.setGraphicSize(Std.int(stageEyes.width * 0.9));
-						stageEyes.updateHitbox();
-						stageEyes.antialiasing = true;
-						stageEyes.scrollFactor.set(0.9, 0.9);
-						add(stageEyes);
-						trace('Eyes loaded! Everythings set!');
+						/*eyes = new FlxSprite(0, 0);
+						eyes.frames = Paths.getSparrowAtlas('stages/wkNega/void/negaeyes','rapcon');
+						eyes.animation.addByPrefix('open', 'eye', 24, false);
+						eyes.animation.addByPrefix('look', 'eye but it looks around', 24, false);
+						eyes.antialiasing = true;
+						eyes.scrollFactor.set(0.8, 0.8);
+
+						eyes2 = new FlxSprite(0, 0);
+						eyes2.frames = Paths.getSparrowAtlas('stages/wkNega/void/negaeyes','rapcon');
+						eyes2.animation.addByPrefix('open', 'eye', 24, false);
+						eyes2.animation.addByPrefix('look', 'eye but it looks around', 24, false);
+						eyes2.antialiasing = true;
+						eyes2.scrollFactor.set(0.8, 0.8);*/
+
+						for (i in 0...eyesArray.length)
+						{
+							eyesArray[i] = new FlxSprite();
+							eyesArray[i].frames = Paths.getSparrowAtlas('stages/wkNega/void/negaeyes','rapcon');
+							eyesArray[i].animation.addByPrefix('open', 'eye', 24, false);
+							eyesArray[i].animation.addByPrefix('look', 'eye but it looks around', 24, false);
+							eyesArray[i].antialiasing = true;
+							eyesArray[i].scrollFactor.set(0.8, 0.8);
+						}
+						trace("Eyes got loaded in the normal stage procedures");
 					}
 					
 			default:
@@ -1176,40 +1195,55 @@ class PlayState extends MusicBeatState
 				// evilTrail.scrollFactor.set(1.1, 1.1);
 				}
 
-
+			boyfriend.x += 200;
+			boyfriend.y += 220;
+			gf.x += 180;
+			gf.y += 300;
+			case 'stadium':
 				boyfriend.x += 200;
-				boyfriend.y += 220;
-				gf.x += 180;
-				gf.y += 300;
-				case 'stadium':
-					boyfriend.x += 200;
-					boyfriend.y += 70;
-					//fuck it hero's repositioning goes here too
-					dad.x += -50;
-					dad.y += 70;
-					// gf.y = 99999;
-					//fuck you into space you go <-- old comment before kiki was added in as the replacement for gf
-					gf.y += 90;
-					gf.x -= 800;
-				case 'stadiumrave':
-					boyfriend.x += 200;
-					boyfriend.y += 70;
-					dad.x += -50;
-					dad.y += 70;
-					gf.y += 90;
-					gf.x -= 800;
-					trace("positions ready");
-				case 'stadiumBoss':
-					boyfriend.x += 200;
-					boyfriend.y += 70;
-					dad.x += -50;
-					dad.y += 70;
-					gf.y = 99999;
-				case 'void':
-					gf.y = 99999;
-					trace("gf yeeted");
-				case 'kikisbooth':
-					gf.y = 99999;
+				boyfriend.y += 70;
+				//fuck it hero's repositioning goes here too
+				dad.x += -50;
+				dad.y += 70;
+				// gf.y = 99999;
+				//fuck you into space you go <-- old comment before kiki was added in as the replacement for gf
+				gf.y += 90;
+				gf.x -= 800;
+			case 'stadiumrave':
+				boyfriend.x += 200;
+				boyfriend.y += 70;
+				dad.x += -50;
+				dad.y += 70;
+				gf.y += 90;
+				gf.x -= 800;
+				trace("positions ready");
+			case 'stadiumBoss':
+				boyfriend.x += 200;
+				boyfriend.y += 70;
+				dad.x += -50;
+				dad.y += 70;
+				gf.y = 99999;
+				/*var evilTrail = new FlxTrail(dad, null, 5, 24, 0.3, 0.069);
+				add(evilTrail);*/
+			case 'void':
+				gf.y = 99999;
+				trace("kiki yeeted");
+			case 'voideye':
+				gf.y = 99999;
+				trace("kiki yeeted");
+				if(FlxG.save.data.distractions)
+				{
+					/*add(eyes);
+					add(eyes2);*/
+					for (i in 0...eyesArray.length)
+					{
+						resetEyes(i);
+						add(eyesArray[i]);
+					}
+					trace("Eyes added in eyes void");
+				}
+			case 'kikisbooth':
+				gf.y = 99999;
 		}
 
 		add(gf);
@@ -2703,31 +2737,6 @@ class PlayState extends MusicBeatState
 			//switch curbeat/step depending on where the REEE is in song to REE anim
 		}
 
-		if (curSong == 'playdate')
-		{
-			var eyeAnimationPlayed:Bool = true;
-			var eyeAnimationGo:Int = 2;
-			if (eyeAnimationPlayed)
-			{
-				eyeAnimationPlayed = false;
-				eyeAnimationGo = FlxG.random.int(curStep, curStep + 50);
-			}
-			if (curStep == eyeAnimationGo)
-			{
-				eyeAnimationPlayed = true;
-				var pickAnimation:Int = FlxG.random.int(1, 2);
-				switch (pickAnimation)
-				{
-					case 1:
-						stageEyes.animation.play('open');
-					case 2:
-						stageEyes.animation.play('look');
-					default:
-						stageEyes.animation.play('open');
-				}
-			}
-		}
-
 		if (health <= 0)
 		{
 			boyfriend.stunned = true;
@@ -3881,6 +3890,90 @@ class PlayState extends MusicBeatState
 			});
 		}
 	}
+	
+	// var eyesCanAnimate:Bool = true;
+	var eyesCanAnimate = new haxe.ds.Vector(15);	// This number has to be changed here, should scale fine with the rest of it
+	// IF YOU CHANGE THIS NUMBER, ALSO CHANGE THE NUMBER FOR THE eyesArray AT AROUND LINE 175. MAKE SURE THEY ARE EQUAL
+
+	function resetEyes(i:Int):Void
+	{
+		if(FlxG.save.data.distractions)
+		{
+			trace("Resetting Eyes");
+			/*eyes.x = FlxG.random.int(100, (FlxG.width - 100));
+			eyes.y = FlxG.random.int(100, (FlxG.height - 100));
+			eyes2.x = FlxG.random.int(100, (FlxG.width - 100));
+			eyes2.y = FlxG.random.int(100, (FlxG.height - 100));*/
+			/*for (i in 0...eyesArray.length)
+			{
+				eyesArray[i].x = FlxG.random.int(100, (FlxG.width - 100));
+				eyesArray[i].y = FlxG.random.int(100, (FlxG.height - 100));
+				eyesCanAnimate[i] = true;
+			}*/
+			eyesArray[i].x = FlxG.random.int(100, (FlxG.width - 100));
+			eyesArray[i].y = FlxG.random.int(100, (FlxG.height - 100));
+			eyesCanAnimate[i] = true;
+			trace("Eyes reset");
+		}
+	}
+
+	function eyesAnimate(i:Int)
+	{
+		if(FlxG.save.data.distractions)
+		{
+			trace("Animating eyes");
+			/*if (FlxG.random.int(1, 2) == 2)
+			{
+				trace("I am looking around");
+				eyes.animation.play('look');
+			}
+			else
+			{
+				trace("I am just opening bro plz");
+				eyes.animation.play('open');
+			}
+			if (FlxG.random.int(1, 2) == 2)
+			{
+				trace("I am looking around");
+				eyes2.animation.play('look');
+			}
+			else
+			{
+				trace("I am just opening bro plz");
+				eyes2.animation.play('open');
+			}*/
+			/*for (i in 0...eyesArray.length)
+			{
+				if (FlxG.random.int(1, 2) == 2)
+					{
+						trace("I am looking around");
+						eyesArray[i].animation.play('look');
+					}
+					else
+					{
+						trace("I am just opening bro plz");
+						eyesArray[i].animation.play('open');
+					}
+					eyesCanAnimate[i] = false;
+			}*/
+			if (FlxG.random.int(1, 2) == 2)
+				{
+					trace("I am looking around");
+					eyesArray[i].animation.play('look');
+				}
+				else
+				{
+					trace("I am just opening bro plz");
+					eyesArray[i].animation.play('open');
+				}
+				eyesCanAnimate[i] = false;
+			new FlxTimer().start(5, function(tmr:FlxTimer)
+			{
+				resetEyes(i);
+			});
+			trace("Eyes animated");
+		}
+	}
 
 	var trainMoving:Bool = false;
 	var trainFrameTiming:Float = 0;
@@ -3926,7 +4019,6 @@ class PlayState extends MusicBeatState
 						trainReset();
 				}
 		}
-
 	}
 
 	function trainReset():Void
@@ -4068,40 +4160,52 @@ class PlayState extends MusicBeatState
 		}
 
 		if (curBeat % 16 == 15 && SONG.song == 'Tutorial' && dad.curCharacter == 'gf' && curBeat > 16 && curBeat < 48)
-			{
-				boyfriend.playAnim('hey', true);
-				dad.playAnim('cheer', true);
-			}
-
+		{
+			boyfriend.playAnim('hey', true);
+			dad.playAnim('cheer', true);
+		}
+		
 		switch (curStage)
 		{
 			case 'school':
 				if(FlxG.save.data.distractions){
 					bgGirls.dance();
 				}
-
+				
 			case 'mall':
 				if(FlxG.save.data.distractions){
 					upperBoppers.animation.play('bop', true);
 					bottomBoppers.animation.play('bop', true);
 					santa.animation.play('idle', true);
 				}
-
+				
+			case 'voideye':
+				trace("Case exists");
+				for (i in 0...eyesArray.length)
+				{
+					if (FlxG.random.bool(10) && eyesCanAnimate[i])
+					{
+						trace("boutta call this function because the 30% hit whilst animate was true");
+						eyesAnimate(i);
+					}
+				}
+				
 			case 'limo':
 				if(FlxG.save.data.distractions){
 					grpLimoDancers.forEach(function(dancer:BackgroundDancer)
-						{
-							dancer.dance();
-						});
-		
-						if (FlxG.random.bool(10) && fastCarCanDrive)
-							fastCarDrive();
+					{
+						dancer.dance();
+					});
+					
+					if (FlxG.random.bool(10) && fastCarCanDrive)
+						fastCarDrive();
 				}
 			case "philly":
-				if(FlxG.save.data.distractions){
+				if(FlxG.save.data.distractions)
+				{
 					if (!trainMoving)
 						trainCooldown += 1;
-	
+					
 					if (curBeat % 4 == 0)
 					{
 						phillyCityLights.forEach(function(light:FlxSprite)
@@ -4110,10 +4214,10 @@ class PlayState extends MusicBeatState
 						});
 	
 						curLight = FlxG.random.int(0, phillyCityLights.length - 1);
-	
+						
 						phillyCityLights.members[curLight].visible = true;
 						// phillyCityLights.members[curLight].alpha = 1;
-				}
+					}
 
 				}
 
