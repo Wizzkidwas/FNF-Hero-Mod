@@ -174,6 +174,7 @@ class PlayState extends MusicBeatState
 	var eyesArray:Array<FlxSprite>;*/
 	var eyesArray = new haxe.ds.Vector(15);	// This number has to be changed here, should scale fine with the rest of it
 	// IF YOU CHANGE THE NUMBER HERE, CHANGE THE NUMBER FOR THE eyesCanAnimate VECTOR AT AROUND LINE 3895. MAKE SURE THEY ARE EQUAL
+	// Fun fact: If Haxe knew what the hell a constant was, I could use one variable for the two vectors and not have to worry about this
 	var fc:Bool = true;
 
 	var bgGirls:BackgroundGirls;

@@ -11,47 +11,47 @@
 	<SubTexture name="eye instance 00003" x="764" y="0" width="191" height="120"/>
 	<!-- eye idle -->	
 	<SubTexture name="eye instance 00004" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00005" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00005" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00006" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00007" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00007" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00008" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00009" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00009" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00010" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00011" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00011" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00012" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00013" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00013" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00014" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00015" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00015" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00016" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00017" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00017" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00018" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00019" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00019" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00020" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00021" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00021" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00022" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00023" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00023" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00024" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00025" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00025" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00026" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00027" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00027" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00028" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00029" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00029" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00030" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00031" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00031" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00032" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00033" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00033" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00034" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00035" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00035" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00036" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00037" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00037" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00038" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00039" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00039" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00040" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00041" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00041" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00042" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00043" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00043" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00044" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye instance 00045" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye instance 00045" x="191" y="120" width="191" height="120"/>
 		<!-- eye close -->
 	<SubTexture name="eye instance 00046" x="764" y="0" width="191" height="120"/>
 	<SubTexture name="eye instance 00047" x="573" y="0" width="191" height="120"/>
@@ -74,91 +74,91 @@
 	<SubTexture name="eye but it looks around00003" x="764" y="0" width="191" height="120"/>
 	<!-- eye idle -->	
 	<SubTexture name="eye but it looks around00004" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00005" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00005" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00006" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00007" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00007" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00008" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00009" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00009" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00010" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00011" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00011" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00012" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00013" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00013" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00014" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00015" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00015" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00016" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00017" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00017" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00018" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00019" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00019" x="191" y="120" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00020" x="0" y="120" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00021" x="382" y="120" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00021" x="191" y="120" width="191" height="120"/>
 		<!-- start look left -->
 	<SubTexture name="eye but it looks around00022" x="0" y="240" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00023" x="382" y="240" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00024" x="573" y="240" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00023" x="191" y="240" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00024" x="382" y="240" width="191" height="120"/>
 		<!-- left idle -->
 	<SubTexture name="eye but it looks around00025" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00026" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00026" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00027" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00028" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00028" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00029" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00030" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00030" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00031" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00032" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00032" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00033" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00034" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00034" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00035" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00036" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00036" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00037" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00038" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00038" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00039" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00040" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00040" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00041" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00042" x="382" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00043" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00042" x="191" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00043" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00044" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00045" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00045" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00046" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00047" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00047" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00048" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00049" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00049" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00050" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00051" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00051" x="191" y="360" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00052" x="0" y="360" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00053" x="382" y="360" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00053" x="191" y="360" width="191" height="120"/>
 		<!-- start look right -->
 	<SubTexture name="eye but it looks around00054" x="0" y="480" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00055" x="382" y="480" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00056" x="573" y="480" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00055" x="191" y="480" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00056" x="382" y="480" width="191" height="120"/>
 		<!-- right -->
 	<SubTexture name="eye but it looks around00057" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00058" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00058" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00059" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00060" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00060" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00061" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00062" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00062" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00063" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00064" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00064" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00065" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00066" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00066" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00067" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00068" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00068" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00069" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00070" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00070" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00071" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00072" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00072" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00073" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00074" x="382" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00075" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00074" x="191" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00075" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00076" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00077" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00077" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00078" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00079" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00079" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00080" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00081" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00081" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00082" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00083" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00083" x="191" y="600" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00084" x="0" y="600" width="191" height="120"/>
-	<SubTexture name="eye but it looks around00085" x="382" y="600" width="191" height="120"/>
+	<SubTexture name="eye but it looks around00085" x="191" y="600" width="191" height="120"/>
 		<!-- eye close -->
 	<SubTexture name="eye but it looks around00086" x="764" y="0" width="191" height="120"/>
 	<SubTexture name="eye but it looks around00087" x="573" y="0" width="191" height="120"/>
