@@ -53,11 +53,11 @@
 	<SubTexture name="eye instance 00044" x="0" y="120" width="191" height="120"/>
 	<SubTexture name="eye instance 00045" x="382" y="120" width="191" height="120"/>
 		<!-- eye close -->
-	<SubTexture name="eye instance 00046" x="764" y="0" width="191" height="120"/>
-	<SubTexture name="eye instance 00047" x="573" y="0" width="191" height="120"/>
-	<SubTexture name="eye instance 00048" x="382" y="0" width="191" height="120"/>
-	<SubTexture name="eye instance 00049" x="0" y="0" width="191" height="120"/>
-	<SubTexture name="eye instance 00050" x="573" y="600" width="191" height="120"/>
+	<SubTexture name="eye instance 00000" x="764" y="0" width="191" height="120"/>
+	<SubTexture name="eye instance 00001" x="573" y="0" width="191" height="120"/>
+	<SubTexture name="eye instance 00002" x="382" y="0" width="191" height="120"/>
+	<SubTexture name="eye instance 00003" x="0" y="0" width="191" height="120"/>
+	<SubTexture name="eye instance 00004" x="573" y="600" width="191" height="120"/>
 
 
 

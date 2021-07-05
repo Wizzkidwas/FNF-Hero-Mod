@@ -1004,6 +1004,48 @@ class PlayState extends MusicBeatState
 			
 						add(stageCurtains);
 					}
+					case 'voideye':
+					{
+						defaultCamZoom = 0.9; //this might need to be switched out too???
+						curStage = 'void';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkNega/void/stageback.png', 'rapcon'));
+						// var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('void/stageback.png'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stages/wkNega/void/stagefront.png', 'rapcon'));
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(0.9, 0.9);
+						stageFront.active = false;
+						add(stageFront);
+			
+						var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stages/wkNega/void/stagecurtains.png', 'rapcon'));
+						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+						stageCurtains.updateHitbox();
+						stageCurtains.antialiasing = true;
+						stageCurtains.scrollFactor.set(1.3, 1.3);
+						stageCurtains.active = false;
+			
+						add(stageCurtains);
+
+						trace('Loading Eyes');
+						var stageEyes:FlxSprite = new FlxSprite();
+						stageEyes.frames = Paths.getSparrowAtlas('stages/wkNega/void/negaeyes', 'rapcon');
+						stageEyes.animation.addByPrefix('open', 'eye', 24, false);
+						stageEyes.animation.addByPrefix('look', 'eye but it looks around', 24, false);
+					    // stageEyes.animation.play('loop');
+						stageEyes.setGraphicSize(Std.int(stageEyes.width * 0.9));
+						stageEyes.updateHitbox();
+						stageEyes.antialiasing = true;
+						stageEyes.scrollFactor.set(0.9, 0.9);
+						add(stageEyes);
+						trace('Eyes loaded! Everythings set!');
+					}
+					
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -2543,7 +2585,10 @@ class PlayState extends MusicBeatState
 					case 'hero':
 						camFollow.y = dad.getMidpoint().y + 50;
 					case 'herorave':
-						camFollow.y = dad.getMidpoint().y + 50;					
+						camFollow.y = dad.getMidpoint().y + 50;
+					case 'nega':
+						camFollow.y = dad.getMidpoint().y;
+											
 				}
 
 				if (dad.curCharacter == 'mom')
@@ -2656,6 +2701,31 @@ class PlayState extends MusicBeatState
 				screamed = true;
 			}
 			//switch curbeat/step depending on where the REEE is in song to REE anim
+		}
+
+		if (curSong == 'playdate')
+		{
+			var eyeAnimationPlayed:Bool = true;
+			var eyeAnimationGo:Int = 2;
+			if (eyeAnimationPlayed)
+			{
+				eyeAnimationPlayed = false;
+				eyeAnimationGo = FlxG.random.int(curStep, curStep + 50);
+			}
+			if (curStep == eyeAnimationGo)
+			{
+				eyeAnimationPlayed = true;
+				var pickAnimation:Int = FlxG.random.int(1, 2);
+				switch (pickAnimation)
+				{
+					case 1:
+						stageEyes.animation.play('open');
+					case 2:
+						stageEyes.animation.play('look');
+					default:
+						stageEyes.animation.play('open');
+				}
+			}
 		}
 
 		if (health <= 0)
