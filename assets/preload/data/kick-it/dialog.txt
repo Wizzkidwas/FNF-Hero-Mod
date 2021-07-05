@@ -1,13 +1,6 @@
-:bf:BEE!
-:heroL:?
-:bf: Bee-op bedopa?
-:heroL: Ah...? You want my autograph, bud?
-:bf: Bee, bop!!
-:heroL: A rap battle you say...
-:bf:Bup.
-:heroL: (Huh.)
-:heroL: (I guess.. a lil' practice couldn't hurt.)
-:heroL: ...Sure i'll fight you, kid!
-:heroR: Kiki! Get the song ready! ...Wait why am I here
-:kiki: woaaaaaaaaah lads it's fuckin' meeeeeeeeee
-:nega: spoopy
+:bf:BEEP!
+:heroL: Huh? Hey, kid. What's up? Want an autograph?
+:bf: Beep bop skdoo!
+:heroL: A rap battle? Hmm...
+:kiki: It could be good practice, you know.
+:heroL: Yeah, you're right. You're on, kiddo! Set up the stereo, Kiki. Let's go!
