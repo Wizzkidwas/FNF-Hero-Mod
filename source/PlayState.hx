@@ -1327,7 +1327,7 @@ class PlayState extends MusicBeatState
 		// beatPlayState.text = "Beat: " + curBeat;
 		beatPlayState.scrollFactor.set();
 		
-		add(beatPlayState); // Will be commented/uncommented for debugging purposes
+		// add(beatPlayState); // Will be commented/uncommented for debugging purposes
 
 		stepPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 200 : -200), 0, "", 20);
 		stepPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
