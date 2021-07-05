@@ -237,7 +237,7 @@ class DialogueBox extends FlxSpriteGroup
 		// Negathreads
 		portraitLeft5 = new FlxSprite(450, 40);
 		portraitLeft5.frames = Paths.getSparrowAtlas('cutscenes/negathreads/portrait', 'rapcon');
-		portraitLeft5.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+		portraitLeft5.animation.addByPrefix('enter', 'Boyfriend portrait enter', 12, true); //why does setting it to loop make it go FASTER??
 		portraitLeft5.scrollFactor.set();
 		portraitLeft5.flipX = true;
 		add(portraitLeft5);
@@ -255,8 +255,8 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRight = new FlxSprite(0, 40);
 		portraitRight.frames = Paths.getSparrowAtlas('weeb/bfPortrait');
 		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-		portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
-		portraitRight.updateHitbox();
+		// portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
+		// portraitRight.updateHitbox();
 		portraitRight.scrollFactor.set();
 		add(portraitRight);
 		portraitRight.visible = false;
