@@ -1,7 +1,3 @@
-:bf: Beep.
-:heroL: The party's just getting started kiddo!
-:bf: Bap?
-:heroL: Kiki, let's hit the lights!
-:kiki: Things are gonna get fancy!
-:bf: Bwoah!
-:heroL: Cool, huh? Let's rock!
+:heroL: Man, you're good! ...and it looks like we've got a crowd now.
+:heroL: (Today was just supposed to be a rehearsal, but...)
+:heroL: Turn on the lights, Kiki! This is round two, so you'd better not hold back!
