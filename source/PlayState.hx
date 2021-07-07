@@ -163,6 +163,7 @@ class PlayState extends MusicBeatState
 	var trainSound:FlxSound;
 
 	var limo:FlxSprite;
+	var drama:FlxSprite;
 	var grpLimoDancers:FlxTypedGroup<BackgroundDancer>;
 	var fastCar:FlxSprite;
 	var songName:FlxText;
@@ -898,9 +899,6 @@ class PlayState extends MusicBeatState
 						trace('Loading BG');
 						var ravebg:FlxSprite = new FlxSprite(-550, -200);
 						ravebg.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/back', 'rapcon');
-						// ravebg.frames = Paths.getSparrowAtlas('stadiumBoss/back');
-						// ravebg.animation.addByPrefix('def', 'Back', 24, false);
-						// ravebg.animation.addByPrefix('transition', 'BackTrans', 24, false);
 						ravebg.animation.addByPrefix('loop', 'BackLoop', 24, true);
 						ravebg.animation.play('loop');
 						ravebg.antialiasing = true;
@@ -912,9 +910,6 @@ class PlayState extends MusicBeatState
 						trace('Loading moon');
 						stadiumCrowd = new FlxSprite(-250, 140);
 						stadiumCrowd.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/crowd', 'rapcon');
-						// stadiumCrowd.frames = Paths.getSparrowAtlas('stadiumBoss/crowd');
-						// stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
-						// stadiumCrowd.animation.addByPrefix('trans', 'CrowdTrans', 24, true);
 						stadiumCrowd.animation.addByPrefix('loop', 'CrowdLoop', 35, true);
 						stadiumCrowd.animation.play('loop');
 						stadiumCrowd.antialiasing = true;
@@ -927,9 +922,6 @@ class PlayState extends MusicBeatState
 						trace('Loading moon 2');
 						var stadiumCrowdFront = new FlxSprite(-500, 350);
 						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/crowdfront', 'rapcon');
-						// stadiumCrowdFront.frames = Paths.getSparrowAtlas('stadiumBoss/crowdfront');
-						// stadiumCrowdFront.animation.addByPrefix('bop', 'CrowdFront', 35, true);
-						// stadiumCrowdFront.animation.addByPrefix('trans', 'CrowdFrontTrans', 24, true);
 						stadiumCrowdFront.animation.addByPrefix('loop', 'CrowdFrontLoop', 36, true);
 						stadiumCrowdFront.animation.play('loop');
 						stadiumCrowdFront.antialiasing = true;
@@ -942,9 +934,6 @@ class PlayState extends MusicBeatState
 						trace('Loading cloods');
 						var stadiumClouds = new FlxSprite(-500, 350);
 						stadiumClouds.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/clouds', 'rapcon');
-						// stadiumClouds.frames = Paths.getSparrowAtlas('stadiumBoss/clouds');
-						// stadiumClouds.animation.addByPrefix('bop', 'clouds', 35, true);
-						// stadiumClouds.animation.addByPrefix('trans', 'cloudsTrans', 24, true);
 						stadiumClouds.animation.addByPrefix('loop', 'clouds', 24, true);
 						stadiumClouds.animation.play('loop');
 						stadiumClouds.antialiasing = true;
@@ -957,9 +946,6 @@ class PlayState extends MusicBeatState
 						trace('Loading Stage');
 						var stageFront:FlxSprite = new FlxSprite(-680, 625);
 						stageFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/front', 'rapcon');
-						// stageFront.frames = Paths.getSparrowAtlas('stadiumBoss/front');
-						// stageFront.animation.addByPrefix('def', 'Front', 35, true);
-						// stageFront.animation.addByPrefix('trans', 'FrontTrans', 24, true);
 						stageFront.animation.addByPrefix('loop', 'FrontLoop', 24, true);
 						stageFront.animation.play('loop');
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
@@ -969,20 +955,24 @@ class PlayState extends MusicBeatState
 						add(stageFront);
 						trace('Stage loaded!');
 						
-						trace('Loading Lights');
-						var stageCurtains:FlxSprite = new FlxSprite(-400, 300);
-						stageCurtains.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/lights', 'rapcon');
-						// stageCurtains.frames = Paths.getSparrowAtlas('stadiumBoss/lights');
-						// stageCurtains.animation.addByPrefix('def', 'Lights', 35, true);
-						// stageCurtains.animation.addByPrefix('trans', 'LightsTrans', 24, true);
-						stageCurtains.animation.addByPrefix('loop', 'LightsLoop', 24, true);
-						stageCurtains.animation.play('loop');
-						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
-						stageCurtains.updateHitbox();
-						stageCurtains.antialiasing = true;
-						stageCurtains.scrollFactor.set(0.9, 0.9);
-						add(stageCurtains);
-						trace('Lights loaded! Everythings set!');
+						trace('Loading Drama Effect');
+						var drama:FlxSprite = new FlxSprite(-240, 120); // i could probably use screencenter but i'm too lazy
+						drama.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/lights', 'rapcon');
+						drama.animation.addByPrefix('loop', 'LightsLoop', 24, true);
+						drama.animation.play('loop');
+						drama.setGraphicSize(Std.int(drama.width * 0.65)); // ???
+						drama.updateHitbox();
+						drama.antialiasing = true;
+						drama.scrollFactor.set(0.9, 0.9);
+						drama.cameras = [camHUD]; // should lock it to being part of the HUD?
+						if(FlxG.save.data.distractions){
+							add(drama); //fnf community in a nutshell
+							trace('distractions on, adding drama effect!');
+						};
+						else {
+							trace('distractions off, no drama for now.');
+							}
+						trace('Drama effect loaded! Everythings set!');
 					}
 					case 'void':
 					{
@@ -1252,6 +1242,7 @@ class PlayState extends MusicBeatState
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
+		
 
 		add(dad);
 		trace("dad truly added");
@@ -2727,7 +2718,7 @@ class PlayState extends MusicBeatState
 				dad.playAnim('Heroboss Shake'); //the thing is we need this to loop until REE and idk how to do that without making it
 					// count every single beat case. good luck wizz
 					// Luck was had, somewhat
-				trace('*Shakes you like a juice*'); // thanks for filling up my cmd wizz.
+				// trace('*Shakes you like a juice*'); // thanks for filling up my cmd wizz.
 				// anyways so the beat resets to 0 upon song end, which is when the fadeout occurs... so heroboss is shaking again at the transition. visibly.
 				// we could force a transition earlier or have the camera not focused on him??? i don't know. help
 			}

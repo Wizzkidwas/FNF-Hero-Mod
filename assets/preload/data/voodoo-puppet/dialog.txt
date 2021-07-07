@@ -1,9 +1,12 @@
-:bf: ?!
-:negaconfuse: Ah... why hello... little blue boy.
-:bf: B-Beep?
-:nega: Would you like to play?
-:nega: I get lonely in here... Play with me.
-:bf: Bee, Be-op Ski buba
-:nega: A music game! I love love love...music.
-:negathreads: Fun, Fun, Fun!
-:negathreads: Let's play!~
+:nega: Ah... well hello there... little blue boy.
+:bf: Beep?!
+:nega: Would you like to play a game with me? Kekeke...
+:nega: Father told me to practice on somebody and you look like you'd be lots of fun to play with.
+:bf: Beep skdoo bop beep!
+:nega: A music game? I love love love... music~.
+:negaconfuse: ...What's that in your hand? Is it a toy for the music game?
+:bf: [beeps that explain what a microphone is]
+:negaconfuse: Mhm... uh huh... so... liiiike... thiiiis...?
+:bf: Beep, beep!
+:nega: Kekeke... If that's right, then...
+:negathreads: Let's have some fun! Fun, fun, fun! Let's play!
