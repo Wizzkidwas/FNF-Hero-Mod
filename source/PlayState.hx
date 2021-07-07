@@ -176,6 +176,8 @@ class PlayState extends MusicBeatState
 	var eyesArray = new haxe.ds.Vector(15);	// This number has to be changed here, should scale fine with the rest of it
 	// IF YOU CHANGE THE NUMBER HERE, CHANGE THE NUMBER FOR THE eyesCanAnimate VECTOR AT AROUND LINE 3895. MAKE SURE THEY ARE EQUAL
 	// Fun fact: If Haxe knew what the hell a constant was, I could use one variable for the two vectors and not have to worry about this
+	var evilTrail:FlxTrail;
+	var trailAdded:Bool = false;
 	var fc:Bool = true;
 
 	var bgGirls:BackgroundGirls;
@@ -1232,6 +1234,8 @@ class PlayState extends MusicBeatState
 						add(eyesArray[i]);
 					}
 					trace("Eyes added in eyes void");
+					evilTrail = new FlxTrail(dad, null, 0, 24, 0.3, 0.4);
+					add(evilTrail);
 				}
 			case 'kikisbooth':
 				gf.y = 99999;
@@ -1395,14 +1399,14 @@ class PlayState extends MusicBeatState
 		// beatPlayState.text = "Beat: " + curBeat;
 		beatPlayState.scrollFactor.set();
 		
-		// add(beatPlayState); // Will be commented/uncommented for debugging purposes
+		// if(FlxG.save.data.botplay && !loadRep) add(beatPlayState); // Will be commented/uncommented for debugging purposes
 
 		stepPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 200 : -200), 0, "", 20);
 		stepPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		// stepPlayState.text = "Beat: " + curStep;
 		stepPlayState.scrollFactor.set();
 		
-		// add(stepPlayState); // Will be commented/uncommented for debugging purposes
+		// if(FlxG.save.data.botplay && !loadRep) add(stepPlayState); // Will be commented/uncommented for debugging purposes
 
 		iconP1 = new HealthIcon(SONG.player1, true);
 		iconP1.y = healthBar.y - (iconP1.height / 2);
@@ -2715,9 +2719,13 @@ class PlayState extends MusicBeatState
 			camZooming = true;
 			if (curBeat < 31 && !screamed)
 			{
-				dad.playAnim('Heroboss Shake'); //the thing is we need this to loop until REE and idk how to do that without making it
-					// count every single beat case. good luck wizz
-					// Luck was had, somewhat
+				dad.playAnim('Heroboss Shake');
+				var shakeyBoi:FlxPoint = new FlxPoint((dad.getGraphicMidpoint().x - 200), dad.getGraphicMidpoint().y - 100);
+				FlxG.camera.focusOn(shakeyBoi);
+				FlxG.camera.zoom = 0.9; 
+				//the thing is we need this to loop until REE and idk how to do that without making it
+				// count every single beat case. good luck wizz
+				// Luck was had, somewhat
 				// trace('*Shakes you like a juice*'); // thanks for filling up my cmd wizz.
 				// anyways so the beat resets to 0 upon song end, which is when the fadeout occurs... so heroboss is shaking again at the transition. visibly.
 				// we could force a transition earlier or have the camera not focused on him??? i don't know. help
@@ -2725,8 +2733,23 @@ class PlayState extends MusicBeatState
 			if (curBeat > 31)
 			{
 				screamed = true;
+				FlxG.camera.zoom = 0.7; 
 			}
 			//switch curbeat/step depending on where the REEE is in song to REE anim
+		}
+
+		if (curSong == 'playdate')
+		{
+			if (curBeat == 47 && !trailAdded)
+			{
+				evilTrail.increaseLength(4);
+				trailAdded = true;
+			}
+			if (curBeat == 64 && trailAdded)
+			{
+				remove(evilTrail);
+				trailAdded = false;
+			}
 		}
 
 		if (health <= 0)
