@@ -2742,6 +2742,11 @@ class PlayState extends MusicBeatState
 		{
 			if (curBeat == 47 && !trailAdded)
 			{
+				if (evilTrail == null)
+				{
+					evilTrail = new FlxTrail(dad, null, 0, 24, 0.3, 0.4);
+					add(evilTrail);
+				}
 				evilTrail.increaseLength(4);
 				trailAdded = true;
 			}
@@ -4200,7 +4205,7 @@ class PlayState extends MusicBeatState
 				{
 					if (FlxG.random.bool(10) && eyesCanAnimate[i])
 					{
-						trace("boutta call this function because the 30% hit whilst animate was true");
+						trace("boutta call this function because the 10% hit whilst animate was true");
 						eyesAnimate(i);
 					}
 				}
