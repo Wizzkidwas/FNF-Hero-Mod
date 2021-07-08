@@ -2742,6 +2742,11 @@ class PlayState extends MusicBeatState
 		{
 			if (curBeat == 47 && !trailAdded)
 			{
+				if (evilTrail == null)
+				{
+					evilTrail = new FlxTrail(dad, null, 0, 24, 0.3, 0.4);
+					add(evilTrail);
+				}
 				evilTrail.increaseLength(4);
 				trailAdded = true;
 			}
