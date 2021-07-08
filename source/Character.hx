@@ -693,6 +693,24 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'Nega Down', 24, false);
 				animation.addByPrefix('singLEFT', 'Nega Left', 24, false);
 				animation.addByPrefix('singRIGHT', 'Nega Right', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'Nega Cough', 24, false);
+					
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				addOffset("singDOWN-alt");
+				
+				playAnim('idle');
+				
+			case 'nega2':
+				frames = Paths.getSparrowAtlas('characters/nega');
+				animation.addByPrefix('idle', 'Nega Idle', 24, false);
+				animation.addByPrefix('singUP', 'Nega Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Nega Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Nega Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Nega Right', 24, false);
 					
 				addOffset('idle');
 				addOffset("singUP");
