@@ -32,11 +32,12 @@ class FreeplayState extends MusicBeatState
 
 	private var grpSongs:FlxTypedGroup<Alphabet>;
 	private var curPlaying:Bool = false;
-
+	
 	private var iconArray:Array<HealthIcon> = [];
-
+	var bg:FlxSprite;
+	
 	override function create()
-	{
+		{
 		var initSonglist = CoolUtil.coolTextFile(Paths.txt('freeplaySonglist'));
 
 		for (i in 0...initSonglist.length)
@@ -67,8 +68,16 @@ class FreeplayState extends MusicBeatState
 		// LOAD MUSIC
 
 		// LOAD CHARACTERS
-
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGBlue'));
+		
+		switch (MainMenuState.menuBGChoice)
+		{
+			case 2:
+				bg = new FlxSprite().loadGraphic(Paths.image('menuBGBluenega'));
+				trace("Nega BGs");
+			default:
+				bg = new FlxSprite().loadGraphic(Paths.image('menuBGBlue'));
+				trace("boring ol' hero BG");
+		}
 		add(bg);
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
@@ -197,6 +206,7 @@ class FreeplayState extends MusicBeatState
 
 		if (controls.BACK)
 		{
+			MainMenuState.menuBGChoice = FlxG.random.int(1, 3);
 			FlxG.switchState(new MainMenuState());
 		}
 

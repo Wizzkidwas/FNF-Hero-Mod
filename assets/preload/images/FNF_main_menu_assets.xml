@@ -2,21 +2,21 @@
 <TextureAtlas imagePath="FNF_main_menu_assets.png">
 	<!-- Created with Adobe Animate version 20.5.0.29329 -->
 	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="donate basic0000" x="0" y="1694" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>
-	<SubTexture name="donate basic0001" x="0" y="1694" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>	
-	<SubTexture name="donate basic0002" x="0" y="1916" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>
-	<SubTexture name="donate basic0003" x="0" y="1916" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>
-	<SubTexture name="donate basic0004" x="0" y="2138" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>
-	<SubTexture name="donate basic0005" x="0" y="2138" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>	
+	<SubTexture name="devs basic0000" x="0" y="1694" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>
+	<SubTexture name="devs basic0001" x="0" y="1694" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>	
+	<SubTexture name="devs basic0002" x="0" y="1916" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>
+	<SubTexture name="devs basic0003" x="0" y="1916" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>
+	<SubTexture name="devs basic0004" x="0" y="2138" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>
+	<SubTexture name="devs basic0005" x="0" y="2138" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>/>	
 	
-	<SubTexture name="donate white0000" x="693" y="1694" width="693" height="222" frameX="50" frameY="40" frameWidth="590" frameHeight="159"/>
-	<SubTexture name="donate white0001" x="693" y="1694" width="693" height="222" frameX="50" frameY="47" frameWidth="590" frameHeight="159"/>	
-	<SubTexture name="donate white0002" x="693" y="1706" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>
-	<SubTexture name="donate white0003" x="693" y="1706" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>	
-	<SubTexture name="donate white0004" x="693" y="2138" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>
-	<SubTexture name="donate white0005" x="693" y="2138" width="693" height="222" frameX="50" frameY="47" frameWidth="590" frameHeight="159"/>	
-	<SubTexture name="donate white0006" x="1386" y="2138" width="693" height="222" frameX="50" frameY="40" frameWidth="590" frameHeight="159"/>
-	<SubTexture name="donate white0007" x="1386" y="2138" width="693" height="222" frameX="50" frameY="40" frameWidth="590" frameHeight="159"/>	
+	<SubTexture name="devs white0000" x="693" y="1694" width="693" height="222" frameX="50" frameY="40" frameWidth="590" frameHeight="159"/>
+	<SubTexture name="devs white0001" x="693" y="1694" width="693" height="222" frameX="50" frameY="47" frameWidth="590" frameHeight="159"/>	
+	<SubTexture name="devs white0002" x="693" y="1706" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>
+	<SubTexture name="devs white0003" x="693" y="1706" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>	
+	<SubTexture name="devs white0004" x="693" y="2138" width="693" height="222" frameX="50" frameY="50" frameWidth="590" frameHeight="159"/>
+	<SubTexture name="devs white0005" x="693" y="2138" width="693" height="222" frameX="50" frameY="47" frameWidth="590" frameHeight="159"/>	
+	<SubTexture name="devs white0006" x="1386" y="2138" width="693" height="222" frameX="50" frameY="40" frameWidth="590" frameHeight="159"/>
+	<SubTexture name="devs white0007" x="1386" y="2138" width="693" height="222" frameX="50" frameY="40" frameWidth="590" frameHeight="159"/>	
 
 	
 	
