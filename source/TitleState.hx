@@ -43,6 +43,7 @@ class TitleState extends MusicBeatState
 	var credTextShit:Alphabet;
 	var textGroup:FlxGroup;
 	var beansSpr:FlxSprite;
+	var fuegoSpr:FlxSprite;
 
 	var curWacky:Array<String> = [];
 
@@ -234,6 +235,15 @@ class TitleState extends MusicBeatState
 		beansSpr.screenCenter(X);
 		beansSpr.y = 190;
 		beansSpr.antialiasing = true;
+		
+		fuegoSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('fuegoSpr'));
+		add(fuegoSpr);
+		fuegoSpr.visible = false;
+		fuegoSpr.setGraphicSize(Std.int(fuegoSpr.width * 1.1));
+		fuegoSpr.updateHitbox();
+		fuegoSpr.screenCenter(X);
+		fuegoSpr.y = 290;
+		fuegoSpr.antialiasing = true;
 
 		FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
 
@@ -414,19 +424,20 @@ class TitleState extends MusicBeatState
 			// credTextShit.screenCenter();
 			case 5:
 				if (Main.watermarks)
-					createCoolText(['Kade Engine', 'by']);
+					createCoolText(['With Guest Musician']);
 				else
-					createCoolText(['Kade Engine', 'by']);
+					createCoolText(['With Guest Musician']);
 			case 7:
 				if (Main.watermarks)
-					addMoreText('KadeDeveloper');
+					fuegoSpr.visible = true;
 				else
 				{
-					addMoreText('KadeDeveloper');
+					fuegoSpr.visible = true;
 				}
 			// credTextShit.text += '\nNewgrounds';
 			case 8:
 				deleteCoolText();
+				fuegoSpr.visible = false;
 			// credTextShit.visible = false;
 
 			// credTextShit.text = 'Shoutouts Tom Fulp';
@@ -463,6 +474,7 @@ class TitleState extends MusicBeatState
 		if (!skippedIntro)
 		{
 			remove(beansSpr);
+			remove(fuegoSpr);
 
 			FlxG.camera.flash(FlxColor.WHITE, 4);
 			remove(credGroup);

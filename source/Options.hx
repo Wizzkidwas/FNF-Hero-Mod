@@ -614,3 +614,23 @@ class BotPlay extends Option
 	private override function updateDisplay():String
 		return "BotPlay " + (FlxG.save.data.botplay ? "on" : "off");
 }
+
+class Counter extends Option
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+	
+	public override function press():Bool
+	{
+		FlxG.save.data.counter = !FlxG.save.data.counter;
+		trace('Beat and Step Counters : ' + FlxG.save.data.counter);
+		display = updateDisplay();
+		return true;
+	}
+	
+	private override function updateDisplay():String
+		return "Beat/Step Counters " + (FlxG.save.data.counter ? "on" : "off");
+}

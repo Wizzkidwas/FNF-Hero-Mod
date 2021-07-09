@@ -753,7 +753,6 @@ class PlayState extends MusicBeatState
 						
 						trace('Loading BG');
 						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkHero/stadium/back', 'rapcon'));
-						// var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stadium/back'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false; //also! i believe this is used for like. if the shit animates. so the bg doesn't animate, ergo, it's not active
@@ -765,33 +764,8 @@ class PlayState extends MusicBeatState
 							// thanks
 						}
 						
-						/*trace('Loading crowd');
-						stadiumCrowd = new FlxSprite(-250, 140);
-						stadiumCrowd.frames = Paths.getSparrowAtlas('stadium/crowd');
-						stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
-						stadiumCrowd.animation.play('bop');
-						stadiumCrowd.antialiasing = true;
-						stadiumCrowd.scrollFactor.set(0.9, 0.9);
-						stadiumCrowd.setGraphicSize(Std.int(stadiumCrowd.width * 1));
-						stadiumCrowd.updateHitbox();
-						add(stadiumCrowd);
-						trace('Crowd loaded!');
-						
-						trace('Loading Crowd Front');
-						var stadiumCrowdFront = new FlxSprite(-500, 350);
-						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stadium/crowdfront');
-						stadiumCrowdFront.animation.addByPrefix('bop', 'Front', 35, true);
-						stadiumCrowdFront.animation.play('bop');
-						stadiumCrowdFront.antialiasing = true;
-						stadiumCrowdFront.scrollFactor.set(0.9, 0.9);
-						stadiumCrowdFront.setGraphicSize(Std.int(stadiumCrowdFront.width * 1));
-						stadiumCrowdFront.updateHitbox();
-						add(stadiumCrowdFront);
-						trace('Crowd Front Loaded!');*/
-						
 						trace('Loading Stage');
 						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stages/wkHero/stadium/front', 'rapcon'));
-						// var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stadium/front'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
@@ -819,9 +793,6 @@ class PlayState extends MusicBeatState
 						trace('Loading BG');
 						var ravebg:FlxSprite = new FlxSprite(-600, -200);
 						ravebg.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/back', 'rapcon');
-						// ravebg.frames = Paths.getSparrowAtlas('stadiumrave/back');
-						// ravebg.animation.addByPrefix('def', 'Back', 24, false);
-						// ravebg.animation.addByPrefix('transition', 'BackTrans', 24, false);
 						ravebg.animation.addByPrefix('loop', 'BackLoop', 24, true);
 						if(FlxG.save.data.distractions)
 						{
@@ -833,42 +804,9 @@ class PlayState extends MusicBeatState
 						add(ravebg);
 						trace('BG loaded!');
 						
-						/*trace('Loading crowd');
-						stadiumCrowd = new FlxSprite(-250, 140);
-						stadiumCrowd.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowd', 'rapcon');
-						// stadiumCrowd.frames = Paths.getSparrowAtlas('stadiumrave/crowd');
-						// stadiumCrowd.animation.addByPrefix('bop', 'Crowd', 35, true);
-						// stadiumCrowd.animation.addByPrefix('trans', 'CrowdTrans', 24, true);
-						stadiumCrowd.animation.addByPrefix('loop', 'CrowdLoop', 35, true);
-						stadiumCrowd.animation.play('loop');
-						stadiumCrowd.antialiasing = true;
-						stadiumCrowd.scrollFactor.set(0.9, 0.9);
-						stadiumCrowd.setGraphicSize(Std.int(stadiumCrowd.width * 1));
-						stadiumCrowd.updateHitbox();
-						add(stadiumCrowd);
-						trace('Crowd loaded!');
-						
-						trace('Loading Crowd Front');
-						var stadiumCrowdFront = new FlxSprite(-500, 350);
-						stadiumCrowdFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/crowdfront', 'rapcon');
-						// stadiumCrowdFront.frames = Paths.getSparrowAtlas('stadiumrave/crowdfront');
-						// stadiumCrowdFront.animation.addByPrefix('bop', 'CrowdFront', 35, true);
-						// stadiumCrowdFront.animation.addByPrefix('trans', 'CrowdFrontTrans', 24, true);
-						stadiumCrowdFront.animation.addByPrefix('loop', 'CrowdFrontLoop', 36, true);
-						stadiumCrowdFront.animation.play('loop');
-						stadiumCrowdFront.antialiasing = true;
-						stadiumCrowdFront.scrollFactor.set(0.9, 0.9);
-						stadiumCrowdFront.setGraphicSize(Std.int(stadiumCrowdFront.width * 1));
-						stadiumCrowdFront.updateHitbox();
-						add(stadiumCrowdFront);
-						trace('Crowd Front Loaded!');*/
-						
 						trace('Loading Stage');
 						var stageFront:FlxSprite = new FlxSprite(-680, 1125);
 						stageFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/front', 'rapcon');
-						// stageFront.frames = Paths.getSparrowAtlas('stadiumrave/front');
-						// stageFront.animation.addByPrefix('def', 'Front', 35, true);
-						// stageFront.animation.addByPrefix('trans', 'FrontTrans', 24, true);
 						stageFront.animation.addByPrefix('loop', 'FrontLoop', 24, true);
 						stageFront.animation.play('loop');
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
@@ -881,9 +819,6 @@ class PlayState extends MusicBeatState
 						trace('Loading Lights');
 						var stageCurtains:FlxSprite = new FlxSprite(-400, 350);
 						stageCurtains.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/lights', 'rapcon');
-						// stageCurtains.frames = Paths.getSparrowAtlas('stadiumrave/lights');
-						// stageCurtains.animation.addByPrefix('def', 'Lights', 35, true);
-						// stageCurtains.animation.addByPrefix('trans', 'LightsTrans', 24, true);
 						stageCurtains.animation.addByPrefix('loop', 'LightsLoop', 24, true);
 						stageCurtains.animation.play('loop');
 						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
@@ -981,7 +916,6 @@ class PlayState extends MusicBeatState
 						defaultCamZoom = 0.9; //this might need to be switched out too???
 						curStage = 'void';
 						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkNega/void/stageback.png', 'rapcon'));
-						// var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('void/stageback.png'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false;
@@ -1009,7 +943,6 @@ class PlayState extends MusicBeatState
 						defaultCamZoom = 0.9; //this might need to be switched out too???
 						curStage = 'voideye';
 						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkNega/void/stageback.png', 'rapcon'));
-						// var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('void/stageback.png'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false;
@@ -1031,20 +964,6 @@ class PlayState extends MusicBeatState
 						stageCurtains.active = false;
 			
 						add(stageCurtains);
-
-						/*eyes = new FlxSprite(0, 0);
-						eyes.frames = Paths.getSparrowAtlas('stages/wkNega/void/negaeyes','rapcon');
-						eyes.animation.addByPrefix('open', 'eye', 24, false);
-						eyes.animation.addByPrefix('look', 'eye but it looks around', 24, false);
-						eyes.antialiasing = true;
-						eyes.scrollFactor.set(0.8, 0.8);
-
-						eyes2 = new FlxSprite(0, 0);
-						eyes2.frames = Paths.getSparrowAtlas('stages/wkNega/void/negaeyes','rapcon');
-						eyes2.animation.addByPrefix('open', 'eye', 24, false);
-						eyes2.animation.addByPrefix('look', 'eye but it looks around', 24, false);
-						eyes2.antialiasing = true;
-						eyes2.scrollFactor.set(0.8, 0.8);*/
 
 						for (i in 0...eyesArray.length)
 						{
@@ -1399,14 +1318,18 @@ class PlayState extends MusicBeatState
 		// beatPlayState.text = "Beat: " + curBeat;
 		beatPlayState.scrollFactor.set();
 		
-		// if(FlxG.save.data.botplay && !loadRep) add(beatPlayState); // Will be commented/uncommented for debugging purposes
+		if(FlxG.save.data.counter && !loadRep) {
+			add(beatPlayState); // Will be commented/uncommented for debugging purposes
+			}
 
 		stepPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 200 : -200), 0, "", 20);
 		stepPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		// stepPlayState.text = "Beat: " + curStep;
 		stepPlayState.scrollFactor.set();
 		
-		// if(FlxG.save.data.botplay && !loadRep) add(stepPlayState); // Will be commented/uncommented for debugging purposes
+		if(FlxG.save.data.counter && !loadRep) {
+			add(stepPlayState); // Will be commented/uncommented for debugging purposes
+			}
 
 		iconP1 = new HealthIcon(SONG.player1, true);
 		iconP1.y = healthBar.y - (iconP1.height / 2);
@@ -2740,6 +2663,23 @@ class PlayState extends MusicBeatState
 
 		if (curSong == 'playdate')
 		{
+			if (curStep >= 2 && curStep <= 10)
+				{
+					dad.playAnim('LaughLeft');
+				}
+			if (curStep >= 16 && curStep <= 26)
+				{
+					dad.playAnim('LaughLeft');
+				}
+			if (curStep >= 35 && curStep <= 43)
+				{
+					dad.playAnim('LaughUp');
+				}
+			if (curStep == 57)
+				{
+					dad.playAnim('LaughUp');
+				}
+				
 			if (curBeat == 47 && !trailAdded)
 			{
 				if (evilTrail == null)
