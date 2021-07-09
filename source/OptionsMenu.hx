@@ -72,11 +72,19 @@ class OptionsMenu extends MusicBeatState
 
 	var currentSelectedCat:OptionCategory;
 	var blackBorder:FlxSprite;
+	var menuBG:FlxSprite;
 	override function create()
 	{
 		instance = this;
-		var menuBG:FlxSprite = new FlxSprite().loadGraphic(Paths.image("menuDesat"));
-
+		switch (MainMenuState.menuBGChoice)
+		{
+			case 2:
+				menuBG = new FlxSprite().loadGraphic(Paths.image('menuDesatnega'));
+				trace("Nega BGs");
+			default:
+				menuBG = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+				trace("boring ol' hero BG");
+		}
 		menuBG.color = 0xFFea71fd;
 		menuBG.setGraphicSize(Std.int(menuBG.width * 1.1));
 		menuBG.updateHitbox();
@@ -125,7 +133,10 @@ class OptionsMenu extends MusicBeatState
 		if (acceptInput)
 		{
 			if (controls.BACK && !isCat)
+			{
+				MainMenuState.menuBGChoice = FlxG.random.int(1, 3);
 				FlxG.switchState(new MainMenuState());
+			}
 			else if (controls.BACK)
 			{
 				isCat = false;
@@ -139,6 +150,19 @@ class OptionsMenu extends MusicBeatState
 						// DONT PUT X IN THE FIRST PARAMETER OF new ALPHABET() !!
 					}
 				curSelected = 0;
+				if (isCat)
+					currentDescription = currentSelectedCat.getOptions()[curSelected].getDescription();
+				else
+					currentDescription = "Please select a category";
+				if (isCat)
+				{
+					if (currentSelectedCat.getOptions()[curSelected].getAccept())
+						versionShit.text =  currentSelectedCat.getOptions()[curSelected].getValue() + " - Description - " + currentDescription;
+					else
+						versionShit.text = "Offset (Left, Right, Shift for slow): " + HelperFunctions.truncateFloat(FlxG.save.data.offset,2) + " - Description - " + currentDescription;
+				}
+				else
+					versionShit.text = "Offset (Left, Right, Shift for slow): " + HelperFunctions.truncateFloat(FlxG.save.data.offset,2) + " - Description - " + currentDescription;
 			}
 			if (controls.UP_P)
 				changeSelection(-1);
@@ -232,6 +256,19 @@ class OptionsMenu extends MusicBeatState
 						}
 					curSelected = 0;
 				}
+				if (isCat)
+					currentDescription = currentSelectedCat.getOptions()[curSelected].getDescription();
+				else
+					currentDescription = "Please select a category";
+				if (isCat)
+				{
+					if (currentSelectedCat.getOptions()[curSelected].getAccept())
+						versionShit.text =  currentSelectedCat.getOptions()[curSelected].getValue() + " - Description - " + currentDescription;
+					else
+						versionShit.text = "Offset (Left, Right, Shift for slow): " + HelperFunctions.truncateFloat(FlxG.save.data.offset,2) + " - Description - " + currentDescription;
+				}
+				else
+					versionShit.text = "Offset (Left, Right, Shift for slow): " + HelperFunctions.truncateFloat(FlxG.save.data.offset,2) + " - Description - " + currentDescription;
 			}
 		}
 		FlxG.save.flush();
