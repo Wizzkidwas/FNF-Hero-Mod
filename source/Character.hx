@@ -694,6 +694,8 @@ class Character extends FlxSprite
 				animation.addByPrefix('singLEFT', 'Nega Left', 24, false);
 				animation.addByPrefix('singRIGHT', 'Nega Right', 24, false);
 				animation.addByPrefix('singDOWN-alt', 'Nega Cough', 24, false);
+				animation.addByPrefix('LaughLeft', '', 24, false);
+				animation.addByPrefix('LaughUp', '', 24, false);
 					
 				addOffset('idle');
 				addOffset("singUP");
@@ -701,6 +703,8 @@ class Character extends FlxSprite
 				addOffset("singLEFT");
 				addOffset("singDOWN");
 				addOffset("singDOWN-alt");
+				addOffset("LaughLeft");
+				addOffset("LaughUp");
 				
 				playAnim('idle');
 				
@@ -711,12 +715,18 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'Nega Down', 24, false);
 				animation.addByPrefix('singLEFT', 'Nega Left', 24, false);
 				animation.addByPrefix('singRIGHT', 'Nega Right', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'Nega Cough', 24, false);
+				animation.addByPrefix('LaughLeft', '', 24, false);
+				animation.addByPrefix('LaughUp', '', 24, false);
 					
 				addOffset('idle');
 				addOffset("singUP");
 				addOffset("singRIGHT");
 				addOffset("singLEFT");
 				addOffset("singDOWN");
+				addOffset("singDOWN-alt");
+				addOffset("LaughLeft");
+				addOffset("LaughUp");
 				
 				playAnim('idle');
 	

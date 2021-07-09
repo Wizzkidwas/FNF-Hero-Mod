@@ -1318,14 +1318,18 @@ class PlayState extends MusicBeatState
 		// beatPlayState.text = "Beat: " + curBeat;
 		beatPlayState.scrollFactor.set();
 		
-		// if(FlxG.save.data.botplay && !loadRep) add(beatPlayState); // Will be commented/uncommented for debugging purposes
+		if(FlxG.save.data.counter && !loadRep) {
+			add(beatPlayState); // Will be commented/uncommented for debugging purposes
+			}
 
 		stepPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 200 : -200), 0, "", 20);
 		stepPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		// stepPlayState.text = "Beat: " + curStep;
 		stepPlayState.scrollFactor.set();
 		
-		// if(FlxG.save.data.botplay && !loadRep) add(stepPlayState); // Will be commented/uncommented for debugging purposes
+		if(FlxG.save.data.counter && !loadRep) {
+			add(stepPlayState); // Will be commented/uncommented for debugging purposes
+			}
 
 		iconP1 = new HealthIcon(SONG.player1, true);
 		iconP1.y = healthBar.y - (iconP1.height / 2);
@@ -2659,6 +2663,23 @@ class PlayState extends MusicBeatState
 
 		if (curSong == 'playdate')
 		{
+			if (curStep >= 2 && curStep <= 10)
+				{
+					dad.playAnim('LaughLeft');
+				}
+			if (curStep >= 16 && curStep <= 26)
+				{
+					dad.playAnim('LaughLeft');
+				}
+			if (curStep >= 35 && curStep <= 43)
+				{
+					dad.playAnim('LaughUp');
+				}
+			if (curStep == 57)
+				{
+					dad.playAnim('LaughUp');
+				}
+				
 			if (curBeat == 47 && !trailAdded)
 			{
 				if (evilTrail == null)
