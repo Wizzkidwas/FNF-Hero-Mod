@@ -1555,8 +1555,9 @@ class PlayState extends MusicBeatState
 				if (dialogueBox != null)
 				{
 					inCutscene = true;
+					add(dialogueBox);
 
-					if (songLowercase == 'thorns')
+					/*if (songLowercase == 'thorns')
 					{
 						add(senpaiEvil);
 						senpaiEvil.alpha = 0;
@@ -1585,11 +1586,7 @@ class PlayState extends MusicBeatState
 								});
 							}
 						});
-					}
-					else
-					{
-						add(dialogueBox);
-					}
+					}*/
 				}
 				else
 					startCountdown();
