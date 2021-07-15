@@ -39,15 +39,15 @@ class StoryMenuState extends MusicBeatState
 	];
 
 	var weekNames:Array<String> = [
-		"",
+		"Tutorial",
 		/*"Daddy Dearest",
 		"Spooky Month",
 		"PICO",
 		"MOMMY MUST MURDER",
 		"RED SNOW",
 		"Hating Simulator ft. Moawling",*/
-		"Our hero at Rapcon",
-		"Eggman Nega"
+		"Rehearsal",
+		"Nightmare Niles"
 	];
 
 	var txtWeekTitle:FlxText;

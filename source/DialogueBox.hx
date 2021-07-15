@@ -65,12 +65,24 @@ class DialogueBox extends FlxSpriteGroup
 		bgFade.alpha = 0;
 		add(bgFade);
 
-		new FlxTimer().start(0.83, function(tmr:FlxTimer)
+		if (PlayState.SONG.song.toLowerCase() == 'anomaly')
+		{
+			new FlxTimer().start(0.83, function(tmr:FlxTimer)
+			{
+				bgFade.alpha += (1 / 5) * 0.15;
+				if (bgFade.alpha > 0.15)
+					bgFade.alpha = 0.15;
+			}, 5);
+		}
+		else
+		{
+			new FlxTimer().start(0.83, function(tmr:FlxTimer)
 		{
 			bgFade.alpha += (1 / 5) * 0.7;
 			if (bgFade.alpha > 0.7)
 				bgFade.alpha = 0.7;
 		}, 5);
+		}
 
 		box = new FlxSprite(-20, 45);
 		
@@ -208,7 +220,7 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRight2.visible = false;
 
 		// BF
-		portraitRight = new FlxSprite(0, 40);
+		portraitRight = new FlxSprite(0, 0);
 		portraitRight.frames = Paths.getSparrowAtlas('cutscenes/bf/bfPortrait', 'rapcon');
 		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
 		// portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
@@ -286,7 +298,39 @@ class DialogueBox extends FlxSpriteGroup
 			dialogueStarted = true;
 		}
 
-		if (FlxG.keys.justPressed.ANY  && dialogueStarted == true)
+		if (FlxG.keys.justPressed.SPACE && dialogueStarted == true)
+		{
+			if (!isEnding)
+			{
+				remove(dialogue);
+				isEnding = true;
+	
+				new FlxTimer().start(0.2, function(tmr:FlxTimer)
+				{
+					box.alpha -= 1 / 5;
+					bgFade.alpha -= 1 / 5 * 0.7;
+					portraitLeft.visible = false;
+					portraitLeft2.visible = false;
+					portraitLeft3.visible = false;
+					portraitLeft4.visible = false;
+					portraitLeft5.visible = false;
+					portraitRight.visible = false;
+					portraitRight2.visible = false;
+					swagDialogue.alpha -= 1 / 5;
+					dropText.alpha = swagDialogue.alpha;
+				}, 5);
+	
+				new FlxTimer().start(1.2, function(tmr:FlxTimer)
+				{
+					finishThing();
+					kill();
+				});
+				
+				super.update(elapsed);
+			}
+		}
+
+		if (FlxG.keys.justPressed.ANY && dialogueStarted == true)
 		{
 			remove(dialogue);
 				

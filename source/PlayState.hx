@@ -179,6 +179,8 @@ class PlayState extends MusicBeatState
 	var eyesXPositionArray = new haxe.ds.Vector(15);
 	var eyesYPositionArray = new haxe.ds.Vector(15);
 	var evilTrail:FlxTrail;
+	var evilTrail2:FlxTrail;
+	var negaMic:FlxSprite;
 	var trailAdded:Bool = false;
 	var fc:Bool = true;
 
@@ -367,7 +369,7 @@ class PlayState extends MusicBeatState
 			case 'anomaly':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('anomaly/dialog'));
 			case 'voodoo-puppet':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('voodoo-puppet/dialog'));
+				dialogue = CoolUtil.coolTextFile(Paths.txt('voodoo-puppet/dialogPart1'));
 		}
 
 		switch(SONG.stage)
@@ -923,13 +925,22 @@ class PlayState extends MusicBeatState
 						bg.active = false;
 						add(bg);
 
-						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stages/wkNega/void/stagefront.png', 'rapcon'));
+						var stageFront:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stages/wkNega/void/stagefront.png', 'rapcon'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
 						stageFront.scrollFactor.set(0.9, 0.9);
 						stageFront.active = false;
 						add(stageFront);
+
+						negaMic = new FlxSprite(400, 150); // i could probably use screencenter but i'm too lazy
+						negaMic.frames = Paths.getSparrowAtlas('stages/wkNega/void/negamic', 'rapcon');
+						negaMic.animation.addByPrefix('appear', 'mic appear', 24, false);
+						negaMic.animation.addByPrefix('idle', 'mic idle', 24, true);
+						negaMic.antialiasing = true;
+						negaMic.scrollFactor.set(1, 1);
+						negaMic.visible = false;
+						add(negaMic);
 					}
 					case 'voideye':
 					{
@@ -941,22 +952,23 @@ class PlayState extends MusicBeatState
 						bg.active = false;
 						add(bg);
 
-						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stages/wkNega/void/stagefront.png', 'rapcon'));
-						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						var stageFront:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stages/wkNega/void/stagefronteye.png', 'rapcon'));
+						stageFront.setGraphicSize(Std.int(stageFront.width * 0.9));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
 						stageFront.scrollFactor.set(0.9, 0.9);
 						stageFront.active = false;
 						add(stageFront);
-			
-						var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('stages/wkNega/void/stagecurtains.png', 'rapcon'));
-						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
-						stageCurtains.updateHitbox();
-						stageCurtains.antialiasing = true;
-						stageCurtains.scrollFactor.set(1.3, 1.3);
-						stageCurtains.active = false;
-			
-						add(stageCurtains);
+						if (stageFront == null) trace("ya done fucked up");
+
+						negaMic = new FlxSprite(400, 150); // i could probably use screencenter but i'm too lazy
+						negaMic.frames = Paths.getSparrowAtlas('stages/wkNega/void/negamic', 'rapcon');
+						negaMic.animation.addByPrefix('appear', 'mic appear', 24, false);
+						negaMic.animation.addByPrefix('idle', 'mic idle', 24, true);
+						negaMic.animation.play('idle');
+						negaMic.antialiasing = true;
+						negaMic.scrollFactor.set(1, 1);
+						
 
 						for (i in 0...eyesArray.length)
 						{
@@ -1149,8 +1161,12 @@ class PlayState extends MusicBeatState
 						add(eyesArray[i]);
 					}
 					trace("Eyes added in eyes void");
+					add(negaMic);
+					trace("Mic added after eyes for layering purposes");
 					evilTrail = new FlxTrail(dad, null, 0, 24, 0.3, 0.4);
 					add(evilTrail);
+					evilTrail2 = new FlxTrail(dad, null, 0, 24, 0.3, 0.4);
+					add(evilTrail2);
 				}
 			case 'kikisbooth':
 				gf.y = 99999;
@@ -1407,7 +1423,8 @@ class PlayState extends MusicBeatState
 				case 'anomaly':
 					schoolIntro(doof);
 				case 'voodoo-puppet':
-					schoolIntro(doof);
+					doof.finishThing = setupNegaIntroPart2;
+					negaIntro(doof, false);
 														
 				/*case 'anomaly':
 					bossIntro(doof);*/
@@ -1430,6 +1447,24 @@ class PlayState extends MusicBeatState
 		super.create();
 	}
 	
+	function setupNegaIntroPart2():Void
+	{
+		trace("Yeah this bit existed more");
+		dialogue = CoolUtil.coolTextFile(Paths.txt('voodoo-puppet/dialogPart2'));
+		negaMic.visible = true;
+		negaMic.animation.play('appear');
+		var doof:DialogueBox = new DialogueBox(false, dialogue);
+		trace("doof initialised");
+		doof.scrollFactor.set();
+		trace("doof scroll factor set");
+		doof.finishThing = startCountdown;
+		trace("Heinz Doofenshmirtz");
+		new FlxTimer().start(1.25, function(tmr:FlxTimer)
+		{
+			negaIntro(doof, true);
+		}, 1);
+	}
+
 	function bossIntro(?dialogueBox:DialogueBox):Void
 	{
 		var black:FlxSprite = new FlxSprite(-300, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, FlxColor.BLACK);
@@ -1589,12 +1624,59 @@ class PlayState extends MusicBeatState
 					}*/
 				}
 				else
+				{
 					startCountdown();
+				}
 
 				remove(black);
 			}
 		});
 	}
+
+	function negaIntro(?dialogueBox:DialogueBox, part1Done:Bool):Void
+		{
+			var black:FlxSprite = new FlxSprite(-1000, -200).makeGraphic(FlxG.width * 4, FlxG.height * 3, FlxColor.BLACK);
+			black.scrollFactor.set();
+			if (!part1Done)
+			{
+				add(black);
+			}
+	
+			// pre lowercasing the song name (schoolIntro)
+			var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
+	
+			new FlxTimer().start(0.3, function(tmr:FlxTimer)
+			{
+				if (!part1Done)
+				{
+					black.alpha -= 0.15;
+				}
+				else
+				{
+					black.alpha = 0;
+				}
+	
+				if (black.alpha > 0)
+				{
+					tmr.reset(0.3);
+				}
+				else
+				{
+					if (dialogueBox != null)
+					{
+						inCutscene = true;
+						add(dialogueBox);
+					}
+					else
+					{
+						startCountdown();
+						part1Done = true;
+					}
+						
+					remove(black);
+				}
+			});
+		}
 
 	var startTimer:FlxTimer;
 	var perfectMode:Bool = false;
@@ -2654,6 +2736,11 @@ class PlayState extends MusicBeatState
 			//switch curbeat/step depending on where the REEE is in song to REE anim
 		}
 
+		if (curSong == 'voodoo-puppet' && curBeat == -4)
+		{
+			negaMic.animation.play('idle');
+		}
+
 		if (curSong == 'playdate')
 		{
 			if (curStep >= 2 && curStep <= 10)
@@ -2680,7 +2767,7 @@ class PlayState extends MusicBeatState
 					evilTrail = new FlxTrail(dad, null, 0, 24, 0.3, 0.4);
 					add(evilTrail);
 				}
-				evilTrail.increaseLength(4);
+				evilTrail.increaseLength(6);
 				trailAdded = true;
 			}
 			if (curBeat == 64 && trailAdded)
@@ -2688,6 +2775,22 @@ class PlayState extends MusicBeatState
 				remove(evilTrail);
 				trailAdded = false;
 			}
+
+			if (curBeat == 302 && !trailAdded)
+			{
+				if (evilTrail2 == null)
+				{
+					evilTrail2 = new FlxTrail(dad, null, 0, 24, 0.3, 0.4);
+					add(evilTrail2);
+				}
+				evilTrail2.increaseLength(6);
+				trailAdded = true;
+			}
+			if (curBeat == 320 && trailAdded)
+			{
+				remove(evilTrail2);
+				trailAdded = false;
+			}			
 		}
 
 		if (health <= 0)
