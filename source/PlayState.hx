@@ -176,6 +176,8 @@ class PlayState extends MusicBeatState
 	var eyesArray = new haxe.ds.Vector(15);	// This number has to be changed here, should scale fine with the rest of it
 	// IF YOU CHANGE THE NUMBER HERE, CHANGE THE NUMBER FOR THE eyesCanAnimate VECTOR AT AROUND LINE 3895. MAKE SURE THEY ARE EQUAL
 	// Fun fact: If Haxe knew what the hell a constant was, I could use one variable for the two vectors and not have to worry about this
+	var eyesXPositionArray = new haxe.ds.Vector(15);
+	var eyesYPositionArray = new haxe.ds.Vector(15);
 	var evilTrail:FlxTrail;
 	var trailAdded:Bool = false;
 	var fc:Bool = true;
@@ -964,6 +966,9 @@ class PlayState extends MusicBeatState
 							eyesArray[i].animation.addByPrefix('look', 'eye but it looks around', 24, false);
 							eyesArray[i].antialiasing = true;
 							eyesArray[i].scrollFactor.set(0.8, 0.8);
+
+							eyesXPositionArray[i] = 0;
+							eyesYPositionArray[i] = 0;	// Setting default 0 position values just to avoid null read crashes
 						}
 						trace("Eyes got loaded in the normal stage procedures");
 					}
@@ -3844,7 +3849,7 @@ class PlayState extends MusicBeatState
 	
 	// var eyesCanAnimate:Bool = true;
 	var eyesCanAnimate = new haxe.ds.Vector(15);	// This number has to be changed here, should scale fine with the rest of it
-	// IF YOU CHANGE THIS NUMBER, ALSO CHANGE THE NUMBER FOR THE eyesArray AT AROUND LINE 175. MAKE SURE THEY ARE EQUAL
+	// IF YOU CHANGE THIS NUMBER, ALSO CHANGE THE NUMBER FOR THE VECTORS AT AROUND LINE 175. MAKE SURE THEY ARE EQUAL
 
 	function resetEyes(i:Int):Void
 	{
@@ -3861,8 +3866,38 @@ class PlayState extends MusicBeatState
 				eyesArray[i].y = FlxG.random.int(100, (FlxG.height - 100));
 				eyesCanAnimate[i] = true;
 			}*/
-			eyesArray[i].x = FlxG.random.int(100, (FlxG.width - 100));
-			eyesArray[i].y = FlxG.random.int(100, (FlxG.height - 100));
+			var xPos:Int = FlxG.random.int(0, (FlxG.width - 100));
+			var yPos:Int = FlxG.random.int(0, (FlxG.height - 100));
+			eyesXPositionArray[i] = xPos;
+			eyesYPositionArray[i] = yPos;
+			var positionChanged:Bool = false;
+			do
+			{
+				positionChanged = false;
+				for (j in 0...eyesArray.length)
+				{
+					if (i != j)
+					{	// Eye width = 190 ish
+						if (eyesXPositionArray[i] > eyesXPositionArray[j] - 20 && eyesXPositionArray[i] < eyesXPositionArray[j] + 20)
+						{
+							trace("Move X");
+							xPos = FlxG.random.int(0, (FlxG.width - 100));
+							eyesXPositionArray[i] = xPos;
+							positionChanged = true;
+						}
+						// Eye height = 110 ish
+						if (eyesYPositionArray[i] > eyesYPositionArray[j] - 20 && eyesYPositionArray[i] < eyesYPositionArray[j] + 20)
+						{
+							trace("Move Y");
+							yPos = FlxG.random.int(0, (FlxG.height - 100));
+							eyesYPositionArray[i] = yPos;
+							positionChanged = true;
+						}
+					}
+				}
+			} while (positionChanged);
+			eyesArray[i].x = xPos;
+			eyesArray[i].y = yPos;
 			eyesCanAnimate[i] = true;
 			trace("Eyes reset");
 		}
