@@ -3866,8 +3866,8 @@ class PlayState extends MusicBeatState
 				eyesArray[i].y = FlxG.random.int(100, (FlxG.height - 100));
 				eyesCanAnimate[i] = true;
 			}*/
-			var xPos:Int = FlxG.random.int(0, (FlxG.width - 100));
-			var yPos:Int = FlxG.random.int(0, (FlxG.height - 100));
+			var xPos:Int = FlxG.random.int(-100, (FlxG.width - 100));
+			var yPos:Int = FlxG.random.int(0, (FlxG.height));
 			eyesXPositionArray[i] = xPos;
 			eyesYPositionArray[i] = yPos;
 			var positionChanged:Bool = false;
@@ -3878,10 +3878,10 @@ class PlayState extends MusicBeatState
 				{
 					if (i != j)
 					{	// Eye width = 190 ish
-						if (eyesXPositionArray[i] > eyesXPositionArray[j] - 20 && eyesXPositionArray[i] < eyesXPositionArray[j] + 20)
+						if (eyesXPositionArray[i] > eyesXPositionArray[j] - 30 && eyesXPositionArray[i] < eyesXPositionArray[j] + 30)
 						{
 							trace("Move X");
-							xPos = FlxG.random.int(0, (FlxG.width - 100));
+							xPos = FlxG.random.int(-100, (FlxG.width - 100));
 							eyesXPositionArray[i] = xPos;
 							positionChanged = true;
 						}
@@ -3889,7 +3889,7 @@ class PlayState extends MusicBeatState
 						if (eyesYPositionArray[i] > eyesYPositionArray[j] - 20 && eyesYPositionArray[i] < eyesYPositionArray[j] + 20)
 						{
 							trace("Move Y");
-							yPos = FlxG.random.int(0, (FlxG.height - 100));
+							yPos = FlxG.random.int(0, (FlxG.height));
 							eyesYPositionArray[i] = yPos;
 							positionChanged = true;
 						}
