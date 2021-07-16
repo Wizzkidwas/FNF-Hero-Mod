@@ -1,6 +1,3 @@
 gf
-gf-car
-gf-christmas
-gf-pixel
 kiki
 kikirave

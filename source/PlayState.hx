@@ -368,7 +368,7 @@ class PlayState extends MusicBeatState
 			case 'ringside-rave':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('ringside-rave/dialog'));		
 			case 'anomaly':
-				dialogue = CoolUtil.coolTextFile(Paths.txt('anomaly/dialog'));
+				dialogue = CoolUtil.coolTextFile(Paths.txt('anomaly/dialogPart1'));
 			case 'voodoo-puppet':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('voodoo-puppet/dialogPart1'));
 		}
@@ -1427,7 +1427,8 @@ class PlayState extends MusicBeatState
 				case 'ringside-rave':
 					schoolIntro(doof);
 				case 'anomaly':
-					schoolIntro(doof);
+					doof.finishThing = setupBossIntroPart2;
+					bossIntro(doof, false);
 				case 'voodoo-puppet':
 					doof.finishThing = setupNegaIntroPart2;
 					negaIntro(doof, false);
@@ -1459,19 +1460,37 @@ class PlayState extends MusicBeatState
 		dialogue = CoolUtil.coolTextFile(Paths.txt('voodoo-puppet/dialogPart2'));
 		negaMic.visible = true;
 		negaMic.animation.play('appear');
+		FlxG.sound.play(Paths.sound('nega_mic_appear'));
 		var doof:DialogueBox = new DialogueBox(false, dialogue);
 		trace("doof initialised");
 		doof.scrollFactor.set();
 		trace("doof scroll factor set");
 		doof.finishThing = startCountdown;
 		trace("Heinz Doofenshmirtz");
-		new FlxTimer().start(1.25, function(tmr:FlxTimer)
+		new FlxTimer().start(2.5, function(tmr:FlxTimer)
 		{
 			negaIntro(doof, true);
 		}, 1);
 	}
 
-	function bossIntro(?dialogueBox:DialogueBox):Void
+	function setupBossIntroPart2():Void
+	{
+		trace("boss 2 electric boogaloo");
+		dialogue = CoolUtil.coolTextFile(Paths.txt('anomaly/dialogPart2'));
+		FlxG.sound.play(Paths.sound('HeroTransform'));
+		var doof:DialogueBox = new DialogueBox(false, dialogue);
+		trace("doof initialised");
+		doof.scrollFactor.set();
+		trace("doof scroll factor set");
+		doof.finishThing = startCountdown;
+		trace("Heinz Doofenshmirtz");
+		new FlxTimer().start(5.5, function(tmr:FlxTimer)
+		{
+			bossIntro(doof, true);
+		}, 1);
+	}
+
+	/*function bossIntro(?dialogueBox:DialogueBox):Void
 	{
 		var black:FlxSprite = new FlxSprite(-300, -100).makeGraphic(FlxG.width * 3, FlxG.height * 2, FlxColor.BLACK);
 		black.scrollFactor.set();
@@ -1483,12 +1502,6 @@ class PlayState extends MusicBeatState
 		var boss:FlxSprite = new FlxSprite();
 		boss.frames = Paths.getSparrowAtlas('characters/herocutscene');
 		boss.animation.addByPrefix('transform', 'Hero Transform', 24, false);
-		/*boss.animation.addByPrefix('part1', 'Hero Crouch', 24, false);
-		boss.animation.addByPrefix('part2', 'Hero Tremble', 24, false);
-		boss.animation.addByPrefix('part3', 'Hero Shine Start', 24, false);
-		boss.animation.addByPrefix('part4', 'Hero Shine', 24, false);
-		boss.animation.addByPrefix('part5', 'Dark Hero Tremble', 24, false);
-		boss.animation.addByPrefix('part6', 'Dark Hero Charge', 24, false);*/
 		boss.scrollFactor.set();
 		boss.updateHitbox();
 		boss.screenCenter();
@@ -1524,12 +1537,6 @@ class PlayState extends MusicBeatState
 							boss.animation.play('transform', true);
 							FlxG.sound.play(Paths.sound('Senpai_Dies'), 1, false, null, true, function()
 							{
-								/*boss.animation.play('part1', true);
-								boss.animation.play('part2', true);
-								boss.animation.play('part3', true);
-								boss.animation.play('part4', true);
-								boss.animation.play('part5', true);
-								boss.animation.play('part6', true);*/
 								remove(boss);
 								remove(red);
 								FlxG.camera.fade(FlxColor.WHITE, 0.01, true, function()
@@ -1547,7 +1554,7 @@ class PlayState extends MusicBeatState
 				}
 				remove(black);
 		});
-	}
+	}*/
 	
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void
@@ -1559,28 +1566,11 @@ class PlayState extends MusicBeatState
 		var red:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFFff1b31);
 		red.scrollFactor.set();
 
-		var senpaiEvil:FlxSprite = new FlxSprite();
-		senpaiEvil.frames = Paths.getSparrowAtlas('weeb/senpaiCrazy');
-		senpaiEvil.animation.addByPrefix('idle', 'Senpai Pre Explosion', 24, false);
-		senpaiEvil.setGraphicSize(Std.int(senpaiEvil.width * 6));
-		senpaiEvil.scrollFactor.set();
-		senpaiEvil.updateHitbox();
-		senpaiEvil.screenCenter();
-
 		// pre lowercasing the song name (schoolIntro)
 		var songLowercase = StringTools.replace(PlayState.SONG.song, " ", "-").toLowerCase();
-			switch (songLowercase) {
-				case 'dad-battle': songLowercase = 'dadbattle';
-				case 'philly-nice': songLowercase = 'philly';
-			}
-		if (songLowercase == 'roses' || songLowercase == 'thorns' || songLowercase == 'ringside-rave')
+		if (songLowercase == 'ringside-rave')
 		{
 			remove(black);
-
-			if (songLowercase == 'thorns')
-			{
-				add(red);
-			}
 		}
 
 		new FlxTimer().start(0.3, function(tmr:FlxTimer)
@@ -1597,37 +1587,6 @@ class PlayState extends MusicBeatState
 				{
 					inCutscene = true;
 					add(dialogueBox);
-
-					/*if (songLowercase == 'thorns')
-					{
-						add(senpaiEvil);
-						senpaiEvil.alpha = 0;
-						new FlxTimer().start(0.3, function(swagTimer:FlxTimer)
-						{
-							senpaiEvil.alpha += 0.15;
-							if (senpaiEvil.alpha < 1)
-							{
-								swagTimer.reset();
-							}
-							else
-							{
-								senpaiEvil.animation.play('idle');
-								FlxG.sound.play(Paths.sound('Senpai_Dies'), 1, false, null, true, function()
-								{
-									remove(senpaiEvil);
-									remove(red);
-									FlxG.camera.fade(FlxColor.WHITE, 0.01, true, function()
-									{
-										add(dialogueBox);
-									}, true);
-								});
-								new FlxTimer().start(3.2, function(deadTime:FlxTimer)
-								{
-									FlxG.camera.fade(FlxColor.WHITE, 1.6, false);
-								});
-							}
-						});
-					}*/
 				}
 				else
 				{
@@ -1636,6 +1595,62 @@ class PlayState extends MusicBeatState
 
 				remove(black);
 			}
+		});
+	}
+
+	function bossIntro(?dialogueBox:DialogueBox, part1Done:Bool):Void
+	{
+		var blackScreen:FlxSprite = new FlxSprite(0, 0).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
+		blackScreen.scrollFactor.set();
+		if (!part1Done)
+		{
+			add(blackScreen);
+			FlxG.sound.play(Paths.sound('Lights_Shut_Off'));
+		}
+		camHUD.visible = false;
+
+
+		new FlxTimer().start(0.3, function(tmr:FlxTimer)
+		{
+			if (part1Done)
+			{
+				blackScreen.alpha -= 0.15;
+			}
+			else
+			{
+				blackScreen.alpha = 1;
+			}
+			if (blackScreen.alpha > 0)
+			{
+				tmr.reset(0.3);
+			}
+			else
+			{
+				if (dialogueBox != null)
+				{
+					inCutscene = true;
+					add(dialogueBox);
+				}
+				else
+				{
+					startCountdown();
+				}
+
+				remove(blackScreen);
+			}
+		});
+		new FlxTimer().start(0.1, function(tmr:FlxTimer)
+		{
+			remove(blackScreen);
+
+			new FlxTimer().start(0.8, function(tmr:FlxTimer)
+			{
+				if (part1Done)
+				{
+					camHUD.visible = true;
+					startCountdown();
+				}
+			});
 		});
 	}
 

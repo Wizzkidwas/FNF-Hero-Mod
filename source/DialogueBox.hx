@@ -38,6 +38,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
+	var youCanSkip:FlxText;
 
 	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
 	{
@@ -111,11 +112,9 @@ class DialogueBox extends FlxSpriteGroup
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('cutscenes/dialogueBox', 'rapcon');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-
-				
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);				
 		}
-
+		
 		this.dialogueList = dialogueList;
 		
 		if (!hasDialog)
@@ -241,9 +240,18 @@ class DialogueBox extends FlxSpriteGroup
 		portraitLeft4.screenCenter(X);
 		portraitLeft5.screenCenter(X);
 
-		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox'));
+		handSelect = new FlxSprite(FlxG.width * 0.85, FlxG.height * 0.85);
+		handSelect.frames = Paths.getSparrowAtlas('cutscenes/BoxArrow', 'rapcon');
+		handSelect.animation.addByPrefix('speen', 'BoxArrow', 12, true);
+		handSelect.animation.play('speen');
 		add(handSelect);
 
+		if (hasDialog)
+		{
+			youCanSkip = new FlxText(0, FlxG.height * 0.92, 0, "Press SPACE to skip", 32);
+			add(youCanSkip);
+			youCanSkip.screenCenter(X);
+		}
 
 		if (!talkingRight)
 		{
@@ -303,6 +311,7 @@ class DialogueBox extends FlxSpriteGroup
 			if (!isEnding)
 			{
 				remove(dialogue);
+				remove(youCanSkip);
 				isEnding = true;
 	
 				new FlxTimer().start(0.2, function(tmr:FlxTimer)
@@ -341,6 +350,7 @@ class DialogueBox extends FlxSpriteGroup
 				if (!isEnding)
 				{
 					isEnding = true;
+					remove(youCanSkip);
 
 					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns')
 						FlxG.sound.music.fadeOut(2.2, 0);
@@ -476,7 +486,14 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeft5.visible = true;			// Do the funky animations
 					portraitLeft5.animation.play('enter');
 				}
-				
+			default:
+				portraitLeft.visible = false;
+				portraitLeft2.visible = false;
+				portraitLeft3.visible = false;
+				portraitLeft4.visible = false;
+				portraitLeft5.visible = false;
+				portraitRight.visible = false;
+				portraitRight2.visible = false;
 		}
 	}
 
