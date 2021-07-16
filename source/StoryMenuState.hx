@@ -40,7 +40,7 @@ class StoryMenuState extends MusicBeatState
 
 	var weekNames:Array<String> = [
 		"Technosomnia",
-		"Rehearsal gone Awry"
+		"Rehearsal gone Awry",
 		"Nightmare Niles"
 	];
 
