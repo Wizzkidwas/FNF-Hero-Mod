@@ -181,6 +181,7 @@ class PlayState extends MusicBeatState
 	var evilTrail:FlxTrail;
 	var evilTrail2:FlxTrail;
 	var negaMic:FlxSprite;
+	var stageFront:FlxSprite;
 	var trailAdded:Bool = false;
 	var fc:Bool = true;
 
@@ -706,7 +707,7 @@ class PlayState extends MusicBeatState
 						bg.active = false;
 						add(bg);
 	
-						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
+						stageFront = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
@@ -733,7 +734,7 @@ class PlayState extends MusicBeatState
 						bg.active = false;
 						add(bg);
 	
-						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
+						stageFront = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
@@ -769,7 +770,7 @@ class PlayState extends MusicBeatState
 						}
 						
 						trace('Loading Stage');
-						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stages/wkHero/stadium/front', 'rapcon'));
+						stageFront = new FlxSprite(-650, 600).loadGraphic(Paths.image('stages/wkHero/stadium/front', 'rapcon'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
@@ -809,7 +810,7 @@ class PlayState extends MusicBeatState
 						trace('BG loaded!');
 						
 						trace('Loading Stage');
-						var stageFront:FlxSprite = new FlxSprite(-680, 1125);
+						stageFront = new FlxSprite(-680, 1125);
 						stageFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/front', 'rapcon');
 						stageFront.animation.addByPrefix('loop', 'FrontLoop', 24, true);
 						stageFront.animation.play('loop');
@@ -885,7 +886,7 @@ class PlayState extends MusicBeatState
 						trace('cloods Loaded!');
 						
 						trace('Loading Stage');
-						var stageFront:FlxSprite = new FlxSprite(-680, 625);
+						stageFront = new FlxSprite(-680, 625);
 						stageFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumBoss/front', 'rapcon');
 						stageFront.animation.addByPrefix('loop', 'FrontLoop', 24, true);
 						stageFront.animation.play('loop');
@@ -919,13 +920,13 @@ class PlayState extends MusicBeatState
 					{
 						defaultCamZoom = 0.9; //this might need to be switched out too???
 						curStage = 'void';
-						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkNega/void/stageback.png', 'rapcon'));
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkNega/void/stageback', 'rapcon'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false;
 						add(bg);
 
-						var stageFront:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stages/wkNega/void/stagefront.png', 'rapcon'));
+						stageFront = new FlxSprite(-200, 625).loadGraphic(Paths.image('stages/wkNega/void/stagefront', 'rapcon'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
@@ -946,20 +947,19 @@ class PlayState extends MusicBeatState
 					{
 						defaultCamZoom = 0.9; //this might need to be switched out too???
 						curStage = 'voideye';
-						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkNega/void/stageback.png', 'rapcon'));
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('stages/wkNega/void/stageback', 'rapcon'));
 						bg.antialiasing = true;
 						bg.scrollFactor.set(0.9, 0.9);
 						bg.active = false;
 						add(bg);
 
-						var stageFront:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('stages/wkNega/void/stagefronteye.png', 'rapcon'));
+						stageFront = new FlxSprite(-200, 625).loadGraphic(Paths.image('stages/wkNega/void/stagefronteye', 'rapcon'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 0.9));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
 						stageFront.scrollFactor.set(0.9, 0.9);
 						stageFront.active = false;
-						add(stageFront);
-						if (stageFront == null) trace("ya done fucked up");
+						
 
 						negaMic = new FlxSprite(400, 150); // i could probably use screencenter but i'm too lazy
 						negaMic.frames = Paths.getSparrowAtlas('stages/wkNega/void/negamic', 'rapcon');
@@ -995,7 +995,7 @@ class PlayState extends MusicBeatState
 					bg.active = false;
 					add(bg);
 
-					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
+					stageFront = new FlxSprite(-650, 600).loadGraphic(Paths.image('stagefront'));
 					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 					stageFront.updateHitbox();
 					stageFront.antialiasing = true;
@@ -1161,13 +1161,15 @@ class PlayState extends MusicBeatState
 						add(eyesArray[i]);
 					}
 					trace("Eyes added in eyes void");
-					add(negaMic);
-					trace("Mic added after eyes for layering purposes");
 					evilTrail = new FlxTrail(dad, null, 0, 24, 0.3, 0.4);
 					add(evilTrail);
 					evilTrail2 = new FlxTrail(dad, null, 0, 24, 0.3, 0.4);
 					add(evilTrail2);
 				}
+				add(stageFront);
+				trace("Floor added after eyes for layering purposes");
+				add(negaMic);
+				trace("Mic added after eyes for layering purposes");
 			case 'kikisbooth':
 				gf.y = 99999;
 		}
@@ -1231,6 +1233,10 @@ class PlayState extends MusicBeatState
 
 		trace('generated');
 
+		if (curSong.toLowerCase() == 'tutorial')
+		{
+			gf.y += 99999; // BACK TO THE DEPTHS	
+		}
 		// add(strumLine);
 
 		camFollow = new FlxObject(0, 0, 1, 1);
@@ -2745,19 +2751,19 @@ class PlayState extends MusicBeatState
 		{
 			if (curStep >= 2 && curStep <= 10)
 				{
-					dad.playAnim('LaughLeft');
+					dad.playAnim('singLEFT');
 				}
 			if (curStep >= 16 && curStep <= 26)
 				{
-					dad.playAnim('LaughLeft');
+					dad.playAnim('singLEFT');
 				}
 			if (curStep >= 35 && curStep <= 43)
 				{
-					dad.playAnim('LaughUp');
+					dad.playAnim('singLEFT');
 				}
 			if (curStep == 57)
 				{
-					dad.playAnim('LaughUp');
+					dad.playAnim('singLEFT');
 				}
 				
 			if (curBeat == 47 && !trailAdded)
@@ -3967,7 +3973,7 @@ class PlayState extends MusicBeatState
 				eyesCanAnimate[i] = true;
 			}*/
 			var xPos:Int = FlxG.random.int(-100, (FlxG.width - 100));
-			var yPos:Int = FlxG.random.int(0, (FlxG.height));
+			var yPos:Int = FlxG.random.int(0, (FlxG.height - 100));
 			eyesXPositionArray[i] = xPos;
 			eyesYPositionArray[i] = yPos;
 			var positionChanged:Bool = false;
@@ -3989,7 +3995,7 @@ class PlayState extends MusicBeatState
 						if (eyesYPositionArray[i] > eyesYPositionArray[j] - 20 && eyesYPositionArray[i] < eyesYPositionArray[j] + 20)
 						{
 							trace("Move Y");
-							yPos = FlxG.random.int(0, (FlxG.height));
+							yPos = FlxG.random.int(0, (FlxG.height - 100));
 							eyesYPositionArray[i] = yPos;
 							positionChanged = true;
 						}

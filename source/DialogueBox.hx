@@ -69,10 +69,10 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			new FlxTimer().start(0.83, function(tmr:FlxTimer)
 			{
-				bgFade.alpha += (1 / 5) * 0.15;
+				bgFade.alpha += (1 / 3) * 0.15;
 				if (bgFade.alpha > 0.15)
 					bgFade.alpha = 0.15;
-			}, 5);
+			}, 3);
 		}
 		else
 		{
