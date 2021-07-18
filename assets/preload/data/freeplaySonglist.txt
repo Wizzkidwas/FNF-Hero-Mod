@@ -1,6 +1,6 @@
 Tutorial:kikituto:0
-Kick It:hero:1
-Ringside Rave:herorave:1
+kick it:hero:1
+ringside rave:herorave:1
 Anomaly:heroboss:1
-Voodoo Puppet:nega:2
-Playdate:nega:2
+voodoo puppet:nega:2
+playdate:nega:2
