@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="portrait.png">
+<TextureAtlas imagePath="Portrait.png">
 	<!-- Created with Adobe Animate version 20.0.0.17400 -->
 	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="Boyfriend portrait enter instance =10003" x="0" y="0" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
 	<SubTexture name="Boyfriend portrait enter instance =10000" x="0" y="418" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
 	<SubTexture name="Boyfriend portrait enter instance =10009" x="0" y="836" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
-	<SubTexture name="Boyfriend portrait enter instance =10009" x="0" y="1254" width="670" height="418" frameX="-150" frameY="-60" frameWidth="470" frameHeight="735"/>	
 </TextureAtlas>
