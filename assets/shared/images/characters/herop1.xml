@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="herop1.png">
+	<!-- MODIFIED BY ONEILR ;0 -->
+	<!-- IDLE -->
+	<SubTexture name="Hero idle dance0000" x="0" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0002" x="0" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0003" x="563" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0004" x="563" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0005" x="1126" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0006" x="1126" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0007" x="1689" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0008" x="1689" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0009" x="2252" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0010" x="2252" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0011" x="0" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero idle dance0012" x="0" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<!-- UP -->
+	<SubTexture name="Hero UP0000" x="0" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0001" x="563" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0002" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0003" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0004" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0005" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0006" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0007" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0008" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0009" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0010" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0011" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0012" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0013" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0014" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0015" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero UP0016" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero UP0017" x="1126" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>	
+	<!-- DOWN -->
+	<SubTexture name="Hero DOWN0000" x="0" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0001" x="563" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0002" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0003" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0004" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0005" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0006" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0007" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0008" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0009" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0010" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0011" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero DOWN0012" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero DOWN0013" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero DOWN0014" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0015" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0016" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero DOWN0017" x="1126" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<!-- LEFT -->
+	<SubTexture name="Hero LEFT0000" x="0" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0001" x="563" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0002" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0003" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0004" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0005" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0006" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0007" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0008" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0009" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0010" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0011" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0012" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0013" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0014" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0015" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0016" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero LEFT0017" x="1126" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<!-- RIGHT -->
+	<SubTexture name="Hero RIGHT0000" x="0" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0001" x="563" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0002" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0003" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0004" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0005" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0006" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0007" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0008" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0009" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0010" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero RIGHT0011" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero RIGHT0012" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero RIGHT0013" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero RIGHT0014" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero RIGHT0015" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero RIGHT0016" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero RIGHT0017" x="1126" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+
+
+
+
+
+	<SubTexture name="Hero MISS UP0000" x="1689" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0001" x="2252" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0002" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0003" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0004" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0005" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0006" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0007" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0008" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0009" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0010" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0011" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0012" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0013" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0014" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0015" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS UP0016" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS UP0017" x="2815" y="738" width="563" height="738" frameX="30" frameY="-30" frameWidth="563" frameHeight="738"/>	
+	<!-- DOWN -->
+	<SubTexture name="Hero MISS DOWN0000" x="1689" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0001" x="2252" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0002" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0003" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0004" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0005" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0006" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0007" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0008" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0009" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0010" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0011" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS DOWN0012" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS DOWN0013" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS DOWN0014" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0015" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0016" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS DOWN0017" x="2815" y="1476" width="563" height="738" frameX="-30" frameY="50" frameWidth="563" frameHeight="738"/>
+	<!-- LEFT -->
+	<SubTexture name="Hero MISS LEFT0000" x="1689" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0001" x="2252" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0002" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0003" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0004" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0005" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0006" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0007" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0008" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0009" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0010" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0011" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0012" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0013" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0014" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0015" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0016" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS LEFT0017" x="2815" y="2214" width="563" height="738" frameX="-50" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<!-- RIGHT -->
+	<SubTexture name="Hero MISS RIGHT0000" x="1689" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0001" x="2252" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0002" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0003" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0004" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0005" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0006" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0007" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0008" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0009" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0010" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero MISS RIGHT0011" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS RIGHT0012" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS RIGHT0013" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS RIGHT0014" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS RIGHT0015" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS RIGHT0016" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>	
+	<SubTexture name="Hero MISS RIGHT0017" x="2815" y="2952" width="563" height="738" frameX="30" frameY="0" frameWidth="563" frameHeight="738"/>
+
+	<SubTexture name="Hero Spook0000" x="3378" y="0" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero Spook0001" x="3378" y="738" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero Spook0002" x="3378" y="1476" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+	<SubTexture name="Hero Spook0003" x="3378" y="738" width="563" height="738" frameX="0" frameY="0" frameWidth="563" frameHeight="738"/>
+</TextureAtlas>
