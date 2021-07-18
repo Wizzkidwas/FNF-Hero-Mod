@@ -51,6 +51,7 @@ class HealthIcon extends FlxSprite
 		animation.add('bfrave', [9, 10, 11], 0, false, isPlayer);
 		animation.add('bfspook', [0, 1, 0], 0, false, isPlayer); //imo no win icon for bfspook.
 		animation.add('hero', [3, 4, 5], 0, false, isPlayer);
+		animation.add('herop1', [3, 4, 5], 0, false, isPlayer);
 		animation.add('herorave', [12, 13, 14], 0, false, isPlayer);
 		animation.add('heroboss', [15, 16, 15], 0, false, isPlayer);
 		animation.add('nega', [6, 7, 8], 0, false, isPlayer);

@@ -301,7 +301,7 @@ class Character extends FlxSprite
 				addOffset("singUP", -29, 27);
 				addOffset("singRIGHT", -68, -7);
 				addOffset("singLEFT", 65, 9);
-				addOffset("singDOWN", 200, -70);
+				addOffset("singDOWN", 300, -70);
 				addOffset("singUPmiss", -19, 67);
 				addOffset("singRIGHTmiss", -60, 41);
 				addOffset("singLEFTmiss", 62, 64);
@@ -433,8 +433,8 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
-				width -= 100;
-				height -= 100;
+				width -= 300;
+				height -= 300;
 
 				antialiasing = false;
 
@@ -590,7 +590,7 @@ class Character extends FlxSprite
 				addOffset('idle', -220, -280);
 				addOffset('singUP', -220, -240);
 				addOffset("singRIGHT", -220, -280);
-				addOffset("singLEFT", -200, -280);
+				addOffset("singLEFT", -300, -280);
 				addOffset("singDOWN", 170, 110);
 
 				setGraphicSize(Std.int(width * 6));
@@ -644,6 +644,35 @@ class Character extends FlxSprite
 				addOffset("Hero Go");
 
 				playAnim('idle');
+				
+			case 'herop1': // to anyone looking at this code: why is hero's cam so far down? cos of the offsets to  get him to stand on the stage w/o modifying playstate.
+				var tex = Paths.getSparrowAtlas('characters/herop1');
+				frames = tex;
+				animation.addByPrefix('idle', 'Hero Spook', 24, false);
+				animation.addByPrefix('singUP', 'Hero UP', 24, false);
+				animation.addByPrefix('singLEFT', 'Hero LEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'Hero RIGHT', 24, false);
+				animation.addByPrefix('singDOWN', 'Hero DOWN', 24, false);
+				animation.addByPrefix('singUPmiss', 'Hero MISS UP', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'Hero MISS LEFT', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'Hero MISS RIGHT', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'Hero MISS DOWN', 24, false);
+				animation.addByPrefix('scared', 'Hero Spook', 24, false);
+
+				addOffset('idle', 0, 300);
+				addOffset("singUP", 0, 330);
+				addOffset("singRIGHT", 0, 300);
+				addOffset("singLEFT", 0, 300);
+				addOffset("singDOWN", 0, 270);
+				addOffset("singUPmiss", 0, 330);
+				addOffset("singRIGHTmiss", 0, 300);
+				addOffset("singLEFTmiss", 0, 300);
+				addOffset("singDOWNmiss", 0, 270);
+				addOffset("scared", 0, 300);
+
+				playAnim('idle');
+
+				flipX = true;
 
 			case 'heroboss':
 				frames = Paths.getSparrowAtlas('characters/heroboss');
