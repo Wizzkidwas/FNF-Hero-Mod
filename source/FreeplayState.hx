@@ -214,17 +214,10 @@ class FreeplayState extends MusicBeatState
 		{
 			// pre lowercasing the song name (update)
 			var songLowercase = StringTools.replace(songs[curSelected].songName, " ", "-").toLowerCase();
-			switch (songLowercase) {
-				case 'dad-battle': songLowercase = 'dadbattle';
-				case 'philly-nice': songLowercase = 'philly';
-			}
+
 			// adjusting the highscore song name to be compatible (update)
 			// would read original scores if we didn't change packages
 			var songHighscore = StringTools.replace(songs[curSelected].songName, " ", "-");
-			switch (songHighscore) {
-				case 'Dad-Battle': songHighscore = 'Dadbattle';
-				case 'Philly-Nice': songHighscore = 'Philly';
-			}
 			
 			trace(songLowercase);
 
@@ -252,10 +245,6 @@ class FreeplayState extends MusicBeatState
 
 		// adjusting the highscore song name to be compatible (changeDiff)
 		var songHighscore = StringTools.replace(songs[curSelected].songName, " ", "-");
-		switch (songHighscore) {
-			case 'Dad-Battle': songHighscore = 'Dadbattle';
-			case 'Philly-Nice': songHighscore = 'Philly';
-		}
 		
 		#if !switch
 		intendedScore = Highscore.getScore(songHighscore, curDifficulty);
@@ -293,10 +282,6 @@ class FreeplayState extends MusicBeatState
 		// adjusting the highscore song name to be compatible (changeSelection)
 		// would read original scores if we didn't change packages
 		var songHighscore = StringTools.replace(songs[curSelected].songName, " ", "-");
-		switch (songHighscore) {
-			case 'Dad-Battle': songHighscore = 'Dadbattle';
-			case 'Philly-Nice': songHighscore = 'Philly';
-		}
 
 		#if !switch
 		intendedScore = Highscore.getScore(songHighscore, curDifficulty);

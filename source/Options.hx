@@ -524,7 +524,7 @@ class AccuracyDOption extends Option
 	}
 }
 
-class CustomizeGameplay extends Option
+/*class CustomizeGameplay extends Option
 {
 	public function new(desc:String)
 	{
@@ -543,7 +543,7 @@ class CustomizeGameplay extends Option
 	{
 		return "Customize Gameplay";
 	}
-}
+}*/
 
 class WatermarkOption extends Option
 {

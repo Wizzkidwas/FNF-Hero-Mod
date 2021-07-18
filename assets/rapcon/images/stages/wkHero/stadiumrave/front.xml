@@ -20,22 +20,22 @@
 	<SubTexture name="FrontLoop0015" x="0" y="0" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
 	<SubTexture name="FrontLoop0016" x="0" y="0" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>	
 	
-	<SubTexture name="FrontLoop0017" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0018" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0019" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0020" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>	
-	<SubTexture name="FrontLoop0021" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>	
-	<SubTexture name="FrontLoop0022" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>	
-	<SubTexture name="FrontLoop0023" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0024" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0025" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0026" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0027" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0028" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0029" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0030" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0031" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0032" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>
-	<SubTexture name="FrontLoop0033" x="0" y="666" width="2560" height="666" frameX="0" frameY="490" frameWidth="2560" frameHeight="666"/>		
+	<SubTexture name="FrontLoop0017" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0018" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0019" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0020" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>	
+	<SubTexture name="FrontLoop0021" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>	
+	<SubTexture name="FrontLoop0022" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>	
+	<SubTexture name="FrontLoop0023" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0024" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0025" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0026" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0027" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0028" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0029" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0030" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0031" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0032" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>
+	<SubTexture name="FrontLoop0033" x="0" y="667" width="2560" height="666" frameX="0" frameY="488" frameWidth="2560" frameHeight="666"/>		
 	
 </TextureAtlas>

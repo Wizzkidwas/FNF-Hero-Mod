@@ -38,6 +38,7 @@ class DialogueBox extends FlxSpriteGroup
 
 	var handSelect:FlxSprite;
 	var bgFade:FlxSprite;
+	var youCanSkip:FlxText;
 
 	public function new(talkingRight:Bool = true, ?dialogueList:Array<String>)
 	{
@@ -55,11 +56,11 @@ class DialogueBox extends FlxSpriteGroup
 
 		if (PlayState.SONG.song.toLowerCase() == 'anomaly')
 		{
-			bgFade = new FlxSprite(-200, -200).makeGraphic(Std.int(FlxG.width * 1.3), Std.int(FlxG.height * 1.3), 0xFFF42328);
+			bgFade = new FlxSprite(-400, -200).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), 0xFFF42328);
 		}
 		else
 		{
-			bgFade = new FlxSprite(-200, -200).makeGraphic(Std.int(FlxG.width * 1.3), Std.int(FlxG.height * 1.3), 0xFFB3DFd8);
+			bgFade = new FlxSprite(-400, -200).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), 0xFFB3DFd8);
 		}
 		bgFade.scrollFactor.set();
 		bgFade.alpha = 0;
@@ -111,11 +112,9 @@ class DialogueBox extends FlxSpriteGroup
 				hasDialog = true;
 				box.frames = Paths.getSparrowAtlas('cutscenes/dialogueBox', 'rapcon');
 				box.animation.addByPrefix('normalOpen', 'Text Box Appear', 24, false);
-				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);
-
-				
+				box.animation.addByIndices('normal', 'Text Box Appear', [4], "", 24);				
 		}
-
+		
 		this.dialogueList = dialogueList;
 		
 		if (!hasDialog)
@@ -123,17 +122,32 @@ class DialogueBox extends FlxSpriteGroup
 		
 		switch (PlayState.SONG.song.toLowerCase())
 		{		
-			// Differentiate between regular hero and boss hero
+			// Differentiate between regular hero/kiki/bf and boss hero/spooked kiki/spooked bf
 			case 'anomaly':
-				portraitLeft = new FlxSprite(-20, 40);
+				portraitLeft = new FlxSprite(500, 0);
 				portraitLeft.frames = Paths.getSparrowAtlas('cutscenes/boss/portrait', 'rapcon');
-				portraitLeft.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+				portraitLeft.animation.addByPrefix('enter', 'Boyfriend portrait enter', 12, true);
 				// portraitLeft.setGraphicSize(Std.int(portraitLeft.width * PlayState.daPixelZoom * 0.9));
 				// portraitLeft.updateHitbox();
 				portraitLeft.scrollFactor.set();
 				portraitLeft.flipX = true;
 				add(portraitLeft);
 				portraitLeft.visible = false;
+
+				portraitLeft2 = new FlxSprite(-20, 40);
+				portraitLeft2.frames = Paths.getSparrowAtlas('cutscenes/kikispook/portrait', 'rapcon');
+				portraitLeft2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+				portraitLeft2.scrollFactor.set();
+				portraitLeft2.flipX = true;
+				add(portraitLeft2);
+				portraitLeft2.visible = false;
+
+				portraitRight = new FlxSprite(400, 30);
+				portraitRight.frames = Paths.getSparrowAtlas('cutscenes/bfspook/portrait', 'rapcon');
+				portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+				portraitRight.scrollFactor.set();
+				add(portraitRight);
+				portraitRight.visible = false;
 			default:
 				portraitLeft = new FlxSprite(-20, 40);
 				portraitLeft.frames = Paths.getSparrowAtlas('cutscenes/hero/portrait', 'rapcon');
@@ -144,45 +158,23 @@ class DialogueBox extends FlxSpriteGroup
 				portraitLeft.flipX = true;
 				add(portraitLeft);
 				portraitLeft.visible = false;
+				portraitLeft.screenCenter(X);
+
+				portraitLeft2 = new FlxSprite(-20, 40);
+				portraitLeft2.frames = Paths.getSparrowAtlas('cutscenes/kiki/portrait', 'rapcon');
+				portraitLeft2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+				portraitLeft2.scrollFactor.set();
+				portraitLeft2.flipX = true;
+				add(portraitLeft2);
+				portraitLeft2.visible = false;
+
+				portraitRight = new FlxSprite(400, 25);
+				portraitRight.frames = Paths.getSparrowAtlas('cutscenes/bf/portrait', 'rapcon');
+				portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
+				portraitRight.scrollFactor.set();
+				add(portraitRight);
+				portraitRight.visible = false;
 		}
-
-		// Easy copypastes to add heroL, kiki and nega when needed
-		/*
-		heroL:
-			portraitRight2 = new FlxSprite(-20, 40);
-			portraitRight2.frames = Paths.getSparrowAtlas('cutscenes/hero/portrait', 'rapcon');
-			portraitRight2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-			portraitRight2.scrollFactor.set();
-			add(portraitRight2);
-			portraitRight2.visible = false;
-
-		kiki:
-			portraitLeft2 = new FlxSprite(-20, 40);
-			portraitLeft2.frames = Paths.getSparrowAtlas('cutscenes/kiki/portrait', 'rapcon');
-			portraitLeft2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-			portraitLeft2.scrollFactor.set();
-			portraitLeft2.flipX = true;
-			add(portraitLeft2);
-			portraitLeft2.visible = false;
-
-		nega:
-			portraitLeft3 = new FlxSprite(-20, 40);
-			portraitLeft3.frames = Paths.getSparrowAtlas('cutscenes/nega/portrait', 'rapcon');
-			portraitLeft3.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-			portraitLeft3.scrollFactor.set();
-			portraitLeft3.flipX = true;
-			add(portraitLeft3);
-			portraitLeft3.visible = false;
-		*/
-
-		// Kiki
-		portraitLeft2 = new FlxSprite(-20, 40);
-		portraitLeft2.frames = Paths.getSparrowAtlas('cutscenes/kiki/portrait', 'rapcon');
-		portraitLeft2.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-		portraitLeft2.scrollFactor.set();
-		portraitLeft2.flipX = true;
-		add(portraitLeft2);
-		portraitLeft2.visible = false;
 
 		// Nega
 		portraitLeft3 = new FlxSprite(-20, 40);
@@ -218,16 +210,6 @@ class DialogueBox extends FlxSpriteGroup
 		portraitRight2.scrollFactor.set();
 		add(portraitRight2);
 		portraitRight2.visible = false;
-
-		// BF
-		portraitRight = new FlxSprite(0, 0);
-		portraitRight.frames = Paths.getSparrowAtlas('cutscenes/bf/bfPortrait', 'rapcon');
-		portraitRight.animation.addByPrefix('enter', 'Boyfriend portrait enter', 24, false);
-		// portraitRight.setGraphicSize(Std.int(portraitRight.width * PlayState.daPixelZoom * 0.9));
-		// portraitRight.updateHitbox();
-		portraitRight.scrollFactor.set();
-		add(portraitRight);
-		portraitRight.visible = false;
 		
 		box.animation.play('normalOpen');
 		box.setGraphicSize(Std.int(box.width * PlayState.daPixelZoom * 0.9));
@@ -235,15 +217,23 @@ class DialogueBox extends FlxSpriteGroup
 		add(box);
 
 		box.screenCenter(X);
-		portraitLeft.screenCenter(X);
 		portraitLeft2.screenCenter(X);
 		portraitLeft3.screenCenter(X);
 		portraitLeft4.screenCenter(X);
 		portraitLeft5.screenCenter(X);
 
-		handSelect = new FlxSprite(FlxG.width * 0.9, FlxG.height * 0.9).loadGraphic(Paths.image('weeb/pixelUI/hand_textbox'));
+		handSelect = new FlxSprite(FlxG.width * 0.85, FlxG.height * 0.85);
+		handSelect.frames = Paths.getSparrowAtlas('cutscenes/BoxArrow', 'rapcon');
+		handSelect.animation.addByPrefix('speen', 'BoxArrow', 12, true);
+		handSelect.animation.play('speen');
 		add(handSelect);
 
+		if (hasDialog)
+		{
+			youCanSkip = new FlxText(0, FlxG.height * 0.92, 0, "Press SPACE to skip", 32);
+			add(youCanSkip);
+			youCanSkip.screenCenter(X);
+		}
 
 		if (!talkingRight)
 		{
@@ -302,7 +292,9 @@ class DialogueBox extends FlxSpriteGroup
 		{
 			if (!isEnding)
 			{
+				FlxG.sound.play(Paths.sound('clickText'), 0.8);
 				remove(dialogue);
+				remove(youCanSkip);
 				isEnding = true;
 	
 				new FlxTimer().start(0.2, function(tmr:FlxTimer)
@@ -330,7 +322,7 @@ class DialogueBox extends FlxSpriteGroup
 			}
 		}
 
-		if (FlxG.keys.justPressed.ANY && dialogueStarted == true)
+		if (FlxG.keys.justPressed.ANY && !FlxG.keys.justPressed.SPACE && dialogueStarted == true)
 		{
 			remove(dialogue);
 				
@@ -341,6 +333,7 @@ class DialogueBox extends FlxSpriteGroup
 				if (!isEnding)
 				{
 					isEnding = true;
+					remove(youCanSkip);
 
 					if (PlayState.SONG.song.toLowerCase() == 'senpai' || PlayState.SONG.song.toLowerCase() == 'thorns')
 						FlxG.sound.music.fadeOut(2.2, 0);
@@ -476,7 +469,14 @@ class DialogueBox extends FlxSpriteGroup
 					portraitLeft5.visible = true;			// Do the funky animations
 					portraitLeft5.animation.play('enter');
 				}
-				
+			default:
+				portraitLeft.visible = false;
+				portraitLeft2.visible = false;
+				portraitLeft3.visible = false;
+				portraitLeft4.visible = false;
+				portraitLeft5.visible = false;
+				portraitRight.visible = false;
+				portraitRight2.visible = false;
 		}
 	}
 

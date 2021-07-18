@@ -27,14 +27,14 @@ class DevsMenu extends MusicBeatState
     [
 		new DevCategory("OneilR",
         [
-            new LinkOption("Check out OnielR's Newgrounds!", "https://oneilr.newgrounds.com"),
+            new LinkOption("Press ENTER to check out OnielR's Newgrounds!", "https://oneilr.newgrounds.com"),
 			new Lead("What did this person do?"),
             new Art("What else did this person do?"),
             new Animate("What else did this person do?") 
 		]),
 		new DevCategory("AshaTelethia",
         [
-            new LinkOption("Check out AshaTelethia's Newgrounds!", "https://ashatelethia.newgrounds.com"),
+            new LinkOption("Press ENTER to check out AshaTelethia's Newgrounds!", "https://ashatelethia.newgrounds.com"),
 			new Co("What did this person do?"),
             new Write("What else did this person do?"),
             new Assist("What else did this person do?")
@@ -42,19 +42,20 @@ class DevsMenu extends MusicBeatState
 		
 		new DevCategory("Saruky",
         [
-            new LinkOption("Check out Saruky's Newgrounds!", "https://saruky.newgrounds.com"),
+            new LinkOption("Press ENTER to check out Saruky's Newgrounds!", "https://saruky.newgrounds.com"),
 			new Music1("What did this person do?")
 		]),
 
         new DevCategory("Wizzkidwas",
         [
-            new LinkOption("Check out Wizzkidwas' Twitter!", "https://twitter.com/wizzkidwas"),
+            new LinkOption("Press ENTER to check out Wizzkidwas' Twitter!", "https://twitter.com/wizzkidwas"),
+			new LinkOption("Press ENTER to check out Wizzkidwas' Dev Twitter!", "https://twitter.com/WizzkidDev"),
 			new Program("What did this person do?")
 		]),
 
         new DevCategory("FuegO",
         [
-			new LinkOption("Check out Fueg0's Youtube!", "https://www.youtube.com/channel/UC8udDz2kZJREgNfS8T4iuHg"),
+			new LinkOption("Press ENTER to check out Fueg0's Youtube!", "https://www.youtube.com/channel/UC8udDz2kZJREgNfS8T4iuHg"),
 			new MusicTut("What did this person do?"),
             new Music2("What else did this person do?")
 		])
