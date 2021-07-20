@@ -46,22 +46,14 @@ class DialogueBox extends FlxSpriteGroup
 
 		switch (PlayState.SONG.song.toLowerCase())
 		{
-			case 'senpai':
-				FlxG.sound.playMusic(Paths.music('Lunchbox'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
-			case 'thorns':
-				FlxG.sound.playMusic(Paths.music('LunchboxScary'), 0);
-				FlxG.sound.music.fadeIn(1, 0, 0.8);
+			case 'anomaly':
+				bgFade = new FlxSprite(-400, -200).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), 0xFFF42328);
+			case 'voodoo-puppet':
+				bgFade = new FlxSprite(-400, -200).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), 0xFF5A24A6);
+			default:
+				bgFade = new FlxSprite(-400, -200).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), 0xFFB3DFd8);
 		}
-
-		if (PlayState.SONG.song.toLowerCase() == 'anomaly')
-		{
-			bgFade = new FlxSprite(-400, -200).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), 0xFFF42328);
-		}
-		else
-		{
-			bgFade = new FlxSprite(-400, -200).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), 0xFFB3DFd8);
-		}
+		
 		bgFade.scrollFactor.set();
 		bgFade.alpha = 0;
 		add(bgFade);
@@ -324,9 +316,11 @@ class DialogueBox extends FlxSpriteGroup
 
 		if (FlxG.keys.justPressed.ANY && !FlxG.keys.justPressed.SPACE && dialogueStarted == true)
 		{
-			remove(dialogue);
-				
-			FlxG.sound.play(Paths.sound('clickText'), 0.8);
+			if (!isEnding)
+			{
+				remove(dialogue);		
+				FlxG.sound.play(Paths.sound('clickText'), 0.8);
+			}
 
 			if (dialogueList[1] == null && dialogueList[0] != null)
 			{
@@ -362,8 +356,11 @@ class DialogueBox extends FlxSpriteGroup
 			}
 			else
 			{
-				dialogueList.remove(dialogueList[0]);
-				startDialogue();
+				if (!isEnding)
+				{
+					dialogueList.remove(dialogueList[0]);
+					startDialogue();
+				}
 			}
 		}
 		

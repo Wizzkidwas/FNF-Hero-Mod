@@ -186,10 +186,29 @@ class Animate extends Dev
 	{
 		return true;
 	}
-	
+
 	private override function updateDisplay():String
 	{
 		return "Animator";
+	}
+}
+
+class Chart extends Dev
+{
+	public function new(desc:String)
+	{
+		super();
+		description = desc;
+	}
+
+	public override function press():Bool
+	{
+		return true;
+	}
+
+	private override function updateDisplay():String
+	{
+		return "Charter";
 	}
 }
 
