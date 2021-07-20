@@ -173,9 +173,6 @@ class PlayState extends MusicBeatState
 	var trailAdded:Bool = false;
 	var fc:Bool = true;
 
-	var bgGirls:BackgroundGirls;
-	var wiggleShit:WiggleEffect = new WiggleEffect();
-
 	var talking:Bool = true;
 	var songScore:Int = 0;
 	var songScoreDef:Int = 0;
@@ -452,7 +449,10 @@ class PlayState extends MusicBeatState
 						stageFront = new FlxSprite(-680, 1125);
 						stageFront.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/front', 'rapcon');
 						stageFront.animation.addByPrefix('loop', 'FrontLoop', 24, true);
-						stageFront.animation.play('loop');
+						if(FlxG.save.data.distractions)
+						{
+							stageFront.animation.play('loop');
+						}
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
@@ -464,7 +464,10 @@ class PlayState extends MusicBeatState
 						var stageCurtains:FlxSprite = new FlxSprite(-400, 350);
 						stageCurtains.frames = Paths.getSparrowAtlas('stages/wkHero/stadiumrave/lights', 'rapcon');
 						stageCurtains.animation.addByPrefix('loop', 'LightsLoop', 24, true);
-						stageCurtains.animation.play('loop');
+						if(FlxG.save.data.distractions)
+						{
+							stageCurtains.animation.play('loop');
+						}
 						stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 						stageCurtains.updateHitbox();
 						stageCurtains.antialiasing = true;
@@ -568,7 +571,7 @@ class PlayState extends MusicBeatState
 						bg.active = false;
 						add(bg);
 
-						stageFront = new FlxSprite(-200, 625).loadGraphic(Paths.image('stages/wkNega/void/stagefront', 'rapcon'));
+						stageFront = new FlxSprite(-400, 625).loadGraphic(Paths.image('stages/wkNega/void/stagefront', 'rapcon'));
 						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 						stageFront.updateHitbox();
 						stageFront.antialiasing = true;
@@ -840,7 +843,9 @@ class PlayState extends MusicBeatState
 
 		if (curSong.toLowerCase() == 'tutorial')
 		{
-			gf.y += 99999; // BACK TO THE DEPTHS	
+			gf.y += 99999; // BACK TO THE DEPTHS
+			dad.x += -50;
+			dad.y += 95;	
 		}
 		// add(strumLine);
 
@@ -1003,9 +1008,6 @@ class PlayState extends MusicBeatState
 				case 'voodoo-puppet':
 					doof.finishThing = setupNegaIntroPart2;
 					negaIntro(doof, false);
-														
-				/*case 'anomaly':
-					bossIntro(doof);*/
 				default:
 					startCountdown();
 			}
@@ -1252,10 +1254,13 @@ class PlayState extends MusicBeatState
 			{
 				if (dialogueBox != null)
 				{
-					camHUD.visible = true;
-					showOrHideStuffForBossIntro(false);
-					inCutscene = true;
-					add(dialogueBox);
+					new FlxTimer().start(1.5, function(tmr:FlxTimer)
+						{
+							camHUD.visible = true;
+							showOrHideStuffForBossIntro(false);
+							inCutscene = true;
+							add(dialogueBox);
+						}, 1);
 				}
 				else
 				{
@@ -3721,7 +3726,6 @@ class PlayState extends MusicBeatState
 				dad.dance();
 		}
 		// FlxG.log.add('change bpm' + SONG.notes[Std.int(curStep / 16)].changeBPM);
-		wiggleShit.update(Conductor.crochet);
 
 		// HARDCODING FOR MILF ZOOMS!
 		if (curSong.toLowerCase() == 'milf' && curBeat >= 168 && curBeat < 200 && camZooming && FlxG.camera.zoom < 1.35)

@@ -28,36 +28,37 @@ class DevsMenu extends MusicBeatState
 		new DevCategory("OneilR",
         [
             new LinkOption("Press ENTER to check out OnielR's Newgrounds!", "https://oneilr.newgrounds.com"),
-			new Lead("What did this person do?"),
-            new Art("What else did this person do?"),
-            new Animate("What else did this person do?") 
+			new Lead("The brave leader. Called the shots in terms of the design of the mod."),
+            new Art("There was only 20 revisions of all the art!"),
+            new Animate("Decided Adobe Animate was for noobs. Was a god at XML wizardry."), 
+			new Chart("So blame him if you don't like the charts!")
 		]),
 		new DevCategory("AshaTelethia",
         [
             new LinkOption("Press ENTER to check out AshaTelethia's Newgrounds!", "https://ashatelethia.newgrounds.com"),
-			new Co("What did this person do?"),
-            new Write("What else did this person do?"),
-            new Assist("What else did this person do?")
+			new Co("Also a brave leader. Also called some shots in terms of the design of the mod."),
+            new Write("The loremaster. He Knows Everything."),
+            new Assist("Helped fixed a lot of my mistakes and also added some funky things.")
 		]),
 		
 		new DevCategory("Saruky",
         [
             new LinkOption("Press ENTER to check out Saruky's Newgrounds!", "https://saruky.newgrounds.com"),
-			new Music1("What did this person do?")
+			new Music1("The mod savior! Seriously, without the week 1 music, I wouldn't have joined.")
 		]),
 
         new DevCategory("Wizzkidwas",
         [
             new LinkOption("Press ENTER to check out Wizzkidwas' Twitter!", "https://twitter.com/wizzkidwas"),
 			new LinkOption("Press ENTER to check out Wizzkidwas' Dev Twitter!", "https://twitter.com/WizzkidDev"),
-			new Program("What did this person do?")
+			new Program("Hi! I made this cool dev screen and wrote these descriptions.")
 		]),
 
         new DevCategory("FuegO",
         [
 			new LinkOption("Press ENTER to check out Fueg0's Youtube!", "https://www.youtube.com/channel/UC8udDz2kZJREgNfS8T4iuHg"),
-			new MusicTut("What did this person do?"),
-            new Music2("What else did this person do?")
+			new MusicTut("Very very funky tune, me likey."),
+            new Music2("Apparently he spedran the songs.")
 		])
 		
 	];
@@ -132,7 +133,7 @@ class DevsMenu extends MusicBeatState
 		{
 			if (controls.BACK && !isCat)
 			{
-				MainMenuState.menuBGChoice = FlxG.random.int(1, 3);
+				MainMenuState.menuBGChoice = FlxG.random.int(1, 5);
 				FlxG.switchState(new MainMenuState());
 			}
 			else if (controls.BACK)

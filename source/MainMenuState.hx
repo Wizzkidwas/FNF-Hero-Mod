@@ -40,10 +40,10 @@ class MainMenuState extends MusicBeatState
 	public static var nightly:String = "";
 	
 	public static var kadeEngineVer:String = "1.5.2" + nightly;
-	public static var gameVer:String = "0.2.7.1";
-	public static var menuBGChoice:Int = FlxG.random.int(1, 3);
+	public static var gameVer:String = "1.0";
+	public static var menuBGChoice:Int = FlxG.random.int(1, 5);
 	/* If changing menuBGChoice's range, also change the range for:
-	DevsMenu line 165, OptionsMenu Line 137, StoryMenuState Line 255 and FreeplayState Line 209*/
+	DevsMenu line 135, OptionsMenu Line 137, StoryMenuState Line 249 and FreeplayState Line 209*/
 
 	var bg:FlxSprite;
 	var greyBG:FlxSprite;	// For some reason this was called magenta even tho it loaded the grey background? Thanks ninjamuffin and/or kade

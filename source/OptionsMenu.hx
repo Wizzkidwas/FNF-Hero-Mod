@@ -134,7 +134,7 @@ class OptionsMenu extends MusicBeatState
 		{
 			if (controls.BACK && !isCat)
 			{
-				MainMenuState.menuBGChoice = FlxG.random.int(1, 3);
+				MainMenuState.menuBGChoice = FlxG.random.int(1, 5);
 				FlxG.switchState(new MainMenuState());
 			}
 			else if (controls.BACK)

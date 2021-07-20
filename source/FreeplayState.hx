@@ -206,7 +206,7 @@ class FreeplayState extends MusicBeatState
 
 		if (controls.BACK)
 		{
-			MainMenuState.menuBGChoice = FlxG.random.int(1, 3);
+			MainMenuState.menuBGChoice = FlxG.random.int(1, 5);
 			FlxG.switchState(new MainMenuState());
 		}
 
