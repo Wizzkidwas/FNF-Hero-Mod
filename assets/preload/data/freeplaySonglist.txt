@@ -1,4 +1,4 @@
-Tutorial:kikituto:0
+Hibiki:kikituto:0
 kick it:hero:1
 ringside rave:herorave:1
 Anomaly:heroboss:1
