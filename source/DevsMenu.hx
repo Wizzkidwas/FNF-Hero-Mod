@@ -28,37 +28,37 @@ class DevsMenu extends MusicBeatState
 		new DevCategory("OneilR",
         [
             new LinkOption("Press ENTER to check out OnielR's Newgrounds!", "https://oneilr.newgrounds.com"),
-			new Lead("The brave leader. Called the shots in terms of the design of the mod."),
-            new Art("There was only 20 revisions of all the art!"),
-            new Animate("Decided Adobe Animate was for noobs. Was a god at XML wizardry."), 
-			new Chart("So blame him if you don't like the charts!")
+			new Role("The brave leader. Called the shots in terms of the design of the mod.", "Project Lead"),
+            new Role("There was only 20 revisions of all the art!", "Artist"),
+            new Role("Decided Adobe Animate was for noobs. Was a god at XML wizardry.", "Animator"), 
+			new Role("So blame him if you don't like the charts!", "Charter")
 		]),
 		new DevCategory("AshaTelethia",
         [
             new LinkOption("Press ENTER to check out AshaTelethia's Newgrounds!", "https://ashatelethia.newgrounds.com"),
-			new Co("Also a brave leader. Also called some shots in terms of the design of the mod."),
-            new Write("The loremaster. He Knows Everything."),
-            new Assist("Helped fixed a lot of my mistakes and also added some funky things.")
+			new Role("Also a brave leader. Also called some shots in terms of the design of the mod.", "Co Lead"),
+            new Role("The loremaster. He Knows Everything.", "Writer"),
+            new Role("Helped fixed a lot of my mistakes and also added some funky things.", "Assistant Programmer")
 		]),
 		
 		new DevCategory("Saruky",
         [
             new LinkOption("Press ENTER to check out Saruky's Newgrounds!", "https://saruky.newgrounds.com"),
-			new Music1("The mod savior! Seriously, without the week 1 music, I wouldn't have joined.")
+			new Role("The mod savior! Seriously, without the week 1 music, I wouldn't have joined.", "Hero Week Music")
 		]),
 
         new DevCategory("Wizzkidwas",
         [
             new LinkOption("Press ENTER to check out Wizzkidwas' Twitter!", "https://twitter.com/wizzkidwas"),
 			new LinkOption("Press ENTER to check out Wizzkidwas' Dev Twitter!", "https://twitter.com/WizzkidDev"),
-			new Program("Hi! I made this cool dev screen and wrote these descriptions.")
+			new Role("Hi! I made this cool dev screen and wrote these descriptions.", "Main Programmer")
 		]),
 
         new DevCategory("FuegO",
         [
 			new LinkOption("Press ENTER to check out Fueg0's Youtube!", "https://www.youtube.com/channel/UC8udDz2kZJREgNfS8T4iuHg"),
-			new MusicTut("Very very funky tune, me likey."),
-            new Music2("Apparently he spedran the songs.")
+			new Role("Very very funky tune, me likey.", "Tutorial Music"),
+            new Role("Apparently he spedran the songs.", "Nega Week Music")
 		])
 		
 	];
@@ -177,7 +177,7 @@ class DevsMenu extends MusicBeatState
 				{
 					if (currentSelectedCat.getDevs()[curSelected].press()) {
 						grpControls.remove(grpControls.members[curSelected]);
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, currentSelectedCat.getDevs()[curSelected].getDisplay(), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, currentSelectedCat.getDevs()[curSelected].getRole(), true, false);
 						ctrl.isMenuItem = true;
 						grpControls.add(ctrl);
 					}
@@ -189,7 +189,7 @@ class DevsMenu extends MusicBeatState
 					grpControls.clear();
 					for (i in 0...currentSelectedCat.getDevs().length)
 						{
-							var controlLabel:Alphabet = new Alphabet(0, (70 * i) + 30, currentSelectedCat.getDevs()[i].getDisplay(), true, false);
+							var controlLabel:Alphabet = new Alphabet(0, (70 * i) + 30, currentSelectedCat.getDevs()[i].getRole(), true, false);
 							controlLabel.isMenuItem = true;
 							controlLabel.targetY = i;
 							grpControls.add(controlLabel);

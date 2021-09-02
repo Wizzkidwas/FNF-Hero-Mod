@@ -62,15 +62,15 @@ class Dev
 {
 	public function new()
 	{
-		display = updateDisplay();
+		role = updateDisplay();
 	}
 	private var description:String = "";
 	private var url:String = "";
-	private var display:String;
+	private var role:String;
 	private var acceptValues:Bool = false;
-	public final function getDisplay():String
+	public final function getRole():String
 	{
-		return display;
+		return role;
 	}
 
 	public final function getAccept():Bool
@@ -115,7 +115,7 @@ class LinkOption extends Dev
 	}
 }
 
-/*class Role1 extends Dev
+class Role extends Dev
 {
 	public function new(desc:String, job:String)
 	{
@@ -126,221 +126,11 @@ class LinkOption extends Dev
 
 	public override function press():Bool			// I had a cool class here that took a role as a parameter and displayed it
 	{												// But in true FNF code fashion, it didn't display the name, so I had to hardcode it in a bad way below
-		return true;
+		return true;								// Thanks to some future work on FNF Moonlight, I made it work and ported it back to here
 	}
 
 	private override function updateDisplay():String
 	{
-		trace(role);
 		return role;
-	}
-}*/
-
-class Lead extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-
-	private override function updateDisplay():String
-	{
-		return "Project Lead";
-	}
-}
-
-class Art extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-	
-	private override function updateDisplay():String
-	{
-		return "Artist";
-	}
-}
-
-class Animate extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-
-	private override function updateDisplay():String
-	{
-		return "Animator";
-	}
-}
-
-class Chart extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-
-	private override function updateDisplay():String
-	{
-		return "Charter";
-	}
-}
-
-class Co extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-	
-	private override function updateDisplay():String
-	{
-		return "Co-Lead";
-	}
-}
-
-class Write extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-	
-	private override function updateDisplay():String
-	{
-		return "Writer";
-	}
-}
-
-class Assist extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-	
-	private override function updateDisplay():String
-	{
-		return "Assistant Programmer";
-	}
-}
-
-class Music1 extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-	
-	private override function updateDisplay():String
-	{
-		return "Hero Week Music";
-	}
-}
-
-class Program extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-	
-	private override function updateDisplay():String
-	{
-		return "Main Programmer";
-	}
-}
-
-class MusicTut extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-	
-	private override function updateDisplay():String
-	{
-		return "Tutorial Music";
-	}
-}
-
-class Music2 extends Dev
-{
-	public function new(desc:String)
-	{
-		super();
-		description = desc;
-	}
-
-	public override function press():Bool
-	{
-		return true;
-	}
-	
-	private override function updateDisplay():String
-	{
-		return "Nega Week Music";
 	}
 }
